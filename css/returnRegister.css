@@ -1,0 +1,267 @@
+body a{
+    text-decoration: none;
+    color: #3f6ad8;
+}
+/* ===============Remove Scrollbar================== */
+body::-webkit-scrollbar {
+    display: none;
+}
+body {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+  }
+body a:hover{
+    text-decoration: none;
+}
+.returnbtn{
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    letter-spacing: .5px;
+    cursor: pointer;
+  }
+  .returnbtn:hover{
+    color: #fff;
+    text-decoration: none;
+  }
+  .header-links{
+    justify-content: space-between;
+  }
+  @media(max-width:768px){
+    .header-links{
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+    }
+    .header-links-items{
+      margin-bottom: 1rem;
+    }
+  }
+.pendindreturns{
+    color: #ff0000 !important;
+    text-decoration: none !important;
+}
+.filedreturns{
+    color: #34a853 !important;
+    text-decoration: none !important;
+    letter-spacing: .5px;
+}
+.table-responsive .company-name{
+    text-decoration: none;
+}
+/* ================================= */
+.button {
+    margin-left: 1rem;
+    display: inline-block;
+    padding: .4rem 1rem;
+    text-decoration: none;
+    letter-spacing: .5px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.button:hover {
+    text-decoration: none;
+}
+.selected {
+    background-color: #3498db;
+    color: #fff;
+}
+.selected:hover {
+    color: #fff;
+}
+
+.content {
+    display: none;
+}
+
+.active-content {
+    display: block;
+}
+/* ========= month wise=========== */
+.table-responsive .table-head th{
+    color: #cd1c1f !important;
+    letter-spacing: .5px;
+}
+.table-responsive .count{
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+}
+.monthwise-header{
+    border-top: 1px solid #2323234d;
+    border-bottom: 1px solid #2323234d;
+    border-radius: 0 !important;
+    background-color: #ddd;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@media(max-width:768px){
+    .monthwise-header{
+        display:  block;
+    }
+}
+#monthWiseReturnWise{
+    display: none;
+}
+#returnWiseDetails{
+    display: none;
+}
+.return-type-btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.return-type-btn a{
+    margin-left: 1rem;
+    padding: .4rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .5px;
+    background-color: #26ace3;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+.table-responsive .crossx{
+    color: #cd1c1f;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.table-responsive .check{
+    color: #34a853;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+@media(max-width:600px){
+    .return-type-btn{
+        justify-content: flex-start;
+    }
+    .return-type-btn a{
+        margin-bottom: 1rem;
+    }
+}
+/* ===========================Cash Ledger Modal================================ */
+#cashLedger .modal-dialog{
+    max-height: 65%;
+
+}
+.modalbtns{
+    max-width: 100%;
+}
+@media(max-width:768px){
+    .modalbtns{
+        margin-bottom: 1rem;
+    }
+}
+.modalbtns a{
+    border: 2px solid #fff;
+    padding: .4rem 1rem;
+    letter-spacing: .5px;
+    color: #3f6ad8;
+    font-weight: 500;
+}
+.transactionbtn{
+    background-color: #26ace3;
+    color: #fff !important;
+    border-left: none !important;
+}
+.balancebtn{
+    background-color: #26ace3;
+    color: #fff !important;
+    border-right: none !important;
+}
+#cashLedgerTransaction table tr{
+    border: 1px solid #23232329;
+}
+#cashLedgerTransaction table th{
+    border: 1px solid #23232329;
+}
+#cashLedgerTransaction table td{
+    border: 1px solid #23232329;
+}
+#cashLedgerTransaction table th{
+    vertical-align: top;
+}
+
+
+#creditLedger table tr{
+    border: 1px solid #23232329;
+}
+#creditLedger table th{
+    border: 1px solid #23232329;
+}
+#creditLedger table td{
+    border: 1px solid #23232329;
+}
+#creditLedger table th{
+    vertical-align: top;
+}
+
+
+#importBookData table tr{
+    border: 1px solid #23232329;
+}
+#importBookData table th{
+    border: 1px solid #23232329;
+}
+#importBookData table td{
+    border: 1px solid #23232329;
+}
+#importBookData table th{
+    vertical-align: top;
+}
+
+/* ============================date picker============================= */
+.calender{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+/* ========================== */
+#importBtn{
+    position: fixed;
+    bottom: 45%;
+    right: -90px;
+    border-radius: 0px;
+    background-color: #26ace3;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+	border-radius: 4px;
+    transform: rotate(90deg);
+    z-index: 100;
+    padding: 0 .5rem;
+}
+#importBtn a{
+	display: inline-block;
+	font-size: 18px;
+	padding: 5px; 
+	color: #fff;
+	text-transform: uppercase;
+    letter-spacing: .5px;
+}
+/* ================import modal====================== */
+.import-file{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    font-weight: 500;
+    color: #000;
+}
+.import-file .delete{
+    color: #ff0000;
+    font-weight: 500;
+    font-size: 1.1rem;
+}

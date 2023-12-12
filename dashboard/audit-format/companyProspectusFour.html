@@ -1,0 +1,1367 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> Dashboard | CharteredONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./style/dashboardpack.css">
+    <link rel="stylesheet" href="./style/dashboard.css">
+    <link rel="stylesheet" href="./style/bankaudit.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa-solid fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Romana I Khan
+                                    </div>
+                                    <div class="widget-subheading">
+                                       GST Analyst
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <div class="widget-content-left">
+                                        <div class="widget-content-left">
+                                            <a href="./profile.html"><img width="40" class="rounded-circle" src="../images/female_avatar_efig.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>        
+        <div class="ui-theme-settings">
+            <button type="button" id="TooltipDemo" class="btn-open-options btn">
+                <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+            </button>
+            <div class="theme-settings__inner">
+                <div class="scrollbar-container">
+                    <div class="theme-settings__options-wrapper">
+                        <h3 class="themeoptions-heading">Layout Options
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-header">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Header
+                                                </div>
+                                                <div class="widget-subheading">Makes the header top fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-sidebar">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Sidebar
+                                                </div>
+                                                <div class="widget-subheading">Makes the sidebar left fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-footer">
+                                                    <div class="switch-animate switch-off">
+                                                        <input type="checkbox" data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Footer
+                                                </div>
+                                                <div class="widget-subheading">Makes the app footer bottom fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>
+                                Header Options
+                            </div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-header-cs-class" data-class="bg-secondary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-header-cs-class" data-class="bg-success header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-header-cs-class" data-class="bg-info header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-header-cs-class" data-class="bg-warning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-header-cs-class" data-class="bg-danger header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-header-cs-class" data-class="bg-light header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-header-cs-class" data-class="bg-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-header-cs-class" data-class="bg-focus header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-header-cs-class" data-class="bg-alternate header-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-header-cs-class" data-class="bg-midnight-bloom header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-header-cs-class" data-class="bg-night-sky header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-header-cs-class" data-class="bg-slick-carbon header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-header-cs-class" data-class="bg-asteroid header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-header-cs-class" data-class="bg-royal header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-header-cs-class" data-class="bg-warm-flame header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-header-cs-class" data-class="bg-night-fade header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-header-cs-class" data-class="bg-sunny-morning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-header-cs-class" data-class="bg-tempting-azure header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-header-cs-class" data-class="bg-amy-crisp header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-header-cs-class" data-class="bg-heavy-rain header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-header-cs-class" data-class="bg-mean-fruit header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-header-cs-class" data-class="bg-malibu-beach header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-header-cs-class" data-class="bg-deep-blue header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-header-cs-class" data-class="bg-ripe-malin header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-header-cs-class" data-class="bg-arielle-smile header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-header-cs-class" data-class="bg-plum-plate header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-header-cs-class" data-class="bg-happy-fisher header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-header-cs-class" data-class="bg-happy-itmeo header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-header-cs-class" data-class="bg-mixed-hopes header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-header-cs-class" data-class="bg-strong-bliss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-header-cs-class" data-class="bg-grow-early header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-header-cs-class" data-class="bg-love-kiss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-header-cs-class" data-class="bg-premium-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-header-cs-class" data-class="bg-happy-green header-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Sidebar Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-sidebar-cs-class" data-class="bg-primary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-sidebar-cs-class" data-class="bg-secondary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-sidebar-cs-class" data-class="bg-success sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-sidebar-cs-class" data-class="bg-info sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-sidebar-cs-class" data-class="bg-warning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-sidebar-cs-class" data-class="bg-danger sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-sidebar-cs-class" data-class="bg-light sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-sidebar-cs-class" data-class="bg-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-sidebar-cs-class" data-class="bg-focus sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-sidebar-cs-class" data-class="bg-alternate sidebar-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class" data-class="bg-vicious-stance sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-sidebar-cs-class" data-class="bg-midnight-bloom sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-sidebar-cs-class" data-class="bg-night-sky sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-sidebar-cs-class" data-class="bg-slick-carbon sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-sidebar-cs-class" data-class="bg-asteroid sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-sidebar-cs-class" data-class="bg-royal sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-sidebar-cs-class" data-class="bg-warm-flame sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-sidebar-cs-class" data-class="bg-night-fade sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-sidebar-cs-class" data-class="bg-sunny-morning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-sidebar-cs-class" data-class="bg-tempting-azure sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-sidebar-cs-class" data-class="bg-amy-crisp sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-sidebar-cs-class" data-class="bg-heavy-rain sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-sidebar-cs-class" data-class="bg-mean-fruit sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-sidebar-cs-class" data-class="bg-malibu-beach sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-sidebar-cs-class" data-class="bg-deep-blue sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-sidebar-cs-class" data-class="bg-ripe-malin sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-sidebar-cs-class" data-class="bg-arielle-smile sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-sidebar-cs-class" data-class="bg-plum-plate sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-sidebar-cs-class" data-class="bg-happy-fisher sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-sidebar-cs-class" data-class="bg-happy-itmeo sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-sidebar-cs-class" data-class="bg-mixed-hopes sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-sidebar-cs-class" data-class="bg-strong-bliss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-sidebar-cs-class" data-class="bg-grow-early sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-sidebar-cs-class" data-class="bg-love-kiss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-sidebar-cs-class" data-class="bg-premium-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-sidebar-cs-class" data-class="bg-happy-green sidebar-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Main Content Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto active btn btn-focus btn-sm">Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Page Section Tabs
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div role="group" class="mt-2 btn-group">
+                                            <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="body-tabs-line">
+                                                Line
+                                            </button>
+                                            <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="body-tabs-shadow">
+                                                Shadow
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="app-main">
+                <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>    
+                    <div class="scrollbar-sidebar">
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu">
+                                <li class="mt-1 dashbtn">
+                                    <a href="../dashboard.html" class="mm-active">
+                                        <i class="metismenu-icon fa-solid fa-house"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Client Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-user fa-regular"></i>
+                                        Client
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../create-client.html">
+                                                <i class="metismenu-icon"></i>
+                                                Add New Client
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../all-client.html">
+                                                <i class="metismenu-icon"></i>All Clients
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Service Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-users-gear"></i>
+                                        Services
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../tax.html">
+                                                <i class="metismenu-icon"></i>
+                                                Tax
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../gst.html">
+                                                <i class="metismenu-icon"></i>GST
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../audit.html">
+                                                <i class="metismenu-icon"></i>Audit
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../compliences.html">
+                                                <i class="metismenu-icon"></i>Company Compliences
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Audits &amp Reports</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-magnifying-glass"></i>
+                                        Audit
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../company-audit.html">
+                                                <i class="metismenu-icon"></i>
+                                                company
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./gst.html">
+                                                <i class="metismenu-icon"></i>LLP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./audit.html">
+                                                <i class="metismenu-icon"></i>Non Company Entity
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>NPO
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>Banks
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Community</li>
+                                <li>
+                                    <a href="../community.html">
+                                        <i class="metismenu-icon fa-solid fa-solid fa-user">
+                                        </i>My Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../message.html">
+                                        <i class="metismenu-icon fa-solid fa-regular fa-message">
+                                        </i>Chats
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Revunue</li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon fa-solid fa-dollar-sign"></i>
+                                        Revenue
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">PRO Version</li>
+                                <li>
+                                    <a href="#000">
+                                        <i class="metismenu-icon fa-regular fa-circle-check">    
+                                        </i>
+                                        Upgrade to PRO
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===================Content====================== -->
+                <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <!-- ================Pay Taxes ================-->   
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-header">
+                                        <span>Appendix 2.3</span>
+                                        <div class="btn-actions-pane-right">
+                                            <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">Click here to see format</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div>
+                                            <h2 class="audit-title p-0 text-center">
+                                                Illustrative Format of Comfort Letter
+                                            </h2>
+                                        </div>
+                                        <div class="bankaudit">
+                                            <p>Firm's Registration No.</p>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <p>Name of the Member Signing the Audit Report</p>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <p>Company Address</p>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <p>Designation</p>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <p>Membership No.</p>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <p>Date</p>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="date" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <p>
+                                                [This draft is furnished solely for the purpose of indicating the form
+                                                of letter that we would expect to be able to furnish to <input type="text">
+                                                [name of Lead Managers] in response to their request, the matters
+                                                expected to be covered in the letter, and the nature of the
+                                                procedures that we would expect to carry out with respect to such
+                                                matters. Based on our discussions with <input type="text"> [name of
+                                                Lead Managers], it is our understanding that the procedures
+                                                outlined in this draft letter are those they wish us to follow. Unless
+                                                [name of Lead Managers] informs us otherwise, we shall assume
+                                                that there are no additional procedures they wish us to follow. The
+                                                text of the letter itself will depend, of course, on the results of the
+                                                procedures, which we would not expect to complete until shortly
+                                                before the letter is given and in no event before the cutoff date
+                                                indicated therein.]
+                                            </p>
+                                        </div>
+                                    </div>    
+                                    <div class="card-body">
+                                        <div class="bankaudit">
+                                            <p>Name of Chartered Accountant</p>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <p>Address of Chartered Accountant</p>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <p>Company Name</p>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <p>Name of LM1 & Address</p>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <p>Name of LM2 & Address</p>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <p>Name of LM3 & Address</p>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <p>Name of LM4 & Address</p>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <p>Year</p>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="number" class="form-control" id="exampleFormControlInput1" min="1999" max="2090" placeholder="YYYY">
+                                            </div>
+                                            <p>
+                                                [(The latter four addressees above are referred to herein as the
+                                                “Lead Managers”)]
+                                            </p>
+                                            <p>
+                                                Dear Sirs / Madam,
+                                            </p>
+                                            
+                                            <p>
+                                                Proposed Offering of <input type="text"> Equity Shares of Rs <input type="text">
+                                                each (the “Securities”) pursuant to an Initial Public Offering in
+                                                India of [Name of the Company] (the “Company”). 
+                                                We have audited the [standalone]/ [consolidated] financial
+                                                statements of [Name of the Company] (the “Company”) [and its
+                                                subsidiaries, associates and jointly controlled entities (collectively,
+                                                the “Group”) as of [dates] and also for each of the [no. of years]
+                                                years in the period ended [last date audited] and [no. of months in
+                                                interim period, if any] period ended (collectively, the “Audited
+                                                [Standalone]/ [Consolidated] Financial Statements”)[and the
+                                                adequacy and operating effectiveness of the Company’s internal
+                                                financial controls over financial reporting as of March 31, 20XX].
+                                                (State number of years not audited by the Principal Auditor and
+                                                state the reliance placed on the work done by other auditors).
+                                                These Audited [Standalone]/ [Consolidated] Financial Statements
+                                                and our reports thereon are not included in the Company’s [Draft
+                                                Red Herring Prospectus / Red Herring Prospectus / Prospectus]
+                                                dated <strong>XXXX</strong> hereinafter referred to as the [DRHP / RHP/
+                                                Prospectus].
+                                            </p>
+                                            <p>
+                                                [We did not audit the financial statements of certain subsidiaries,
+                                                whose financial statements reflect total assets of Rs. xxx as at
+                                                [dates], total revenues of Rs. <strong>xxx</strong> and total cash flows of Rs. <input type="number" min="1">
+                                                for the years ended on [dates] respectively. Further, we did not
+                                                audit the financial statements of certain associates and joint
+                                                ventures whose financial statements reflect the consolidated
+                                                entities’ share of profits of Rs. xxx for the years ended [dates]
+                                                respectively. These financial statements have been audited by
+                                                other auditors whose reports have been furnished to us, and our
+                                                opinion, insofar as it relates to the amounts included in respect of
+                                                such subsidiaries, associates and joint ventures, is based solely
+                                                on the report of the other auditors.]
+                                            </p>
+                                            <p>
+                                                We have examined [, as appropriate (refer paragraph below),] the
+                                                restated [consolidated] financial information of the Company as of
+                                                [dates] and for each of the [no. of years] years in the period ended
+                                                [last date audited] and [no. of months in interim period, if any]
+                                                period ended (collectively, together with the annexures thereto,
+                                                the “Restated [Consolidated] Financial Information”) each restated
+                                                in accordance with the requirements of the Companies Act, 2013
+                                                (the “Companies Act”) and the Securities and Exchange Board of
+                                                India (Issue of Capital and Disclosure Requirements) Regulations, 2018 (the “ICDR Regulations”) and the “Guidance Note on
+                                                Reports in Company Prospectuses (Revised 2019)” issued by the
+                                                Institute of Chartered Accountants of India (ICAI), to the extent
+                                                applicable, as amended from time to time (“Guidance Note”). The
+                                                Audited [Consolidated] Financial Statements and our reports
+                                                thereon form the basis of the Restated [Consolidated] Financial
+                                                Information. The Restated [Consolidated] Financial Information
+                                                and our report thereon are included in the [DRHP/RHP/
+                                                Prospectus].
+                                            </p>
+                                            <p>
+                                                [The restated financial information of the Company and the Group
+                                                as of [dates] and also for each of the [no. of years] years in the
+                                                period ended [last date audited] and of certain subsidiaries as of
+                                                [dates] and also for each of the [no. of years] years in the period
+                                                ended [last date audited] and [no. of months in interim period, if
+                                                any] period ended (details furnished in Appendix xx) have been
+                                                examined and reported upon by other auditors. Our examination,
+                                                in so far as it relates to the amounts considered in the Restated
+                                                Consolidated Financial Information for these entities is solely
+                                                based on the report of other auditors.] (amend as applicable)
+                                            </p>
+                                            <p>
+                                                This letter is being furnished in reliance upon the Lead Managers
+                                                representation to us that:
+                                            </p>
+                                            <div>
+                                                <ol type="a">
+                                                    <li>
+                                                        The Lead Managers are knowledgeable with respect to the
+                                                        due diligence review process required under Securities and
+                                                        Exchange Board of India (Issue of Capital and Disclosure
+                                                        Requirements) Regulations, 2018, as amended.
+                                                    </li>
+                                                    <li>
+                                                        In connection with the offering of Securities, the review
+                                                        process the Lead Managers have performed is substantially
+                                                        consistent with the due diligence review process required
+                                                        under Securities and Exchange Board of India (Issue of
+                                                        Capital and Disclosure Requirements) Regulations, 2018, as
+                                                        amended. [It is recognised that what is substantially
+                                                        consistent may vary from situation to situation and may not be
+                                                        the same as that done in another offering of the same
+                                                        securities for the same Issuer. Whether the procedure being
+                                                        or to be followed will be 'substantially consistent' will be
+                                                        determined by the [Lead Managers] on a case-by-case basis.] [This letter is being furnished in accordance with the terms of the
+                                                        arrangement letter dated [XX XXX, 20XX] (the "Arrangement
+                                                        Letter"), which have been agreed between us and govern the
+                                                        matters addressed by this comfort letter and its use in connection
+                                                        with the sale of the securities in India.] <sup>7</sup>
+                                                        <p>
+                                                            In connection with the [DRHP / RHP / Prospectus]:
+                                                        </p>
+                                                    </li>
+                                                </ol>
+                                                <ol type="1">
+                                                    <li>
+                                                        We are independent chartered accountants with respect to
+                                                        the Company pursuant to Clause 4 of Part I of the Second
+                                                        Schedule to the Chartered Accountants Act, 1949 / [As at [insert
+                                                        date of the auditors/ accountants’ most recent report on the
+                                                        standalone/consolidated financial statements] and during the
+                                                        period covered by the financial statements on which we reported,
+                                                        we were independent firm of Chartered Accountants with respect
+                                                        to the Issuer pursuant to Clause 4 of Part I of the Second
+                                                        Schedule to the Chartered Accountants Act, 1949]
+                                                         <sup>8</sup>
+                                                        .
+                                                    </li>
+                                                    <li>
+                                                        We have not audited any financial statements of the
+                                                        Company as of any date or for any period subsequent to [latest
+                                                        audited date]; although we have conducted an audit for the year
+                                                        ended [latest audited date], the purpose and therefore the scope
+                                                        of the audit was to enable us to express an opinion on the
+                                                        [standalone]/ [consolidated] financial statements as of [latest
+                                                        audited date] and for the year then ended, but not on the financial
+                                                        statements for any interim period within that year. Therefore, we
+                                                        are unable to and do not express any opinion on the unaudited
+                                                        [standalone]/ [consolidated] balance sheet as of [latest interim
+                                                        review date] and the unaudited [standalone]/ [consolidated]
+                                                        statements of income and cash flows for the [no. of months for
+                                                        which limited review is done] periods ended [latest interim review
+                                                        date and the corresponding previous period date] in the [DRHP /
+                                                        RHP / Prospectus] or on the financial position, results of
+                                                        operations, or cash flows as of any date or for any period
+                                                        subsequent to [latest audited date] <input type="date">
+                                                    </li>
+                                                    <div class="term">
+                                                        <small>
+                                                            <sup>7</sup>The auditor may provide a reference to arrangement letter.
+                                                        </small>
+                                                        <small>
+                                                            <sup>8</sup>Applicable in case of previous auditor.
+                                                        </small>
+                                                    </div>
+                                                    <li>
+                                                        For the purposes of this comfort letter, we have read the
+                                                        [year] minutes of the meetings of the shareholders, the Board of
+                                                        Directors and (include other appropriate committees, if any) of the
+                                                        Company [and its subsidiaries] as set forth in minute books as of
+                                                        [cut-off date – generally minimum 3 business days before date of
+                                                        comfort letter], officials of the Company having advised us that the
+                                                        minutes of all such meetings through that date were set forth
+                                                        therein [(except for the minutes of the [dates] Board of Directors
+                                                        meeting which were not approved in final form, for which drafts
+                                                        were provided to us; officials of the Company have represented
+                                                        that such drafts include a summary of the topics discussed at such
+                                                        meeting)] and have carried out other procedures to [cut-off date]
+                                                        (our work did not extend to the period from [cut-off date to date of
+                                                        comfort letter] inclusive) as follows:
+                                                        <ol type="a">
+                                                            <li>
+                                                                With respect to the [mention no. of months] periods ended
+                                                                [current period and corresponding previous period], we have
+                                                                performed the procedures specified by the Institute of
+                                                                Chartered Accountants of India as described in Standard on
+                                                                Review Engagements 2410 “Review of Interim Financial
+                                                                Information Performed by the Independent Auditor of the
+                                                                Entity” on the unaudited condensed [standalone]/
+                                                                [consolidated] balance sheet of the Company as of [latest
+                                                                interim review date] and the unaudited condensed
+                                                                [standalone]/ [consolidated] statements of profit and loss
+                                                                account and cash flow for the [no. of months for which limited
+                                                                review is done] periods ended [latest interim review date and
+                                                                the corresponding previous period date] (collectively
+                                                                “unaudited condensed [standalone]/ [consolidated] financial
+                                                                statements” <sup>9</sup>
+                                                                
+                                                                ) prepared by the Company in accordance with
+                                                                Accounting Standard 25 “Interim Financial Reporting” or Ind
+                                                                AS 34 “Interim Financial Reporting”, as applicable.
+                                                            </li>
+                                                            <li>
+                                                                With respect to the period from [date after the latest interim
+                                                                review date] to [agreed month(s)period end], we have:
+                                                                <ol type="i">
+                                                                    <li>
+                                                                        read the unaudited [standalone]/ [consolidated] financial
+                                                                        statements/ information of the Company for the [periods] <input type="text"> of both [latest year] <input type="number" min="1999" placeholder="YYYY"> and [previous year] <input type="number" min="1999" placeholder="YYYY"> furnished to us by
+                                                                        the Company, officials of the Company having advised us
+                                                                        that no such financial statements/ information as of any
+                                                                        date or for any period subsequent to [agreed period end]
+                                                                        were available. The financial information for [the periods]
+                                                                        of both [latest year] and [previous year] is incomplete in
+                                                                        that it omits the statements of cash flows and other
+                                                                        disclosures.
+                                                                    </li>
+                                                                    <li>
+                                                                        inquired of certain officials of the Company who have
+                                                                        responsibility for financial and accounting matters
+                                                                        whether the unaudited financial statements/ information
+                                                                        referred to in b(i) are stated on a basis substantially
+                                                                        consistent with that of the restated [audited] financial
+                                                                        statements included in the [DRHP / RHP/ Prospectus].
+                                                                    </li>
+                                                                </ol>
+                                                            </li>
+                                                        </ol>
+                                                    </li>
+                                                    <p>
+                                                        The foregoing procedures do not constitute an audit done in
+                                                        accordance with Standards on Auditing prevailing in India. Also,
+                                                        they would not necessarily reveal matters of significance with
+                                                        respect to comments in the following paragraph. Accordingly, we
+                                                        make no representations regarding the sufficiency of the foregoing
+                                                        procedures for your purposes.
+                                                    </p>
+                                                    <li>
+                                                        Nothing came to our attention as a result of the foregoing
+                                                        procedures [(which insofar in respect of certain entities listed in
+                                                        Appendix xx audited by other auditors listed in Appendix xx is
+                                                        concerned, consisted solely on the basis of reading of the comfort
+                                                        letters referred to in paragraph 3(c))], however, that caused us to
+                                                        believe that:
+                                                        <ol type="i">
+                                                            <li>
+                                                                Any material modifications should be made to the unaudited
+                                                                condensed [standalone]/ [consolidated] financial statements
+                                                                described in 3a for them to be in conformity with accounting
+                                                                principles generally accepted in India, {except that the
+                                                                detailed disclosure notes required by Accounting Standard 25
+                                                                “Interim Financial Reporting” or Ind AS 34 “Interim Financial
+                                                                Reporting”, as applicable, have not been presented}.
+                                                            </li>
+                                                            <li>
+                                                                At [agreed month(s)period end], there was any change in the
+                                                                [issued share capital] or increase in [long-term debt] <sup>11</sup>, of the
+                                                                Company on an [standalone]/ [consolidated] basis as
+                                                                compared with amounts shown in the [latest interim review
+                                                                date], [standalone]/ [consolidated] balance sheet included in
+                                                                the DRHP/RHP, [except for an increase in the long term debt
+                                                                that the DRHP/RHP discloses have occurred or may occur.]
+                                                            </li>
+                                                            <strong>OR</strong>
+                                                            <p>except as mentioned below:</p>
+                                                            <div class="table-responsive my-4">
+                                                                <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="text-center">Particulars</th>
+                                                                            <th class="text-center">
+                                                                                As at [date
+                                                                                (last
+                                                                                balance
+                                                                                sheet date)]
+                                                                                (Rs. in
+                                                                                million)
+                                                                            </th>
+                                                                            <th class="text-center">
+                                                                                As at [date
+                                                                                (agreed
+                                                                                month(s)
+                                                                                period end)]
+                                                                                (Rs. in
+                                                                                million)
+                                                                            </th>
+                                                                            <th class="text-center">
+                                                                                Increase /
+                                                                                (decrease)
+                                                                                (Rs. in
+                                                                                million)
+                                                                            </th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <span>
+                                                                                    Paid up share
+                                                                                    capital
+                                                                                </span>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <span>
+                                                                                    Long-term debt
+                                                                                    (including current
+                                                                                    maturities)
+                                                                                </span>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                            <div class="term">
+                                                                <small>
+                                                                    <sup>9</sup>
+                                                                    These financials should be approved by the Board of Directors of the Company and
+                                                                    should be attached to the comfort letter.
+                                                                </small>
+                                                                <small>
+                                                                    <sup>10</sup>
+                                                                    Based on the facts and circumstances, the auditors may consider, as per their
+                                                                    judgement, whether additional financial statements line items can be included for providing
+                                                                    negative assurance.
+                                                                </small>
+                                                                    <small>
+                                                                        <sup>11</sup>
+                                                                        Based on the facts and circumstances, the auditors may consider, as per their
+                                                                        judgement, whether additional financial statements line items can be included for providing
+                                                                        negative assurance.
+                                                                    </small>
+                                                            </div>
+                                                        </ol>
+                                                    </li>
+                                                    <li>
+                                                        As mentioned in 3b, Company officials have advised us
+                                                        that no [standalone]/[consolidated] financial statements/
+                                                        information as of any date or for any period subsequent to [agreed
+                                                        period end], are available; accordingly the procedures carried out
+                                                        by us with respect to changes in financial statement items after
+                                                        [agreed period end], have, of necessity, been even more limited
+                                                        than those with respect to the periods referred to in 3. We have
+                                                        inquired of certain officials of the Company who have
+                                                        responsibility for financial and accounting matters whether (i) at
+                                                        [cut-off date] there was any change in the paid-up share capital
+                                                        and increase in long term debt <sup>12</sup> of the Company as compared
+                                                        with amounts shown on the [latest interim review date] unaudited
+                                                        [standalone]/ [consolidated] <sup>13</sup> balance sheet included in the [DRHP
+                                                        / RHP/ Prospectus]. On the basis of these inquiries and our
+                                                        reading of the minutes as described in paragraph 3(a) above [and
+                                                        the comfort letters of the other auditors as mentioned in Appendix
+                                                        xx in respect of certain entities listed in Appendix xx], nothing
+                                                        came to our attention that caused us to believe that there was any
+                                                        such change, increase, or decrease, [except for an increase in the
+                                                        long term debt that the [DRHP/RHP] discloses have occurred or
+                                                        may occur.]
+                                                    </li>
+                                                    <strong>OR</strong>
+                                                    <p>
+                                                        except as mentioned below:
+                                                    </p>
+                                                    <div class="table-responsive my-4">
+                                                        <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th class="text-center">Particulars</th>
+                                                                    <th class="text-center">
+                                                                        As at [date
+                                                                        (last
+                                                                        balance
+                                                                        sheet date)]
+                                                                        (Rs. in
+                                                                        million)
+                                                                    </th>
+                                                                    <th class="text-center">
+                                                                        As at [date
+                                                                        (agreed
+                                                                        month(s)
+                                                                        period end)]
+                                                                        (Rs. in
+                                                                        million)
+                                                                    </th>
+                                                                    <th class="text-center">
+                                                                        Increase /
+                                                                        (decrease)
+                                                                        (Rs. in
+                                                                        million)
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <span>
+                                                                            Paid up share
+                                                                            capital
+                                                                        </span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <span>
+                                                                            Long-term debt
+                                                                            (including current
+                                                                            maturities)
+                                                                        </span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="term">
+                                                        <small> <sup>12</sup> Based on the facts and circumstances, the auditors may consider, as per their
+                                                            judgement, whether additional financial statements line items can be included for providing
+                                                            negative assurance.
+                                                        </small>
+                                                        <small>
+                                                            <sup>13</sup>
+                                                            Auditors should not provide comfort on a consolidated basis unless they are auditing all
+                                                            components of the Group or are able to read the comfort letters of all other auditors of the
+                                                            group entities.
+                                                        </small>
+                                                    </div>
+                                                    <li>
+                                                        For the purposes of this letter we have, at your request,
+                                                        also read the items identified by you on the attached pages of the
+                                                        [DRHP/RHP], in respect of which one of the following tests were
+                                                        applied in each case as indicated by the corresponding letter (i.e.
+                                                        reference to the relevant sub-paragraph below) shown against the
+                                                        items:
+                                                        <ol type="A">
+                                                            <li>
+                                                                Compared the amount identified to a corresponding
+                                                                amount in the Company’s Restated [Consolidated] Financial
+                                                                Information, included in the [DRHP / RHP/ Prospectus] for the
+                                                                period indicated and found such amount to be in agreement.
+                                                                [However, we make no comment as to the appropriateness with
+                                                                respect to reasons given for changes between periods.
+                                                            </li>
+                                                            <li>
+                                                                Compared the amount identified to a corresponding
+                                                                amount in the Company’s Audited [Standalone]/ [Consolidated]
+                                                                Financial Statements” for the period indicated and found such
+                                                                amount to be in agreement. [However, we make no comment as
+                                                                to the appropriateness with respect to reasons given for changes
+                                                                between periods.
+                                                            </li>
+                                                            <li>
+                                                                Compared the amount identified to a corresponding
+                                                                amount included in the Company’s accounting records for the
+                                                                period indicated and found such amount to be in agreement.
+                                                                [However, we make no comment as to the appropriateness with
+                                                                respect to reasons given for changes between periods.
+                                                            </li>
+                                                            <li>
+                                                                Compared the amounts identified to a schedule prepared
+                                                                and derived by the officials of the Company from its accounting
+                                                                records for the period indicated and found such amounts to be in
+                                                                agreement and we determined that the schedule was
+                                                                mathematically correct, but in relation to which no other tests
+                                                                whatsoever such as definitions, reasonableness and presentation
+                                                                have been performed. [We have not traced the information to the
+                                                                accounting records themselves.] Further, we make no comments
+                                                                whether the compared number read in isolation is useful for any
+                                                                purpose or misleading.
+                                                            </li>
+                                                            <li>
+                                                                Recomputed the mathematical accuracy of the amounts,
+                                                                total, percentage and ratio for the period indicated from amounts
+                                                                appearing in [DRHP / RHP/ Prospectus]. However, we make no
+                                                                comment as to the appropriateness with respect to classification
+                                                                of such item and with respect to reasons given for changes
+                                                                between periods.
+                                                            </li>
+                                                            <li>
+                                                                Compared the specific components of [insert non-GAAP
+                                                                measure(s)] (in each case, as defined in the [DRHP / RHP/
+                                                                Prospectus]) (“Non-GAAP measures”) to either (i) the Restated
+                                                                [Consolidated] Financial Information of the Company as described
+                                                                in the introductory paragraph above, (ii) a schedule or report
+                                                                prepared by the Company using information derived from the
+                                                                accounting records as described in tick mark D above which we
+                                                                agreed to the accounting records, and found them to be in
+                                                                agreement, and proved the arithmetic accuracy of the calculation
+                                                                used to compute the Non-GAAP measure(s). <br>
+                                                                It should be understood that (1) we make no representations
+                                                                regarding the Company’s determination and presentation of the
+                                                                Non-GAAP measures of financial performance and (2) we provide
+                                                                no assurance that the adjustments to arrive at these Non-GAAP
+                                                                measures reflect non-underlying costs or similar adjustments of
+                                                                the business, (3) the Non-GAAP measures presented may not be
+                                                                comparable to similarly titled measures reported by other
+                                                                companies and (4) we do not provide any assurance as to the
+                                                                completeness, accuracy or appropriateness of the adjustments
+                                                                used to arrive at these Non-GAAP measures. Further, it should be
+                                                                noted that [insert name of non-GAAP measure(s)] is not a
+                                                                measure of operating performance or liquidity defined by generally
+                                                                accepted accounting principles and may not be comparable to
+                                                                similarly titled measures presented by other companies. We make
+                                                                no comment about the Company's definition, calculation or
+                                                                presentation of [insert name of non-GAAP measure(s)], its manner
+                                                                of presentation or its appropriateness or usefulness for any
+                                                                purposes.
+                                                            </li>
+                                                            <li>
+                                                                Proved the arithmetic accuracy of the conversion of the
+                                                                corresponding amount in Rupees to US Dollars (as rounded off),
+                                                                or vice versa, at the applicable exchange rate and found them to
+                                                                be in agreement. We make no representation as to the
+                                                                appropriateness of the rate applied.
+                                                                <h5>
+                                                                    [Member should exercise judgment on what level of comfort
+                                                                    i.e. item (A) to (G) above can be given to a particular
+                                                                    information according to the circumstance of each case.
+                                                                    Additional level of comfort can be included based on
+                                                                    agreement with the bankers]
+                                                                </h5>
+                                                                <p>
+                                                                    For purposes of the above symbols, the following definitions
+                                                                    apply:
+                                                                </p>
+                                                                <ul>
+                                                                    <li>
+                                                                        The phrase “compared” means compared and found to be in
+                                                                        agreement unless otherwise noted. Such agreed amounts or
+                                                                        percentages are deemed to be in agreement if differences are
+                                                                        attributable to rounding.
+                                                                    </li>
+                                                                    <li>
+                                                                        The phrase “recomputed” means recalculated to determine
+                                                                        mathematical accuracy and compared the result to the
+                                                                        amount shown and found the amounts to be in agreement
+                                                                        unless otherwise noted. Such recomputed amounts or
+                                                                        percentages are deemed to be in agreement if differences are
+                                                                        attributable to rounding.
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ol>
+                                                    </li>
+                                                    <li>
+                                                        Our audit / [examination] of the [standalone] /
+                                                        [consolidated] financial statements for the periods referred to in
+                                                        the introductory paragraph of this letter comprised audit tests and
+                                                        procedures deemed necessary for the purpose of expressing an
+                                                        opinion on such financial statements taken as a whole. For none
+                                                        of the periods referred therein, or any other period, did we perform
+                                                        audit tests for the purpose of expressing an opinion on individual
+                                                        balances of accounts or summaries of selected transactions such
+                                                        as those enumerated above and accordingly, we express no
+                                                        opinion thereon.
+                                                    </li>
+                                                    <li>
+                                                        It should be understood that we make no representations
+                                                        regarding questions of legal interpretation or regarding sufficiency
+                                                        for your purposes of the procedures enumerated in the preceding
+                                                        paragraph 6; also, such procedures would not necessarily reveal
+                                                        any material misstatement of the amounts or percentages listed
+                                                        above. Further, we have addressed ourselves solely to the
+                                                        foregoing data as set forth in the [DRHP / RHP/ Prospectus] and
+                                                        make no representations regarding the adequacy of disclosure or
+                                                        regarding whether any material facts have been omitted. It should
+                                                        be noted that certain information contained in the [DRHP / RHP/
+                                                        Prospectus] are not measures of operating performance or
+                                                        liquidity as defined by generally accepted accounting principles
+                                                        and may not be comparable to similarly titled measures presented
+                                                        by other companies. We make no comment about the Company’s
+                                                        definitions, calculations or usefulness for any purpose.
+                                                    </li>
+                                                    <li>
+                                                        This letter is solely for the information of the addressees
+                                                        and to assist the Lead Managers in conducting and documenting
+                                                        their investigation of the affairs of the Company / [Group] in
+                                                        connection with the proposed offering of securities covered by the [DRHP / RHP/ Prospectus] solely in India, [when the comfort letter
+                                                        is furnished by the auditors for a branch/subsidiary/joint venture
+                                                        entity/associate and they are not also accountants for the parent
+                                                        company or if the comfort letter is issued by the previous statutory
+                                                        auditor of the issuer company, the comfort letter should include
+                                                        the following phrase at this point: "and for the use of the [current]
+                                                        statutory auditors for [name of issuer] in furnishing their letter to
+                                                        the Lead Managers,"] and it is not to be used circulated or quoted
+                                                        or otherwise referred to for any other purposes, including but not
+                                                        limited to the registration, purchase or sale of securities, nor is it to
+                                                        be filed with or referred to in whole or in part in the [DRHP / RHP/
+                                                        Prospectus] or any other document, except that reference may be
+                                                        made to it in [the Issue Agreement/ Offer Agreement/ Underwriting
+                                                        Agreement] or [any list of closing documents] pertaining to the
+                                                        proposed offering of securities covered by the [DRHP / RHP/
+                                                        Prospectus].
+                                                    </li>
+                                                    <li>
+                                                        This letter has not been prepared in connection with, nor is
+                                                        it intended for use in any connection with, any offer or sale of
+                                                        securities outside India. We will accept no duty or responsibility to
+                                                        and deny any liability to any party in respect of any use of this
+                                                        letter in connection with an offer or sale of the Securities outside
+                                                        India.
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                            <div class="text-right">
+                                               <p>
+                                                    For ABC and Co.
+                                               </p>
+                                               <p>
+                                                Chartered Accountants
+                                               </p>
+                                               <p>
+                                                Firm’s Registration Number
+                                               </p>
+                                               <p>
+                                                Signature
+                                               </p>
+                                               <p>
+                                                [Name of the Member]
+                                               </p>
+                                               <p>
+                                                Designation <sup>14</sup>
+                                               </p>
+                                               <p>
+                                                Membership Number
+                                               </p>
+                                            </div> 
+                                            <div class="text-left">
+                                                    <p>
+                                                        Place of Signature:
+                                                    </p>
+                                                    <p>
+                                                        Date:
+                                                    </p>
+                                            </div>
+                                            <div class="term">
+                                                <small> <sup>14</sup> Partner or proprietor, as the case may be.</small>
+                                            </div>
+                                        </div>  
+                                    </div>                                   
+                                    <div class="card-footer footer-btn">
+                                        <a href="#Edit">Edit in Docs</a>
+                                        <a href="#Download">Download</a>
+                                        <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">See Format</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script src="./dashboard-pack.js"></script>
+<script src="./dashboard.js"></script>
+<!-- ==========================JQuery================================ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

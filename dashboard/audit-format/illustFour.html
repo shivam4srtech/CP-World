@@ -1,0 +1,1243 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> Dashboard | CharteredONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./style/dashboardpack.css">
+    <link rel="stylesheet" href="./style/dashboard.css">
+    <link rel="stylesheet" href="./style/companyAudit.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa-solid fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Romana I Khan
+                                    </div>
+                                    <div class="widget-subheading">
+                                       GST Analyst
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <div class="widget-content-left">
+                                        <div class="widget-content-left">
+                                            <a href="./profile.html"><img width="40" class="rounded-circle" src="../images/female_avatar_efig.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>        
+        <div class="ui-theme-settings">
+            <button type="button" id="TooltipDemo" class="btn-open-options btn">
+                <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+            </button>
+            <div class="theme-settings__inner">
+                <div class="scrollbar-container">
+                    <div class="theme-settings__options-wrapper">
+                        <h3 class="themeoptions-heading">Layout Options
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-header">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Header
+                                                </div>
+                                                <div class="widget-subheading">Makes the header top fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-sidebar">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Sidebar
+                                                </div>
+                                                <div class="widget-subheading">Makes the sidebar left fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-footer">
+                                                    <div class="switch-animate switch-off">
+                                                        <input type="checkbox" data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Footer
+                                                </div>
+                                                <div class="widget-subheading">Makes the app footer bottom fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>
+                                Header Options
+                            </div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-header-cs-class" data-class="bg-secondary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-header-cs-class" data-class="bg-success header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-header-cs-class" data-class="bg-info header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-header-cs-class" data-class="bg-warning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-header-cs-class" data-class="bg-danger header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-header-cs-class" data-class="bg-light header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-header-cs-class" data-class="bg-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-header-cs-class" data-class="bg-focus header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-header-cs-class" data-class="bg-alternate header-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-header-cs-class" data-class="bg-midnight-bloom header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-header-cs-class" data-class="bg-night-sky header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-header-cs-class" data-class="bg-slick-carbon header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-header-cs-class" data-class="bg-asteroid header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-header-cs-class" data-class="bg-royal header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-header-cs-class" data-class="bg-warm-flame header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-header-cs-class" data-class="bg-night-fade header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-header-cs-class" data-class="bg-sunny-morning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-header-cs-class" data-class="bg-tempting-azure header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-header-cs-class" data-class="bg-amy-crisp header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-header-cs-class" data-class="bg-heavy-rain header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-header-cs-class" data-class="bg-mean-fruit header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-header-cs-class" data-class="bg-malibu-beach header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-header-cs-class" data-class="bg-deep-blue header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-header-cs-class" data-class="bg-ripe-malin header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-header-cs-class" data-class="bg-arielle-smile header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-header-cs-class" data-class="bg-plum-plate header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-header-cs-class" data-class="bg-happy-fisher header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-header-cs-class" data-class="bg-happy-itmeo header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-header-cs-class" data-class="bg-mixed-hopes header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-header-cs-class" data-class="bg-strong-bliss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-header-cs-class" data-class="bg-grow-early header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-header-cs-class" data-class="bg-love-kiss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-header-cs-class" data-class="bg-premium-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-header-cs-class" data-class="bg-happy-green header-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Sidebar Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-sidebar-cs-class" data-class="bg-primary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-sidebar-cs-class" data-class="bg-secondary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-sidebar-cs-class" data-class="bg-success sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-sidebar-cs-class" data-class="bg-info sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-sidebar-cs-class" data-class="bg-warning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-sidebar-cs-class" data-class="bg-danger sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-sidebar-cs-class" data-class="bg-light sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-sidebar-cs-class" data-class="bg-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-sidebar-cs-class" data-class="bg-focus sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-sidebar-cs-class" data-class="bg-alternate sidebar-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class" data-class="bg-vicious-stance sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-sidebar-cs-class" data-class="bg-midnight-bloom sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-sidebar-cs-class" data-class="bg-night-sky sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-sidebar-cs-class" data-class="bg-slick-carbon sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-sidebar-cs-class" data-class="bg-asteroid sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-sidebar-cs-class" data-class="bg-royal sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-sidebar-cs-class" data-class="bg-warm-flame sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-sidebar-cs-class" data-class="bg-night-fade sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-sidebar-cs-class" data-class="bg-sunny-morning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-sidebar-cs-class" data-class="bg-tempting-azure sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-sidebar-cs-class" data-class="bg-amy-crisp sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-sidebar-cs-class" data-class="bg-heavy-rain sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-sidebar-cs-class" data-class="bg-mean-fruit sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-sidebar-cs-class" data-class="bg-malibu-beach sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-sidebar-cs-class" data-class="bg-deep-blue sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-sidebar-cs-class" data-class="bg-ripe-malin sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-sidebar-cs-class" data-class="bg-arielle-smile sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-sidebar-cs-class" data-class="bg-plum-plate sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-sidebar-cs-class" data-class="bg-happy-fisher sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-sidebar-cs-class" data-class="bg-happy-itmeo sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-sidebar-cs-class" data-class="bg-mixed-hopes sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-sidebar-cs-class" data-class="bg-strong-bliss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-sidebar-cs-class" data-class="bg-grow-early sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-sidebar-cs-class" data-class="bg-love-kiss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-sidebar-cs-class" data-class="bg-premium-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-sidebar-cs-class" data-class="bg-happy-green sidebar-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Main Content Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto active btn btn-focus btn-sm">Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Page Section Tabs
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div role="group" class="mt-2 btn-group">
+                                            <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="body-tabs-line">
+                                                Line
+                                            </button>
+                                            <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="body-tabs-shadow">
+                                                Shadow
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="app-main">
+                <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>    
+                    <div class="scrollbar-sidebar">
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu">
+                                <li class="mt-1 dashbtn">
+                                    <a href="../dashboard.html" class="mm-active">
+                                        <i class="metismenu-icon fa-solid fa-house"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Client Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-user fa-regular"></i>
+                                        Client
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../create-client.html">
+                                                <i class="metismenu-icon"></i>
+                                                Add New Client
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../all-client.html">
+                                                <i class="metismenu-icon"></i>All Clients
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Service Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-users-gear"></i>
+                                        Services
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../tax.html">
+                                                <i class="metismenu-icon"></i>
+                                                Tax
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../gst.html">
+                                                <i class="metismenu-icon"></i>GST
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../audit.html">
+                                                <i class="metismenu-icon"></i>Audit
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../compliences.html">
+                                                <i class="metismenu-icon"></i>Company Compliences
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Audits &amp Reports</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-magnifying-glass"></i>
+                                        Audit
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../company-audit.html">
+                                                <i class="metismenu-icon"></i>
+                                                company
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./gst.html">
+                                                <i class="metismenu-icon"></i>LLP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./audit.html">
+                                                <i class="metismenu-icon"></i>Non Company Entity
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>NPO
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>Banks
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Community</li>
+                                <li>
+                                    <a href="../community.html">
+                                        <i class="metismenu-icon fa-solid fa-solid fa-user">
+                                        </i>My Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../message.html">
+                                        <i class="metismenu-icon fa-solid fa-regular fa-message">
+                                        </i>Chats
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Revunue</li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon fa-solid fa-dollar-sign"></i>
+                                        Revenue
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">PRO Version</li>
+                                <li>
+                                    <a href="#000">
+                                        <i class="metismenu-icon fa-regular fa-circle-check">    
+                                        </i>
+                                        Upgrade to PRO
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===================Content====================== -->
+                <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <!-- ================Pay Taxes ================-->   
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-header">
+                                        <span>ILLUS. 3</span>
+                                        <div class="btn-actions-pane-right">
+                                            <a href="https://resource.cdn.icai.org/35924aasb-illus25437d.pdf" target="_blank">Click here to see format</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div>
+                                            <h2 class="audit-title p-0 text-center">
+                                                ILLUSTRATIVE FORMAT OF INDEPENDENT AUDITOR’S REPORT
+                                                ON THE STANDALONE FINANCIAL STATEMENTS OF A COMPANY UNDER
+                                                THE COMPANIES ACT, 2013 AND THE RULES THEREUNDER
+                                            </h2>
+                                            <h3 class="text-center audit-subtitle">(to be added to the Appendix to SA 705
+                                                 <sup>1</sup>
+                                                )</h3>
+                                            <h3 class="audit-subtitle col-md-10 p-0">
+                                                INDEPENDENT AUDITOR’S REPORT
+                                            </h3>
+                                        </div>
+                                        <div class="inputset">
+                                            <div id="wrapper" class="col-md-6 mb-3">
+                                                <label for="companyName" class="form-label">Choose Client</label>
+                                                <select id="selectBankList" >
+                                                  <option value="Rachin Ravindra">Rachin Ravindra</option>
+                                                  <option value="Mark Wood">Mark Wood</option>
+                                                  <option value="Jos B">Jos B</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="companyName" class="form-label">Company Name</label>
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="year" class="form-label">Year</label>
+                                                <input type="number" placeholder="YYYY" min="1999" max="2020" class="form-control">
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="companyName" class="form-label">Chartered Accountants Name</label>
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="companyName" class="form-label">Firm’s Registration No.</label>
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="companyName" class="form-label">Name of the Member Signing the Audit Report</label>
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="companyName" class="form-label">Designation</label>
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="companyName" class="form-label">Membership No.</label>
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="companyName" class="form-label">Place</label>
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="companyName" class="form-label">Date</label>
+                                                <input type="date" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                        </div>
+                                        <div class="report">
+                                            <h4>TO THE MEMBERS OF <strong class="companyname">ABC COMPANY LIMITED</strong></h4>
+                                            <h5>Report on the Standalone <sup>2</sup>Financial Statements</h5>
+                                            <p>We have audited the accompanying standalone financial statements of <strong>ABC COMPANY LIMITED</strong> (“the
+                                                Company”), which comprise the Balance Sheet as at 31st March, 20XX, the Statement of Profit and Loss,
+                                                the Cash Flow Statement for the year then ended, and a summary of the significant accounting policies
+                                                and other explanatory information, <em id="three">in which are incorporated the Returns for the year ended on that
+                                                    date audited by the branch auditors of the Company’s branches at <input type="text" placeholder="Location of the branch">
+                                                    <sup>3</sup>
+                                                    .</em>
+                                                    <input class="form-check-input" type="checkbox" value=""  id="toggleThree" onchange="three()" checked>
+                                            </p>
+                                            <h4>
+                                                Management’s Responsibility for the Standalone Financial Statements
+                                            </h4>
+                                            <p>
+                                                The Company’s Board of Directors is responsible for the matters stated in section 134(5) of the
+                                                Companies Act 2013 (“the Act”) with respect to the preparation of these standalone financial
+                                                statements that give a true and fair view of the financial position, financial performance and cash
+                                                flows of the Company in accordance with the accounting principles generally accepted in India,
+                                                including the Accounting Standards referred specified under section 133 of the Act, read with Rule 7
+                                                of the Companies (Accounts) Rules, 2014. This responsibility also includes maintenance of adequate
+                                                accounting records in accordance with the provisions of the Act for safeguarding the assets of the
+                                                Company and for preventing and detecting frauds and other irregularities; selection and application
+                                                of appropriate accounting policies; making judgments and estimates that are reasonable and prudent; and design, implementation and maintenance of adequate internal financial controls that
+                                                were operating effectively for ensuring the accuracy and completeness of the accounting records,
+                                                relevant to the preparation and presentation of the financial statements that give a true and fair
+                                                view and are free from material misstatement, whether due to fraud or error.
+                                            </p>
+                                            <div class="terms">
+                                                    <em>
+                                                        <sup>1</sup>
+                                                            Standard on Auditing (SA) 705, Modifications to the Opinion in The Independent Auditor’s Report.
+                                                    </em>
+                                                    <em>
+                                                        <sup>2</sup> 2Where the Company does not have any requirement to prepare consolidated financial statements under the
+                                                        Companies Act 2013, in the auditor’s report, the term “Standalone financial statements”, wherever appearing,
+                                                        would be replaced by the term “financial statements”
+                                    
+                                                    </em>
+                                                    <em>
+                                                        <sup>3</sup> Where applicable
+                                                    </em>
+                                            </div>
+                                            <h5>
+                                                Auditor’s Responsibility
+                                            </h5>
+                                            <p>
+                                                Our responsibility is to express an opinion on these standalone financial statements based on our audit
+                                            </p>
+                                            <p>
+                                                We have taken into account the provisions of the Act, the accounting and auditing standards and
+                                                matters which are required to be included in the audit report under the provisions of the Act and the
+                                                Rules made thereunder.
+                                            </p>
+                                            <p>
+                                                We conducted our audit in accordance with the Standards on Auditing specified under Section 143(10)
+                                                of the Act. Those Standards require that we comply with ethical requirements and plan and perform the
+                                                audit to obtain reasonable assurance about whether the financial statements are free from material
+                                                misstatement.
+                                            </p>
+                                            <p>
+                                                An audit involves performing procedures to obtain audit evidence about the amounts and the
+                                                disclosures in the financial statements. The procedures selected depend on the auditor’s judgment,
+                                                including the assessment of the risks of material misstatement of the financial statements, whether due
+                                                to fraud or error. In making those risk assessments, the auditor considers internal financial control
+                                                relevant to the Company’s preparation of the financial statements that give a true and fair view in order
+                                                to design audit procedures that are appropriate in the circumstances. An audit also includes evaluating
+                                                the appropriateness of the accounting policies used and the reasonableness of the accounting estimates
+                                                made by the Company’s Directors, as well as evaluating the overall presentation of the financial
+                                                statements.
+                                            </p>
+                                            <p>
+                                                We believe that the audit evidence we have obtained is sufficient and appropriate to provide a basis
+                                                for our qualified audit opinion.
+                                            </p>
+                                            <h5>
+                                                Basis for Qualified Opinion
+                                            </h5>
+                                            <p>
+                                                ABC Company Limited’s investment in XYZ Company, a foreign associate whose net worth has been
+                                                fully / substantially eroded, is carried at Rs. XXX in the Balance Sheet as at March 31, 20XX. We were
+                                                unable to obtain sufficient appropriate audit evidence about the carrying amount of ABC Company
+                                                Limited’s investment in XYZ Company as at March 31, 20XX because we were denied access to the
+                                                financial information, management, and the auditors of XYZ Company. Consequently, we were
+                                                unable to determine whether any adjustments to these amounts were necessary.
+                                            </p>
+                                            <h5>
+                                                Qualified Opinion
+                                            </h5>
+                                            <p>
+                                                In our opinion and to the best of our information and according to the explanations given to us, except
+                                                for the effects <sup>4</sup> of the matter described in the Basis for Qualified Opinion paragraph above, the aforesaid
+                                                standalone financial statements give the information required by the Act in the manner so required and
+                                                give a true and fair view in conformity with the accounting principles generally accepted in India, of the
+                                                state of affairs of the Company as at 31st March, <strong>20XX</strong>, and its profit/loss and its cash flows for the year
+                                                ended on that date.
+                                            </p>
+                                            <div class="term">
+                                                <em>
+                                                    <sup>4</sup> Note the use of words “possible effects” as the auditor was unable to obtain sufficient appropriate audit evidence.
+                                                </em>
+                                            </div>
+                                            <div class="my-2">
+                                                <div class="input-check">
+                                                    <h3 class="audit-subtitle col-md-10 p-0">
+                                                        Other Matter <sup>5</sup>
+                                                    </h3>
+                                                    <input class="form-check-input" type="checkbox" value=""  id="toggleFive" onchange="five()" checked>
+                                                </div>
+                                                <div class="content" id="five">
+                                                    <p>We did not audit the financial statements/information of <input type="text">(number) branches included in the
+                                                        standalone financial statements of the Company whose financial statements / financial information
+                                                        reflect total assets of Rs.<input type="text"> as at 31st March, <strong>20XX</strong> and total revenues of Rs.<input type="text"> for the year
+                                                        ended on that date, as considered in the standalone financial statements. The financial
+                                                        statements/information of these branches have been audited by the branch auditors whose reports
+                                                        have been furnished to us, and our opinion in so far as it relates to the amounts and disclosures included
+                                                        in respect of these branches, is based solely on the report of such branch auditors. 
+                                                    </p>    
+                                                </div>
+                                                <div class="report mt-3">
+                                                    <p>Our opinion is not modified in respect of these matters</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="report">
+                                            <h5>
+                                                Report on Other Legal and Regulatory Requirements
+                                            </h5>
+                                            <p>As required by Section 143 (3) of the Act, we report that:</p>
+                                            <div class="aplha-list">
+                                                <ul>
+                                                    <li>
+                                                        We have sought and obtained all the information and explanations which to the best of our
+                                                        knowledge and belief were necessary for the purposes of our audit.
+                                                    </li>
+                                                    <li>
+                                                        Except for the possible effects of the matter described in the Basis for Qualified Opinion
+                                                        paragraph above, in our opinion proper books of account as required by law have been kept
+                                                        by the Company so far as appears from our examination of those books <em id="six">and proper returns
+                                                        adequate for the purposes of our audit have been received from branches not visited by us</em>
+                                                       <sup>6</sup>
+                                                        <input class="form-check-input" type="checkbox" value=""  id="toggleSix" onchange="six()" checked>
+                                                    </li>
+                                                    <li id="seven">
+                                                       <em>
+                                                            The reports on the accounts of the branch offices of the Company audited under Section 143 (8) of
+                                                            the Act by branch auditors have been sent to us and have been properly dealt with by us in preparing
+                                                            this report. <sup>7</sup>
+                                                       </em>
+                                                       <input class="form-check-input" type="checkbox" value=""  id="toggleSeven" onchange="seven()" checked>
+                                                    </li>
+                                                    <li>
+                                                        The Balance Sheet, the Statement of Profit and Loss, and the Cash Flow Statement dealt with by this
+                                                        Report are in agreement with the books of account <em id="eight">and with the returns received from the branches
+                                                            not visited by us. <sup>8</sup> </em><input class="form-check-input" type="checkbox" value=""  id="toggleEight" onchange="eight()" checked>
+                                                    </li>
+                                                    <li>
+                                                        Except for the possible effects <sup>9</sup> of the matter described in the Basis for Qualified Opinion
+                                                        paragraph, in our opinion, the Balance Sheet, Statement of Profit and Loss and Cash Flow
+                                                        Statement comply with the Accounting Standards specified under section 133 of the Act,
+                                                        read with Rule 7 of the Companies (Accounts) Rules, 2013;
+                                                    </li>
+                                                    <li>
+                                                        The matter described in the Basis for Qualified Opinion paragraph above, in our opinion, may
+                                                        have an adverse effect on the functioning of the Company.
+                                                    </li>
+                                                    <li>
+                                                        On the basis of written representations received from the directors as on March 31, 20XX,
+                                                        and taken on record by the Board of Directors, none of the directors is disqualified as on
+                                                        March 31, 20XX, from being appointed as a director in terms of section 164(2) of the Act.
+                                                    </li>
+                                                    <li>
+                                                        The qualification relating to the maintenance of accounts and other matters connected
+                                                        therewith are as stated in the Basis for Qualified Opinion paragraph above.
+                                                    </li>
+                                                    <div class="terms">
+                                                        <em>
+                                                            <sup>5</sup>Where applicable
+                                                        </em>
+                                                        <em>
+                                                            <sup>6</sup>Where applicable
+                                                        </em>
+                                                        <em>
+                                                            <sup>7</sup>Where applicable
+                                                        </em>
+                                                        <em>
+                                                            <sup>8</sup>Where applicable
+                                                        </em>
+                                                        <em>
+                                                            <sup>9</sup>Note the use of words “possible effects” as the auditor was unable to obtain sufficient appropriate audit evidence
+                                                        </em>
+                                                    </div>
+                                                </ul>
+                                                <div class="romanlist">
+                                                    <ol type="i">
+                                                        <li>The Company has disclosed the impact of pending litigations on its financial position in
+                                                            its financial statements – Refer Note XX to the financial statements; <em id="ten">or the Company
+                                                                does not have any pending litigations which would impact its financial position <sup>10</sup></em>
+                                                                <input class="form-check-input" type="checkbox" value=""  id="toggleTen" onchange="ten()" checked>
+                                                            <ol type="i">
+                                                                <li>
+                                                                    The Company has made provision, as required under the applicable law or accounting
+                                                                    standards, for material foreseeable losses, if any, on long-term contracts including
+                                                                    derivative contracts – Refer Note XX to the financial statements; <em id="eleven">or the Company did
+                                                                        not have any long-term contracts including derivative contracts for which there were
+                                                                        any material foreseeable losses. <sup>11</sup></em>
+                                                                        <input class="form-check-input" type="checkbox" value=""  id="toggleEleven" onchange="eleven()" checked>
+                                                                </li>
+                                                                <li>
+                                                                    There has been no delay in transferring amounts, required to be transferred, to the
+                                                                    Investor Education and Protection Fund by the Company <em id="twelve">or, following are the
+                                                                    instances of delay in transferring amounts, required to be transferred, to the Investor
+                                                                    Education and Protection Fund by the Company or there were no amounts which were
+                                                                    required to be transferred to the Investor Education and Protection Fund by the
+                                                                    Company <sup>12</sup></em>.
+                                                                    <input class="form-check-input" type="checkbox" value=""  id="toggleTwelve" onchange="twelve()" checked>
+                                                                </li>
+                                                            </ol>
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                                <div class="text-right">
+                                                    <p>For XYZ & Co</p>
+                                                    <p>Chartered Accountants</p>
+                                                    <p>(Firm’s Registration No.)</p>
+                                                    <p>Signature</p>
+                                                    <p>(Xxxxx X. Xxxx)</p>
+                                                    <p>(Name of the Member Signing the Audit Report)</p>
+                                                    <p id="thirteen">(Designation <sup>13</sup>)</p>
+                                                    <p>(Membership No. XXXXX)</p>            
+                                                </div>
+                                                <div class="text-left">
+                                                    <p>Place of Signature:</p>
+                                                    <p>Date:</p>
+                                                </div>
+                                                <div class="terms">
+                                                    <em>
+                                                        <sup>10</sup>As may be applicable.
+                                                        
+                                                    <em>
+                                                        <sup>11</sup>As may be applicable.
+                                                      
+                                                    </em>
+                                                    <em>
+                                                        <sup>12</sup>As may be applicable
+                                                        
+                                                    </em>
+                                                    <em>
+                                                        <sup>13</sup>Partner or Proprietor, as the case may be
+                                                        <input class="form-check-input" type="checkbox" value=""  id="toggleThirteen" onchange="thirteen()" checked>
+                                                    </em>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                       
+                                    <div class="card-footer footer-btn">
+                                        <a href="#Edit">Edit in Docs</a>
+                                        <a href="#Download">Download</a>
+                                        <a href="https://resource.cdn.icai.org/35924aasb-illus25437d.pdf" target="_blank">See Format</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script src="./dashboard-pack.js"></script>
+<script src="./dashboard.js"></script>
+<!-- ==========================JQuery================================ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    function three() {
+      const checkbox = document.getElementById('toggleThree');
+      const content = document.getElementById('three');
+
+      // Check if the checkbox is checked
+      if (checkbox.checked) {
+        // If checked, display the content
+        content.style.display = 'inline';
+      } else {
+        // If not checked, hide the content
+        content.style.display = 'none';
+      }
+    }
+    function four() {
+      const checkbox = document.getElementById('toggleFour');
+      const content = document.getElementById('four');
+
+      // Check if the checkbox is checked
+      if (checkbox.checked) {
+        // If checked, display the content
+        content.style.display = 'inline';
+      } else {
+        // If not checked, hide the content
+        content.style.display = 'none';
+      }
+    }
+    function five() {
+      const checkbox = document.getElementById('toggleFive');
+      const content = document.getElementById('five');
+
+      // Check if the checkbox is checked
+      if (checkbox.checked) {
+        // If checked, display the content
+        content.style.display = 'block';
+      } else {
+        // If not checked, hide the content
+        content.style.display = 'none';
+      }
+    }
+    function six() {
+      const checkbox = document.getElementById('toggleSix');
+      const content = document.getElementById('six');
+
+      // Check if the checkbox is checked
+      if (checkbox.checked) {
+        // If checked, display the content
+        content.style.display = 'inline';
+      } else {
+        // If not checked, hide the content
+        content.style.display = 'none';
+      }
+    }
+    function seven() {
+      const checkbox = document.getElementById('toggleSeven');
+      const content = document.getElementById('seven');
+
+      // Check if the checkbox is checked
+      if (checkbox.checked) {
+        // If checked, display the content
+        content.style.display = 'inline';
+      } else {
+        // If not checked, hide the content
+        content.style.display = 'none';
+      }
+    }
+    function eight() {
+      const checkbox = document.getElementById('toggleEight');
+      const content = document.getElementById('eight');
+
+      if (checkbox.checked) {
+        content.style.display = 'inline';
+      } else {
+        content.style.display = 'none';
+      }
+    }
+    function ten() {
+      const checkbox = document.getElementById('toggleTen');
+      const content = document.getElementById('ten');
+      if (checkbox.checked) {
+        content.style.display = 'inline';
+      } else {
+        content.style.display = 'none';
+      }
+    }
+    function eleven() {
+      const checkbox = document.getElementById('toggleEleven');
+      const content = document.getElementById('eleven');
+      if (checkbox.checked) {
+        content.style.display = 'inline';
+      } else {
+        content.style.display = 'none';
+      }
+    }
+    function twelve() {
+      const checkbox = document.getElementById('toggleTwelve');
+      const content = document.getElementById('twelve');
+      if (checkbox.checked) {
+        content.style.display = 'inline';
+      } else {
+        content.style.display = 'none';
+      }
+    }
+    function thirteen() {
+      const checkbox = document.getElementById('toggleThirteen');
+      const content = document.getElementById('thirteen');
+      if (checkbox.checked) {
+        content.style.display = 'inline';
+      } else {
+        content.style.display = 'none';
+      }
+    }
+</script>
+<script>
+    
+   // Required: JQUERY
+    (function ($) {
+
+    $.fn.select3 = function (options) {
+        var dataItems = [];
+        var selectorID = '#' + this.attr('id');
+
+        $(selectorID).find('option').each(function (index, element) {
+
+            if (element.text != '') {
+                dataItems.push(element.text.trim());
+            }
+            else {
+                dataItems.push(element.value.trim());
+            }
+
+        });
+
+        var opts = $.extend({}, $.fn.select3.defaults, options);
+
+        var idDiv = this.attr('id') + 'searchSelect3';
+        var idInput = this.attr('id') + 'searchSelect3_Input';
+        var idClose = this.attr('id') + 'searchSelect3_Times';
+        var idDown = this.attr('id') + 'searchSelect3_Caret_Down';
+        var idList = this.attr('id') + 'searchSelect3_List';
+        var idListLi = this.attr('id') + 'searchSelect3_List_LI';
+
+        var selectorDiv = '#' + this.attr('id') + 'searchSelect3';
+        var selectorInput = '#' + this.attr('id') + 'searchSelect3_Input';
+        var selectorClose = '#' + this.attr('id') + 'searchSelect3_Times';
+        var selectorDown = '#' + this.attr('id') + 'searchSelect3_Caret_Down';
+        var selectorList = '#' + this.attr('id') + 'searchSelect3_List';
+        var selectorListLi = '#' + this.attr('id') + 'searchSelect3_List_LI';
+
+        var buildELement = $('<div class="searchSelect3" id="' + idDiv + '" style="position:relative;"><input class="searchSelect3_Input" placeholder="' + opts.placeholder + '" value="' + opts.defaultvalue + '" id="' + idInput + '"><span class="fa fa-times searchSelect3_Times" id="' + idClose + '"></span><span class="fa fa-caret-down searchSelect3_Caret_Down" id="' + idDown + '"></span></div>');
+
+        if ($(selectorDiv).length > 0) {
+            $(selectorDiv).remove();
+        }
+
+        this.after(buildELement);
+
+        if (opts.width > 0) {
+            $(selectorInput).css('width', opts.width);
+            $(selectorDown).css('left', (opts.width - 20));
+            $(selectorClose).css('left', (opts.width - 40));
+        }
+
+
+        var cache = {};
+        var drew = false;
+        this.hide();
+
+
+
+        $(document).on('click', function (e) {
+            if ($(e.target).parent().is("li[id*='" + idListLi + "']") == false) {
+                if ($(e.target).attr('id') != idInput && $(e.target).attr('id') != idDown) {
+                    $(selectorList).empty();
+                    $(selectorList).css('z-index', -1);
+                    $(selectorClose).hide();
+                }
+            }
+
+            
+
+        });
+
+
+
+
+        var showList = function (query, valuee) {
+
+            if (query in cache) {
+                results = cache[query];
+            } else {
+                var results = $.grep(dataItems, function (item) {
+                    return item.search(RegExp(query, "i")) != -1;
+                });
+
+                cache[query] = results;
+            }
+
+            $(selectorList).css('z-index', opts.zIndex);
+
+
+            if (drew == false) {
+                $(selectorInput).after('<ul id="' + idList + '" class="searchSelect3_List" style="z-index:' + opts.zIndex + '"></ul>');
+
+                if (opts.width > 0) {
+
+                    $(selectorList).css('width', opts.width);
+
+                }
+
+                if (opts.widthList > 0)
+                {
+                    $(selectorList).css('width', opts.widthList);
+                }
+                drew = true;
+
+                $(selectorList).on("click", "li", function () {
+                    var nilai = $(this).text()
+                    $(selectorInput).val(nilai);
+                    $(selectorID).val(nilai);
+                    $(selectorList).empty();
+                    $(selectorClose).show();
+                    $(selectorList).css('z-index', -1);
+                    $(selectorID).change();
+                });
+
+
+            }
+            else {
+                $(selectorList).empty();
+            }
+
+            var counter = 0;
+            for (term in results) {
+                counter++;
+                $(selectorList).append("<li id=" + idListLi + counter + "><label>" + results[term] + "</label></li>");
+            }
+
+            
+
+        };
+
+
+
+        $(selectorInput).on('click', function (e) {
+            var query = $(this).val();
+
+            showList('', query);
+
+
+            $(selectorClose).hide();
+            if (query.length > 0) {
+                $(selectorClose).show();
+            }
+
+        });
+
+        $(selectorInput).on('keyup', function (e) {
+            $(selectorList).empty();
+            var query = $(selectorInput).val();
+            showList(query, query);
+
+            $(selectorClose).hide();
+            if (query.length > 0) {
+                $(selectorClose).show();
+            }
+
+            $(selectorID).change();
+        });
+
+        $(selectorInput).on('keydown', function (e) {
+            if (e.which == 9) {
+                $(selectorList).empty();
+                $(selectorList).css('z-index', -1);
+                $(selectorClose).hide();
+            }
+        });
+
+        $(selectorDown).on('click', function (e) {
+            var query = $(this).val();
+            if ($(selectorList).find('li').length == 0) {
+                showList('', query);
+            }
+            else {
+                //$(selectorList).css('z-index', -1);
+                $(selectorList).empty();
+                $(selectorList).css('z-index', -1);
+            }
+
+            $(selectorClose).hide();
+            if (query.length > 0) {
+                $(selectorClose).show();
+            }
+
+        });
+
+        $(selectorClose).on('click', function (e) {
+            $(selectorInput).val('');
+            $(selectorClose).hide();
+            $(selectorID).change();
+
+        });
+
+
+        return this;
+    };
+
+    $.fn.select3.defaults = {
+        placeholder: "",
+        zIndex: 1,
+        defaultvalue: "",
+        width: 0,
+        widthList: 0
+    };
+
+    }(jQuery));
+  
+    $(document).ready(function(e){
+
+    $('#selectBankList').select3({ width: 260, placeholder: 'Search Name or ID', zIndex: 100 });  
+
+    });
+
+</script>
+</body>
+</html>

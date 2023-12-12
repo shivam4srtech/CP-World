@@ -1,0 +1,1165 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> Dashboard | CharteredONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./style/dashboardpack.css">
+    <link rel="stylesheet" href="./style/dashboard.css">
+    <link rel="stylesheet" href="./style/bankaudit.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa-solid fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Romana I Khan
+                                    </div>
+                                    <div class="widget-subheading">
+                                       GST Analyst
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <div class="widget-content-left">
+                                        <div class="widget-content-left">
+                                            <a href="./profile.html"><img width="40" class="rounded-circle" src="../images/female_avatar_efig.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>        
+        <div class="ui-theme-settings">
+            <button type="button" id="TooltipDemo" class="btn-open-options btn">
+                <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+            </button>
+            <div class="theme-settings__inner">
+                <div class="scrollbar-container">
+                    <div class="theme-settings__options-wrapper">
+                        <h3 class="themeoptions-heading">Layout Options
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-header">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Header
+                                                </div>
+                                                <div class="widget-subheading">Makes the header top fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-sidebar">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Sidebar
+                                                </div>
+                                                <div class="widget-subheading">Makes the sidebar left fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-footer">
+                                                    <div class="switch-animate switch-off">
+                                                        <input type="checkbox" data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Footer
+                                                </div>
+                                                <div class="widget-subheading">Makes the app footer bottom fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>
+                                Header Options
+                            </div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-header-cs-class" data-class="bg-secondary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-header-cs-class" data-class="bg-success header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-header-cs-class" data-class="bg-info header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-header-cs-class" data-class="bg-warning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-header-cs-class" data-class="bg-danger header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-header-cs-class" data-class="bg-light header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-header-cs-class" data-class="bg-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-header-cs-class" data-class="bg-focus header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-header-cs-class" data-class="bg-alternate header-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-header-cs-class" data-class="bg-midnight-bloom header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-header-cs-class" data-class="bg-night-sky header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-header-cs-class" data-class="bg-slick-carbon header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-header-cs-class" data-class="bg-asteroid header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-header-cs-class" data-class="bg-royal header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-header-cs-class" data-class="bg-warm-flame header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-header-cs-class" data-class="bg-night-fade header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-header-cs-class" data-class="bg-sunny-morning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-header-cs-class" data-class="bg-tempting-azure header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-header-cs-class" data-class="bg-amy-crisp header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-header-cs-class" data-class="bg-heavy-rain header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-header-cs-class" data-class="bg-mean-fruit header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-header-cs-class" data-class="bg-malibu-beach header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-header-cs-class" data-class="bg-deep-blue header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-header-cs-class" data-class="bg-ripe-malin header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-header-cs-class" data-class="bg-arielle-smile header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-header-cs-class" data-class="bg-plum-plate header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-header-cs-class" data-class="bg-happy-fisher header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-header-cs-class" data-class="bg-happy-itmeo header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-header-cs-class" data-class="bg-mixed-hopes header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-header-cs-class" data-class="bg-strong-bliss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-header-cs-class" data-class="bg-grow-early header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-header-cs-class" data-class="bg-love-kiss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-header-cs-class" data-class="bg-premium-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-header-cs-class" data-class="bg-happy-green header-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Sidebar Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-sidebar-cs-class" data-class="bg-primary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-sidebar-cs-class" data-class="bg-secondary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-sidebar-cs-class" data-class="bg-success sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-sidebar-cs-class" data-class="bg-info sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-sidebar-cs-class" data-class="bg-warning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-sidebar-cs-class" data-class="bg-danger sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-sidebar-cs-class" data-class="bg-light sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-sidebar-cs-class" data-class="bg-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-sidebar-cs-class" data-class="bg-focus sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-sidebar-cs-class" data-class="bg-alternate sidebar-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class" data-class="bg-vicious-stance sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-sidebar-cs-class" data-class="bg-midnight-bloom sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-sidebar-cs-class" data-class="bg-night-sky sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-sidebar-cs-class" data-class="bg-slick-carbon sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-sidebar-cs-class" data-class="bg-asteroid sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-sidebar-cs-class" data-class="bg-royal sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-sidebar-cs-class" data-class="bg-warm-flame sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-sidebar-cs-class" data-class="bg-night-fade sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-sidebar-cs-class" data-class="bg-sunny-morning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-sidebar-cs-class" data-class="bg-tempting-azure sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-sidebar-cs-class" data-class="bg-amy-crisp sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-sidebar-cs-class" data-class="bg-heavy-rain sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-sidebar-cs-class" data-class="bg-mean-fruit sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-sidebar-cs-class" data-class="bg-malibu-beach sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-sidebar-cs-class" data-class="bg-deep-blue sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-sidebar-cs-class" data-class="bg-ripe-malin sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-sidebar-cs-class" data-class="bg-arielle-smile sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-sidebar-cs-class" data-class="bg-plum-plate sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-sidebar-cs-class" data-class="bg-happy-fisher sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-sidebar-cs-class" data-class="bg-happy-itmeo sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-sidebar-cs-class" data-class="bg-mixed-hopes sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-sidebar-cs-class" data-class="bg-strong-bliss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-sidebar-cs-class" data-class="bg-grow-early sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-sidebar-cs-class" data-class="bg-love-kiss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-sidebar-cs-class" data-class="bg-premium-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-sidebar-cs-class" data-class="bg-happy-green sidebar-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Main Content Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto active btn btn-focus btn-sm">Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Page Section Tabs
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div role="group" class="mt-2 btn-group">
+                                            <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="body-tabs-line">
+                                                Line
+                                            </button>
+                                            <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="body-tabs-shadow">
+                                                Shadow
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="app-main">
+                <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>    
+                    <div class="scrollbar-sidebar">
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu">
+                                <li class="mt-1 dashbtn">
+                                    <a href="../dashboard.html" class="mm-active">
+                                        <i class="metismenu-icon fa-solid fa-house"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Client Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-user fa-regular"></i>
+                                        Client
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../create-client.html">
+                                                <i class="metismenu-icon"></i>
+                                                Add New Client
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../all-client.html">
+                                                <i class="metismenu-icon"></i>All Clients
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Service Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-users-gear"></i>
+                                        Services
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../tax.html">
+                                                <i class="metismenu-icon"></i>
+                                                Tax
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../gst.html">
+                                                <i class="metismenu-icon"></i>GST
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../audit.html">
+                                                <i class="metismenu-icon"></i>Audit
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../compliences.html">
+                                                <i class="metismenu-icon"></i>Company Compliences
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Audits &amp Reports</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-magnifying-glass"></i>
+                                        Audit
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../company-audit.html">
+                                                <i class="metismenu-icon"></i>
+                                                company
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./gst.html">
+                                                <i class="metismenu-icon"></i>LLP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./audit.html">
+                                                <i class="metismenu-icon"></i>Non Company Entity
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>NPO
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>Banks
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Community</li>
+                                <li>
+                                    <a href="../community.html">
+                                        <i class="metismenu-icon fa-solid fa-solid fa-user">
+                                        </i>My Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../message.html">
+                                        <i class="metismenu-icon fa-solid fa-regular fa-message">
+                                        </i>Chats
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Revunue</li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon fa-solid fa-dollar-sign"></i>
+                                        Revenue
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">PRO Version</li>
+                                <li>
+                                    <a href="#000">
+                                        <i class="metismenu-icon fa-regular fa-circle-check">    
+                                        </i>
+                                        Upgrade to PRO
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===================Content====================== -->
+                <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <!-- ================Pay Taxes ================-->   
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-header">
+                                        <span>Appendix 2.5</span>
+                                        <div class="btn-actions-pane-right">
+                                            <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">Click here to see format</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div>
+                                            <h2 class="audit-title p-0 text-center">
+                                                Illustrative Format of Arrangement Letter
+                                            </h2>
+                                        </div>
+                                        <div class="bankaudit">
+                                        </div>
+                                        <div class="bankaudit">
+                                            <p>Firm's Registration No.</p>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <p>Name of the Member Signing the Audit Report</p>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <p>Company Address</p>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <p>Designation</p>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <p>Membership No.</p>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <p>Date</p>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="date" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                        </div>
+                                    </div>    
+                                    <div class="card-body">
+                                        <div class="bankaudit">
+                                            <p>Name of Chartered Accountant</p>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <p>Address of Chartered Accountant</p>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <p>Company Name</p>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <p>Name of LM1 & Address</p>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <p>Name of LM2 & Address</p>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <p>Name of LM3 & Address</p>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <p>Name of LM4 & Address</p>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <p>Year</p>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="number" class="form-control" id="exampleFormControlInput1" min="1999" max="2090" placeholder="YYYY">
+                                            </div>
+                                            <p>
+                                                (to be drafted / amended based on mutual agreement among the
+                                                parties)
+                                            </p>
+                                            <p>
+                                                The Board of Directors
+                                            </p>
+                                            <p>
+                                                [Name of the Company & Address]
+                                            </p>
+                                            <p> 
+                                                The Lead Manager (name and address)
+                                                (“Lead Manager”)
+                                            </p>
+                                            <p>
+                                                and the other Managers (as defined in Paragraph 2 below)
+                                                [Date]
+                                            </p>
+                                            <p>
+                                                Dear Sirs / Madam,
+                                            </p>
+                                            <p>
+                                                [Proposed] Equity Issue by [Issuer’s Name] (“The Issuer”)
+                                            </p>
+                                            <p>
+                                                    <strong>
+                                                            Introduction
+                                                    </strong>
+                                            </p>
+                                            <ol type="1">
+                                                <li>
+                                                    This arrangement letter sets out the scope and limitations
+                                                    of the work to be performed by us in connection with the above
+                                                    transaction, namely the proposed issue of [ ] (“the Issue”) which
+                                                    will involve the preparation by the Issuer, and for which the Issuer
+                                                    will be solely responsible, of a Draft Red Herring Prospectus
+                                                    (“DRHP”), a Red Herring Prospectus (“RHP”) and a Prospectus,
+                                                    and any amendments and supplements thereto (collectively, the
+                                                    “Offering Circular”) [in accordance with the Securities and
+                                                    Exchange Board of India (Issue of Capital and Disclosure
+                                                    Requirements) Regulations, 2018, as amended (“ICDR
+                                                    Regulations”)]. This letter is written in the context of the respective
+                                                    roles of the directors of the Issuer, the Lead Manager (“the Lead
+                                                    Manager”), the other Managers (as defined in Paragraph 2 below)
+                                                    and ourselves.
+                                                </li>
+                                                <p>
+                                                        <em>Addressees</em>
+                                                </p>
+                                                <li>
+                                                    This arrangement letter is addressed to the directors of the
+                                                    Issuer, to the Lead Manager and to each of the managers who
+                                                    have agreed or, prior to the issue of our comfort letter, will agree
+                                                    to participate in the proposed Issue and who have or, prior to the issue of our comfort letter, will have validly authorised the Lead
+                                                    Manager to sign this arrangement letter on their behalf. Their legal
+                                                    names are set out in Appendix 2.5.1 to this arrangement letter
+                                                    and, together with the Lead Manager, are referred to in this
+                                                    arrangement letter as “the Managers”.
+                                                </li>
+                                                <li>
+                                                    By signing and accepting the terms of this arrangement
+                                                    letter, the Lead Manager confirms that it will ensure that it receives
+                                                    prima facie authority from each Manager identified in Appendix
+                                                    2.5.1 authorising it to enter into this arrangement letter on the
+                                                    relevant Manager’s behalf. However, the Lead Manager makes no
+                                                    representation as to whether such prima facie authority actually
+                                                    confers the necessary authority.
+                                                </li>
+                                                <li>
+                                                    Up to the date of the relevant comfort letter, a Manager
+                                                    may be added to Appendix 2.5.1 by the Issuer or by the Lead
+                                                    Manager by written notice to us and the Issuer or the Lead
+                                                    Manager. A Manager may also be deleted from Appendix 2.5.1
+                                                    where the Manager withdraws from the Issue and/or advises the
+                                                    Lead Manager that it does not wish to receive the benefit of the
+                                                    comfort letter or for this arrangement letter to be signed on its
+                                                    behalf or where the Lead Manager does not receive authority to
+                                                    sign this arrangement letter on behalf of the relevant Manager.
+                                                    The revised managers shall then, together with the Lead
+                                                    Manager, be referred to in this arrangement letter as “the
+                                                    Managers”.
+                                                </li>
+                                                <p>
+                                                    <em>
+                                                        Comfort Letter
+                                                    </em>
+                                                </p>
+                                                <li>
+                                                    The Lead Managers will be reviewing certain information
+                                                    relating to the Company that will be included in the Offering
+                                                    Circular, which may be accessible to investors and utilised by
+                                                    them as a basis for their investment decision. The Lead Managers
+                                                    are knowledgeable with respect to the due diligence review
+                                                    process required under the ICDR Regulations. This review
+                                                    process, applied to the information relating to the issuer, will be
+                                                    substantially consistent with the due diligence review process
+                                                    required under the ICDR Regulations. It is recognised that what is
+                                                    substantially consistent may vary from situation to situation and
+                                                    may not be the same as that done in another offering of the same securities for the same issuer. Whether the procedure being or to
+                                                    be followed will be 'substantially consistent' will be determined by
+                                                    the [Lead Managers] on a case-by-case basis.
+                                                </li>
+                                                <li>
+                                                    solely in the context of the due diligence procedures that you
+                                                    undertake, or procure to be undertaken, pursuant to the guidance
+                                                    referred to in Paragraph 5 above in connection with the contents
+                                                    of the Offering Circular for the purpose of any defence in such
+                                                    context that you may wish to advance in any claim or proceeding
+                                                    in connection with the contents of the Offering Circular.
+                                                    Accordingly our comfort letter will be addressed to you for that
+                                                    purpose and may not be relied on by you for any other purpose.
+                                                </li>
+                                                <li>
+                                                    For the avoidance of doubt and subject to the limitations or
+                                                    exclusions which are contained in or referred to in Paragraphs 8,
+                                                    9, 27, 33 and 34 of this letter, nothing in this letter shall preclude
+                                                    the Managers from obtaining compensation from us in respect of
+                                                    any liability that the Managers incur to an investor arising out of
+                                                    the contents of the Offering Circular to the extent that such liability
+                                                    arises because the work undertaken pursuant to this arrangement
+                                                    letter or the comfort letter was undertaken negligently.
+                                                </li>
+                                                <li>
+                                                    Our comfort letter will not be prepared in connection with,
+                                                    nor is it intended for use in any connection with, any offer or sale
+                                                    of securities outside India. We will accept no duty or responsibility
+                                                    to and deny any liability to any party in respect of any use of our
+                                                    comfort letter in connection with an offer or sale of securities
+                                                    outside India.
+                                                </li>
+                                                <li>
+                                                    Our work and findings shall not in any way constitute
+                                                    advice or recommendations (and we accept no liability in relation
+                                                    to any advice or recommendations) regarding any commercial
+                                                    decisions associated with the Issue, including, in particular, but
+                                                    without limitation, any which may be taken by the Managers (or
+                                                    any person connected to the Managers or any one of them) in the
+                                                    capacity of investor or in providing investment advice to their
+                                                    clients.
+                                                </li>
+                                                <li>
+                                                    Our comfort letter will be provided solely for your private
+                                                    information and should not be used for any purpose other than as set out in Paragraph 6. Our comfort letter may not be referred to
+                                                    in any other document (except that reference may be made to its
+                                                    existence in any contract or other communication between the
+                                                    Issuer and/or the Managers, and/or ourselves), nor made
+                                                    available to any other party (except that a copy may be included in
+                                                    the bible of transaction documents memorialising the Issue
+                                                    prepared for the Issuer and the Managers).
+                                                </li>
+                                                <li>
+                                                    Nothing in Paragraphs 8 and 10 shall prevent you from
+                                                    disclosing our comfort letter to your professional advisers or as
+                                                    may be required by law or regulation, and/or referring to and/or
+                                                    producing our comfort letter in court proceedings relating to the
+                                                    Issue or the Offering Circular. Provided that you first obtain our
+                                                    prior written consent, you may disclose our comfort letter to third
+                                                    parties where to do so would reasonably be necessary in the
+                                                    interest of a resolution of a dispute with that third party.
+                                                </li>
+                                                <li>
+                                                    Other than to those who have validly accepted this
+                                                    arrangement letter, we will not accept any responsibility to any
+                                                    party to whom our comfort letter is shown or into whose hands it
+                                                    may come.
+                                                </li>
+                                                <li>
+                                                    You may only rely on information and comments set out in
+                                                    our comfort letter on the basis of this arrangement letter.
+                                                </li>
+                                                <p>
+                                                    <em>Work and procedures</em>
+                                                </p>
+                                                <li>
+                                                    Our work will, where appropriate, be conducted in
+                                                    accordance with Standards on Auditing prevailing in India. In other
+                                                    jurisdictions, standards and practice relevant to reporting
+                                                    accountants may be different and may not provide for reporting in
+                                                    the manner contemplated herein. Accordingly our report should
+                                                    not be relied on as if it had been provided in accordance with the
+                                                    standards and practice of any professional body in any other
+                                                    jurisdiction.
+                                                </li>
+                                                <li>
+                                                    We have not carried out an audit in accordance with any
+                                                    generally accepted auditing standards of any financial information
+                                                    relating to the Issuer for any period prior to [date of the 1st day of
+                                                    the financial year which was audited by current auditor] and
+                                                    subsequent to [date of last audited balance sheet]. The
+                                                    procedures we will use to perform the work set out in this arrangement letter will not constitute an audit or review made in
+                                                    accordance with any generally accepted auditing standards.
+                                                    Furthermore, they will not necessarily reveal matters of
+                                                    significance with respect to any material misstatement of the
+                                                    information referred to below.
+                                                </li>
+                                                <li>
+                                                    The procedures that we plan to conduct have been
+                                                    discussed between and agreed to by the Issuer, the Lead
+                                                    Managers and us and will be recorded in the comfort letter itself.
+                                                    If during the course of carrying out such procedures as are
+                                                    planned and agreed upon under this letter, and solely as a result
+                                                    of information provided to us in so doing, we conclude that there
+                                                    has been any withholding, concealment or misrepresentation in
+                                                    relation to such information, (or otherwise we conclude that such
+                                                    information contains an inconsistency which clearly indicates that
+                                                    there may have been such a withholding, concealment or
+                                                    misrepresentation), we will discuss with you whether further
+                                                    procedures can be designed to seek to resolve the matter. Where
+                                                    such procedures are agreed between us, we will carry them out
+                                                    and amend the comfort letter accordingly.
+                                                </li>
+                                                <li>
+                                                    We will only carry out those verification procedures
+                                                    expressly provided for in the comfort letter. Accordingly, we make
+                                                    no representations as to the sufficiency for your purposes of such
+                                                    procedures and, therefore, our responsibility shall be limited to
+                                                    performing the work agreed upon in this arrangement letter and/or
+                                                    recorded in the comfort letter with due skill, care and attention. If
+                                                    we were to perform additional procedures or if we were to conduct
+                                                    an audit or review of the financial statements of the Issuer in
+                                                    accordance with auditing standards generally accepted in India,
+                                                    other matters might come to our attention which we would report
+                                                    to you. The procedures to be performed by us should not be
+                                                    taken to supplant any additional enquiries or procedures that may
+                                                    be appropriate in the performance of your role under the proposed
+                                                    offering.
+                                                </li>
+                                                <li>
+                                                    In relation to the contents of the Offering Circular, we will
+                                                    address ourselves solely to such financial information in the
+                                                    Offering Circular as is identified in the comfort letter and we will
+                                                    make no representations as to the adequacy of disclosure in the Offering Circular or as to whether any material facts have been
+                                                    omitted by the Issuer.
+                                                </li>
+                                                <li>
+                                                    Any opinions expressed on financial information outside
+                                                    the context of this arrangement letter were or are expressed solely
+                                                    in the context of the specific terms and conditions governing their
+                                                    preparation. In particular, the terms of this arrangement letter and
+                                                    any action pursuant to it shall be additional to and shall not detract
+                                                    from or change in any way any legal rights which any party to this
+                                                    letter may otherwise have acquired, whether in contract or in tort,
+                                                    in connection with our audits of the financial statements of the
+                                                    Issuer.
+                                                </li>
+                                                <li>
+                                                    Save as may be expressly recorded in the comfort letter,
+                                                    we do not accept any responsibility for any other reports or letters
+                                                    beyond any responsibility that we owed to those to whom our
+                                                    reports or letters were addressed at the date of their issue.
+                                                </li>
+                                                <p>
+                                                    <em>Contents of the Comfort Letter</em>
+                                                </p>
+                                                <li>
+                                                    We will prepare and expect to issue a comfort letter
+                                                    addressed to the Issuer and the Managers in connection with their
+                                                    due diligence enquiries in connection with the contents of the
+                                                    Offering Circular on the basis described above. [Based upon our
+                                                    present understanding of your requirements we expect to be able
+                                                    to provide you with a comfort letter substantially in the form
+                                                    contained in Appendix 2, setting out the procedures that we
+                                                    expect to carry out prior to issuing our comfort letter.] Your
+                                                    acceptance of our comfort letter in final form constitutes your
+                                                    agreement to the scope and extent of such procedures.
+                                                </li>
+                                                <li>
+                                                    We would be grateful if you would review the draft comfort
+                                                    letter that we expect to be able to provide you with and let us have
+                                                    any amendments you propose to the procedures as soon as
+                                                    possible, so that we can provide you with a revised draft for your
+                                                    further consideration and approval <sup>17</sup>
+                                                </li>
+                                                <li>
+                                                    Once an advanced draft of the Offering Circular is
+                                                    available and you have identified, and we have agreed, the
+                                                    detailed financial information whose extraction or calculation you
+                                                    require to be covered in the comfort letter, we will provide you with
+                                                    a further revised draft of the comfort letter for your approval of its
+                                                    scope prior to finalisation.]
+                                                </li>
+                                                <li>
+                                                    For the avoidance of doubt, we will not comment on, or
+                                                    otherwise give comfort in relation to, the prospects or trading
+                                                    position or, save as expressly stated in the comfort letter,
+                                                    comment on or provide any opinion or other conclusion as to the
+                                                    current overall financial position of the Issuer. <sup>18</sup>
+                                                </li>
+                                                <p>
+                                                        <em>Drafts</em>
+                                                </p>
+                                                <li>
+                                                    During the course of the arrangement we may show drafts
+                                                    of, or report orally on, our comfort letter to you. In so far as any
+                                                    such draft or oral report is inconsistent with the subsequent final
+                                                    comfort letter, it will be deemed to be superseded by such final
+                                                    comfort letter.
+                                                </li>
+                                                <p>
+                                                    <em>Audit Opinion</em>
+                                                </p>
+                                                <li>
+                                                    The Issuer may not include our audit opinion in the
+                                                    Offering Circular without our prior written approval.
+                                                </li>
+                                                <p>
+                                                    <em>Meetings</em>
+                                                </p>
+                                                <li>
+                                                    It [will be] [has been] necessary for us to receive copies of
+                                                    the draft Offering Circular as it [is] [was] produced and it [may be]
+                                                    [has been] necessary for us to attend meetings (including, but not
+                                                    limited to, meetings with the Issuer, and its directors and/or
+                                                    employees, and the Lead Manager and its employees or agents)
+                                                    at which the Offering Circular [is] [has been] discussed and
+                                                    drafted or at which other related matters [are] [have been]
+                                                    discussed. We [shall answer] [have answered] queries raised at
+                                                    such meetings on an informal basis but you should neither act nor
+                                                    refrain from acting on the basis of such informal answers unless and until they are confirmed in writing by us, whether in the final
+                                                    comfort letter or otherwise. In the absence of such written
+                                                    confirmation we shall have no liability to you in contract or in tort
+                                                    (including negligence) for our answers.
+                                                </li>
+                                                <li>
+                                                    Unless otherwise specifically agreed between the parties,
+                                                    we are authorised by the Issuer to speak to the Managers and
+                                                    other professional advisers advising on the proposed Issue. In
+                                                    connection with our work pursuant to this arrangement letter, we
+                                                    may release to the Managers and such other professional
+                                                    advisers any information relating to the Issuer, whether
+                                                    confidential or not and obtained during the course of our work or
+                                                    otherwise and shall not be liable to the Issuer for any use
+                                                    subsequently made of that information.
+                                                </li>
+                                                <p>
+                                                    <em>Timetable</em>
+                                                </p>
+                                                <li>
+                                                    We will endeavour to carry out our work in accordance
+                                                    with a timetable to be agreed between all parties that will satisfy
+                                                    the requirements of the Issue.]. We [intend to provide] [are
+                                                    providing] [(i) a comfort letter on each of the date of (a) the filing of
+                                                    the Draft Red Herring Prospectus with SEBI, (b) the filing of the
+                                                    Red Herring Prospectus with the Registrar of the Companies in
+                                                    India (“ROC”), (c) the filing of the Prospectus with the ROC and (ii)
+                                                    a bring down comfort letter on the date of the closing of the Issue
+                                                    i.e. the date of allotment,] or on such other date as may be agreed
+                                                    in writing among the Issuer, the Lead Managers and us. [We will
+                                                    discuss with you any difficulties we encounter with this
+                                                    arrangement or with meeting the timetable as soon as any
+                                                    problems arise. <sup>19</sup>
+                                                </li>
+                                                <p>
+                                                    <em>Applicable law and jurisdiction</em>
+                                                </p>
+                                                <li>
+                                                    This arrangement letter shall be governed by, and construed
+                                                    in accordance with the laws of India. <br>
+                                                    The Courts of India shall have exclusive jurisdiction in relation to
+                                                    any claim, dispute or difference concerning the arrangement letter
+                                                    or any comfort letter and any matter arising from them. Each
+                                                    party irrevocably waives any right it may have to object to an
+                                                    action being brought in any of those Courts, to claim that the
+                                                    action has been brought in an inconvenient forum or to claim that
+                                                    those Courts do not have jurisdiction.
+                                                </li>
+                                                <p>
+                                                    <em>Fees</em>
+                                                </p>
+                                                <li>
+                                                    Our fees will be the responsibility of and will be paid by the
+                                                    Issuer.
+                                                </li>
+                                                <p>
+                                                    <em>Representations from the Issuer</em>
+                                                </p>
+                                                <li>
+                                                    We will ask the Board of Directors to provide us with
+                                                    appropriate representations at the date of the comfort letter either
+                                                    by means of a board minute or by letter of representation from a
+                                                    duly authorised director of the Issuer. A draft will be provided
+                                                    separately, which will reflect the specific issues on which we are
+                                                    required to provide a comfort letter.
+                                                </li>
+                                                <p>
+                                                    <em>Other Terms and Conditions</em>
+                                                </p>
+                                                <li>
+                                                    In no circumstances shall we be liable, other than in the
+                                                    event of our bad faith or wilful default, for any loss or damage, of
+                                                    whatsoever nature, arising from information material to our work
+                                                    being withheld or concealed from us or misrepresented to us by
+                                                    the directors, employees, or agents of the Issuer or any other
+                                                    person of whom we may make enquiries, unless detection of such
+                                                    withholding, concealment or misrepresentation should reasonably
+                                                    have been expected because the fact of such withholding,
+                                                    concealment or misrepresentation was evident without further
+                                                    enquiry from the information provided to us or required to be
+                                                    considered by us pursuant to the procedures finally agreed upon
+                                                    under this letter. This clause, and any assessment of our work
+                                                    made pursuant to it, will have regard to the limited scope of
+                                                    procedures agreed under this letter.
+                                                </li>
+                                                <li>
+                                                    The terms and conditions, which are attached as Appendix
+                                                    [this should be as per auditor’s requirements], also form part of
+                                                    this arrangement letter. These terms and conditions shall apply, as indicated in such terms and conditions, to us, the Issuer and
+                                                    the Managers (as the case may be).
+                                                </li>
+                                                <li>
+                                                    In the event of any inconsistency between this
+                                                    arrangement letter and such terms and conditions, the terms of
+                                                    this letter shall prevail as between the relevant parties.
+                                                </li>
+                                                <p>
+                                                    <em>Prohibition on Assignment</em>
+                                                </p>
+                                                <li>
+                                                    No party may assign any of its rights in relation to this
+                                                    arrangement letter without the prior written consent of the others
+                                                    against whom the rights may be asserted, save that any Manager
+                                                    may assign any of such rights, or such rights may pass by
+                                                    operation of law, to any successor to all or part of its business
+                                                    without such consent, provided that notice is given to us prior to
+                                                    any step being taken by you to enforce any rights hereunder.
+                                                </li>
+                                                <p>
+                                                    <em>Entire Agreement</em>
+                                                </p>
+                                                <li>
+                                                    This arrangement letter and the Appendices to it constitute
+                                                    the entire agreement between us and, save as provided in this
+                                                    arrangement letter, no change in the terms of our agreement will
+                                                    be effective unless agreed in writing and signed by all parties to
+                                                    this arrangement letter or their respective attorney.
+                                                </li>
+                                            </ol>
+                                            
+                                            <div class="text-right">
+                                               <p>
+                                                    For ABC and Co.
+                                               </p>
+                                               <p>
+                                                Chartered Accountants
+                                               </p>
+                                               <p>
+                                                Firm’s Registration Number
+                                               </p>
+                                               <p>
+                                                Signature
+                                               </p>
+                                               <p>
+                                                [Name of the Member]
+                                               </p>
+                                               <p>
+                                                Designation <sup>20</sup>
+                                               </p>
+                                               <p>
+                                                Membership Number
+                                               </p>
+                                            </div> 
+                                            <div class="text-left">
+                                                    <p>
+                                                        Place of Signature:
+                                                    </p>
+                                                    <p>
+                                                        Date:
+                                                    </p>
+                                                    <p>
+                                                        Acknowledgement and Acceptance <br>
+                                                        [by the Issuer and Lead Manager]
+                                                    </p>
+                                            </div>
+                                            <div class="term">
+                                                <small> <sup>17</sup> 
+                                                    The first draft of the arrangement letter will include the form of comfort letter in Appendix
+                                                    xx. The final arrangement letter will include these sentences if it predates the issuance of
+                                                    the comfort letter. If the arrangement letter and the comfort letter are signed
+                                                    contemporaneously, these sentences will be omitted.
+                                                </small>
+                                                <small> <sup>18</sup> 
+                                                     If specific procedures and appropriate terms (e.g. as to timing) are agreed between all
+                                                    parties, the auditors may undertake additional work (for example in relation to the Issuer’s
+                                                    current overall financial position).
+                                                </small>
+                                                <small> <sup>19</sup> 
+                                                    It may not be appropriate to include this sentence if the arrangement letter is signed
+                                                    contemporaneously with the comfort letter.
+                                               </small>
+                                                <small> <sup>20</sup> Partner or proprietor, as the case may be.</small>
+                                            </div>
+                                        </div>  
+                                    </div>                                   
+                                    <div class="card-footer footer-btn">
+                                        <a href="#Edit">Edit in Docs</a>
+                                        <a href="#Download">Download</a>
+                                        <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">See Format</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script src="./dashboard-pack.js"></script>
+<script src="./dashboard.js"></script>
+<!-- ==========================JQuery================================ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

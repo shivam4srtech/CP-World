@@ -1,0 +1,1492 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> Dashboard | CharteredONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./style/dashboardpack.css">
+    <link rel="stylesheet" href="./style/dashboard.css">
+    <link rel="stylesheet" href="./style/bankaudit.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa-solid fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Romana I Khan
+                                    </div>
+                                    <div class="widget-subheading">
+                                       GST Analyst
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <div class="widget-content-left">
+                                        <div class="widget-content-left">
+                                            <a href="./profile.html"><img width="40" class="rounded-circle" src="../images/female_avatar_efig.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>        
+        <div class="ui-theme-settings">
+            <button type="button" id="TooltipDemo" class="btn-open-options btn">
+                <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+            </button>
+            <div class="theme-settings__inner">
+                <div class="scrollbar-container">
+                    <div class="theme-settings__options-wrapper">
+                        <h3 class="themeoptions-heading">Layout Options
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-header">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Header
+                                                </div>
+                                                <div class="widget-subheading">Makes the header top fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-sidebar">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Sidebar
+                                                </div>
+                                                <div class="widget-subheading">Makes the sidebar left fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-footer">
+                                                    <div class="switch-animate switch-off">
+                                                        <input type="checkbox" data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Footer
+                                                </div>
+                                                <div class="widget-subheading">Makes the app footer bottom fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>
+                                Header Options
+                            </div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-header-cs-class" data-class="bg-secondary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-header-cs-class" data-class="bg-success header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-header-cs-class" data-class="bg-info header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-header-cs-class" data-class="bg-warning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-header-cs-class" data-class="bg-danger header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-header-cs-class" data-class="bg-light header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-header-cs-class" data-class="bg-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-header-cs-class" data-class="bg-focus header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-header-cs-class" data-class="bg-alternate header-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-header-cs-class" data-class="bg-midnight-bloom header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-header-cs-class" data-class="bg-night-sky header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-header-cs-class" data-class="bg-slick-carbon header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-header-cs-class" data-class="bg-asteroid header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-header-cs-class" data-class="bg-royal header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-header-cs-class" data-class="bg-warm-flame header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-header-cs-class" data-class="bg-night-fade header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-header-cs-class" data-class="bg-sunny-morning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-header-cs-class" data-class="bg-tempting-azure header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-header-cs-class" data-class="bg-amy-crisp header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-header-cs-class" data-class="bg-heavy-rain header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-header-cs-class" data-class="bg-mean-fruit header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-header-cs-class" data-class="bg-malibu-beach header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-header-cs-class" data-class="bg-deep-blue header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-header-cs-class" data-class="bg-ripe-malin header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-header-cs-class" data-class="bg-arielle-smile header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-header-cs-class" data-class="bg-plum-plate header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-header-cs-class" data-class="bg-happy-fisher header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-header-cs-class" data-class="bg-happy-itmeo header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-header-cs-class" data-class="bg-mixed-hopes header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-header-cs-class" data-class="bg-strong-bliss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-header-cs-class" data-class="bg-grow-early header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-header-cs-class" data-class="bg-love-kiss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-header-cs-class" data-class="bg-premium-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-header-cs-class" data-class="bg-happy-green header-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Sidebar Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-sidebar-cs-class" data-class="bg-primary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-sidebar-cs-class" data-class="bg-secondary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-sidebar-cs-class" data-class="bg-success sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-sidebar-cs-class" data-class="bg-info sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-sidebar-cs-class" data-class="bg-warning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-sidebar-cs-class" data-class="bg-danger sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-sidebar-cs-class" data-class="bg-light sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-sidebar-cs-class" data-class="bg-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-sidebar-cs-class" data-class="bg-focus sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-sidebar-cs-class" data-class="bg-alternate sidebar-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class" data-class="bg-vicious-stance sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-sidebar-cs-class" data-class="bg-midnight-bloom sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-sidebar-cs-class" data-class="bg-night-sky sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-sidebar-cs-class" data-class="bg-slick-carbon sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-sidebar-cs-class" data-class="bg-asteroid sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-sidebar-cs-class" data-class="bg-royal sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-sidebar-cs-class" data-class="bg-warm-flame sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-sidebar-cs-class" data-class="bg-night-fade sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-sidebar-cs-class" data-class="bg-sunny-morning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-sidebar-cs-class" data-class="bg-tempting-azure sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-sidebar-cs-class" data-class="bg-amy-crisp sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-sidebar-cs-class" data-class="bg-heavy-rain sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-sidebar-cs-class" data-class="bg-mean-fruit sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-sidebar-cs-class" data-class="bg-malibu-beach sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-sidebar-cs-class" data-class="bg-deep-blue sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-sidebar-cs-class" data-class="bg-ripe-malin sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-sidebar-cs-class" data-class="bg-arielle-smile sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-sidebar-cs-class" data-class="bg-plum-plate sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-sidebar-cs-class" data-class="bg-happy-fisher sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-sidebar-cs-class" data-class="bg-happy-itmeo sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-sidebar-cs-class" data-class="bg-mixed-hopes sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-sidebar-cs-class" data-class="bg-strong-bliss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-sidebar-cs-class" data-class="bg-grow-early sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-sidebar-cs-class" data-class="bg-love-kiss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-sidebar-cs-class" data-class="bg-premium-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-sidebar-cs-class" data-class="bg-happy-green sidebar-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Main Content Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto active btn btn-focus btn-sm">Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Page Section Tabs
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div role="group" class="mt-2 btn-group">
+                                            <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="body-tabs-line">
+                                                Line
+                                            </button>
+                                            <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="body-tabs-shadow">
+                                                Shadow
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="app-main">
+                <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>    
+                    <div class="scrollbar-sidebar">
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu">
+                                <li class="mt-1 dashbtn">
+                                    <a href="../dashboard.html" class="mm-active">
+                                        <i class="metismenu-icon fa-solid fa-house"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Client Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-user fa-regular"></i>
+                                        Client
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../create-client.html">
+                                                <i class="metismenu-icon"></i>
+                                                Add New Client
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../all-client.html">
+                                                <i class="metismenu-icon"></i>All Clients
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Service Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-users-gear"></i>
+                                        Services
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../tax.html">
+                                                <i class="metismenu-icon"></i>
+                                                Tax
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../gst.html">
+                                                <i class="metismenu-icon"></i>GST
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../audit.html">
+                                                <i class="metismenu-icon"></i>Audit
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../compliences.html">
+                                                <i class="metismenu-icon"></i>Company Compliences
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Audits &amp Reports</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-magnifying-glass"></i>
+                                        Audit
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../company-audit.html">
+                                                <i class="metismenu-icon"></i>
+                                                company
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./gst.html">
+                                                <i class="metismenu-icon"></i>LLP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./audit.html">
+                                                <i class="metismenu-icon"></i>Non Company Entity
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>NPO
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>Banks
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Community</li>
+                                <li>
+                                    <a href="../community.html">
+                                        <i class="metismenu-icon fa-solid fa-solid fa-user">
+                                        </i>My Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../message.html">
+                                        <i class="metismenu-icon fa-solid fa-regular fa-message">
+                                        </i>Chats
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Revunue</li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon fa-solid fa-dollar-sign"></i>
+                                        Revenue
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">PRO Version</li>
+                                <li>
+                                    <a href="#000">
+                                        <i class="metismenu-icon fa-regular fa-circle-check">    
+                                        </i>
+                                        Upgrade to PRO
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===================Content====================== -->
+                <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <!-- ================Pay Taxes ================-->   
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-header">
+                                        <span>Appendix 13</span>
+                                        <div class="btn-actions-pane-right">
+                                            <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">Click here to see format</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div>
+                                            <h2 class="audit-title p-0 text-center">
+                                                Format of the Engagement Letter for the
+                                                Entire Engagement to Issue Report on the
+                                                Prospectus
+                                            </h2>
+                                        </div>
+
+                                        <div class="bankaudit">
+                                            <div class="inputset">
+                                                <div id="wrapper" class="col-md-6 mb-3">
+                                                    <label for="companyName" class="form-label">Choose Client</label>
+                                                    <select id="selectBankList" >
+                                                      <option value="Rachin Ravindra">Rachin Ravindra</option>
+                                                      <option value="Mark Wood">Mark Wood</option>
+                                                      <option value="Jos B">Jos B</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="companyName" class="form-label">Company Name</label>
+                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="year" class="form-label">Year</label>
+                                                    <input type="number" placeholder="YYYY" min="1999" max="2020" class="form-control">
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="companyName" class="form-label">Chartered Accountants Name</label>
+                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="companyName" class="form-label">Firm’s Registration No.</label>
+                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="companyName" class="form-label">Name of the Member Signing the Audit Report</label>
+                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="companyName" class="form-label">Designation</label>
+                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="companyName" class="form-label">Membership No.</label>
+                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                </div>
+                                                <div class=" col-md-6 mb-3">
+                                                    <label for="exampleFormControlTextarea1" class="form-label">Address</label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                  </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="companyName" class="form-label">Place</label>
+                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="companyName" class="form-label">Date</label>
+                                                    <input type="date" class="form-control" id="exampleFormControlInput1">
+                                                </div>
+                                            </div>
+                                          <div class="text-left">
+                                            <p>
+                                                Date
+                                            </p>
+                                            <p>
+                                                ABC Ltd.
+                                            </p>
+                                            <p>
+                                                Address
+                                            </p>
+                                          </div>
+                                          <h5 class="text-center">Letter of Engagement</h5>
+                                          <p>
+                                            Dear Sirs / Madam,
+                                          </p>
+                                          <div>
+                                                <p>
+                                                    We are writing to confirm our understanding of the scope and
+                                                    limitations of the work to be performed by us in connection with
+                                                    <input type="text"> [Draft Red Herring Prospectus/Red Herring
+                                                    Prospectus/Prospectus(“DRHP/RHP/Prospectus”)(collectively, the
+                                                    “Offer Document”), prepared in connection with the filing of an
+                                                    offer document a proposed issue of <input type="text"> [Insert
+                                                    name and type of security] (the “Equity Shares/Notes/Security”) by
+                                                    <input type="text"> (name of the company) (the “Company”)
+                                                    with the Securities and Exchange Board of India (“SEBI”) and the
+                                                    Registrar of Companies, <input type="text"> [Insert name of the
+                                                    State].
+                                                </p>
+                                                <p>
+                                                    This letter is not to be used in connection with the sale of
+                                                    securities in the <input type="text"> (name of the Country).
+                                                    We accept no duty or responsibility to and deny any liability to any
+                                                    party in respect of any use of this letter in connection with the sale
+                                                    of securities in the <input type="text"> (name of the
+                                                    country).
+                                                </p>
+                                                <p>
+                                                    As part of the offer document, the Company will prepare financial
+                                                    information for the [six] month period ended September 30, 20XX
+                                                    and for each of the three years ended March 31, 20XX, 20XX and
+                                                    20XX after adjustments as required by the Securities and
+                                                    Exchange Board of India (Issue of Capital and Disclosure
+                                                    Requirements) Regulations, 2018, as amended (the "ICDR
+                                                    Regulations") in a manner consistent with the accounting policies being adopted for the latest financial period/year presented.
+                                                    Further, the Company will prepare Consolidated Financial
+                                                    Information of the Company and its subsidiaries (together referred
+                                                    to as the “Group”) and share of profit /(loss) of associates and joint
+                                                    ventures for [six] month period ended September 30, 20XX and
+                                                    for each of the three years ended March 31, 20XX, 20XX and
+                                                    20XX (after adjustments as required by the ICDR Regulations) in
+                                                    a manner consistent with the accounting policies being adopted
+                                                    for the latest financial period/year presented. The Company will
+                                                    prepare other financial information to be included in the offer
+                                                    document as required by the ICDR Regulations.
+                                                </p>
+                                          </div>
+                                          <div>
+                                                <ol type="A">
+                                                    <li>
+                                                        Accordingly, we will examine the restated [consolidated]
+                                                        financial information to be included in the offer document of
+                                                        the Company as required by the ICDR Regulations </br>
+                                                        [Additionally, we would also issue following certificates/
+                                                        reports:
+                                                        <ol type="i">
+                                                            <li>
+                                                                [mention details of certificates]; and
+                                                            </li>
+                                                            <li>
+                                                                Comfort letters (will enter into a separate arrangement
+                                                                letter)]
+                                                            </li>
+                                                        </ol>
+                                                        (amend as applicable) </br>
+                                                        In connection with the offering of Equity
+                                                        Shares/Notes/Security, we will perform all necessary
+                                                        procedures, in order to issue an auditor’s report to the
+                                                        Company, in accordance with the Guidance Note on Reports
+                                                        in Company Prospectuses (Revised 2019), issued by the ICAI
+                                                        ('the Guidance Note’). </br>
+                                                        Our work and findings shall not in any way constitute advice
+                                                        or recommendations (and we accept no liability in relation to
+                                                        any advice or recommendations) regarding any commercial
+                                                        decisions associated with the issue of the
+                                                        <input type="text">(name of the security).
+                                                    </li>
+                                                    <li>
+                                                        Upon completion of our examination, we will provide you with
+                                                        our report on the Restated [Consolidated] Financial
+                                                        Information referred to above, and bring to your attention any material errors of which we become aware during our
+                                                        examination.
+                                                    </li>
+                                                    <li>
+                                                        It should be understood that we make no representation
+                                                        regarding questions of legal interpretation or regarding the
+                                                        sufficiency for your purposes of the procedures enumerated
+                                                        above; also, such procedures would not necessarily reveal
+                                                        any material misstatement of the amounts or percentages
+                                                        listed above. Further, we will address ourselves solely to the
+                                                        foregoing data as set forth in the offer document and will
+                                                        make no representation regarding the adequacy of disclosure
+                                                        or regarding whether any material facts have been omitted or
+                                                        appropriateness of comparative information for evaluation.
+                                                    </li>
+                                                    <li>
+                                                        We will conduct our examination in accordance with the
+                                                        Guidance Note. We will plan and perform our engagement to
+                                                        obtain reasonable assurance that the Financial Information,
+                                                        are free of material misstatement whether caused by errors or
+                                                        fraud. However, having regard to the test nature of our
+                                                        examination, persuasive rather than conclusive nature of
+                                                        audit evidence together with any inherent limitations of any
+                                                        accounting and internal control system, there is an
+                                                        unavoidable risk that even some material misstatements of
+                                                        the Financial Information, resulting from fraud, and to a lesser
+                                                        extent error, if either exists, may remain undetected. Also, our
+                                                        examination is not designed to detect error or fraud that is
+                                                        immaterial to the Financial Information. </br> </br>
+                                                        As part of our examination, we will consider, solely for the
+                                                        purpose of planning our work and determining the nature,
+                                                        timing, and extent of our audit procedures, the Company’s
+                                                        internal control environment. This consideration will not be
+                                                        sufficient to enable us to provide assurance on internal control
+                                                        or to identify all reportable conditions. </br> </br>
+                                                        We will determine that appropriate members of management
+                                                        are informed of fraud and illegal acts, unless they are clearly
+                                                        inconsequential, of which we become aware in the regular
+                                                        course of our examination focused on the Financial
+                                                        Information. In addition, we will inform appropriate members
+                                                        of management of significant adjustments and of reportable
+                                                        conditions noted during our examination.
+                                                    </li>
+                                                    <li>
+                                                        For our examination, we will place reliance on the following:
+                                                        <ol type="i">
+                                                            <li>
+                                                                The financial statements of ABC Ltd. for the financial
+                                                                years ended <input type="text"> , which have been
+                                                                audited and reported upon by us, vide our reports dated -
+                                                                <input type="text"> , respectively.
+                                                            </li>
+                                                            <li>
+                                                                The financial statements of ABC Ltd. for the financial
+                                                                years ended <input type="text"> , which have been audited and
+                                                                reported upon by <input type="text"> , Chartered Accountants
+                                                                hereafter referred as <input type="text"> . {if required}
+                                                            </li>
+                                                            <li>
+                                                                The financial statements of below mentioned
+                                                                subsidiaries/ joint ventures/ associates of ABC Ltd. for
+                                                                the year ended <input type="text"> , which have been audited and
+                                                                reported by us, vide our reports mentioned there against,
+                                                                hereafter referred as the <input type="text"> Subsidiaries Financial
+                                                                Statements:
+                                                            </li>
+                                                            <div class="table-responsive my-4">
+                                                                <table class="align-middle mb-0 table table-striped table-hover">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th> Name of subsidiaries</th>
+                                                                            <th class="text-center">Audit report’s date</th>
+                                                                            <th class="text-center">Partner</th>             
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>
+                                                                                Name of joint
+                                                                                ventures
+                                                                            </th>
+                                                                            <td>
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>
+                                                                                Name of
+                                                                                Associates
+                                                                            </th>
+                                                                            <td>
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody> 
+                                                                </table>
+                                                            </div>
+                                                            <li>
+                                                                The financial statements of the below mentioned
+                                                                subsidiaries/ joint ventures/ associates of ABC Ltd. which
+                                                                have been audited and reported upon by their auditors,
+                                                                the names of which and the period of their audit are
+                                                                mentioned there against.
+                                                            </li>
+                                                            <div class="table-responsive my-4">
+                                                                <table class="align-middle mb-0 table table-striped table-hover">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th> Name of subsidiaries</th>
+                                                                            <th class="text-center">
+                                                                                Name of the
+                                                                                Auditors
+                                                                            </th>
+                                                                            <th class="text-center">Partner</th>             
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>
+                                                                                Name of joint
+                                                                                ventures
+                                                                            </th>
+                                                                            <td>
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>
+                                                                                Name of
+                                                                                Associates
+                                                                            </th>
+                                                                            <td>
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="col">
+                                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody> 
+                                                                </table>
+                                                            </div>
+                                                            <li>
+                                                                The un-audited financial statements of below mentioned
+                                                                subsidiaries/ joint ventures/ associates of ABC Ltd. for
+                                                                the quarter ended  <input type="text">
+                                                                <div class="table-responsive my-4 col-md-10 mx-auto">
+                                                                    <table class="align-middle mb-0 table table-striped table-hover">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <th>
+                                                                                    Name of subsidiaries
+                                                                                </th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>
+                                                                                    Name of Joint Ventures
+                                                                                </th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <div class="col">
+                                                                                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>
+                                                                                    Name of Associates
+                                                                                </th>
+                                                                            </tr>
+                                                                        </tbody> 
+                                                                    </table>
+                                                                </div>
+                                                                Our audit of the financial statements for the periods
+                                                                referred to in paragraphs E(i) and E(iii) of this letter
+                                                                comprises such audit tests and procedures as deemed
+                                                                necessary for the purpose of expressing an opinion on
+                                                                such financial statements taken as a whole. For none of
+                                                                the other periods referred to in paragraph E we will
+                                                                perform audit tests for the purpose of expressing an
+                                                                opinion on individual balances of accounts or summaries
+                                                                of selected transactions such as those enumerated
+                                                                above and accordingly, we express no opinion thereon.
+                                                            </li>
+                                                        </ol>
+                                                    </li>
+                                                    <li>
+                                                        Consent Letters </br> </br>
+                                                        We will issue consent letters to act as an auditor and to permit
+                                                        the inclusion of our report in the offer document. </br> </br>
+                                                        In connection with the issuance of our consent, we will
+                                                        perform certain procedures as required by professional
+                                                        standards. These include, but are not limited to, the following: </br> </br>
+                                                        <ol type="a">
+                                                            <li>
+                                                                Reading the offer document; and
+                                                            </li>
+                                                            <li>
+                                                                Obtaining a representation letter from management (and
+                                                                other matters as appropriate)
+                                                            </li>
+                                                        </ol>
+                                                        Based on the results of our procedures, we will consider
+                                                        whether the Financial Information referred above and/or our
+                                                        auditor’s report needs to be modified in order to consent to
+                                                        the inclusion of our reports in the offer document.
+                                                    </li>
+                                                    <li>
+                                                        <em>
+                                                            Management's responsibilities and representations
+                                                        </em>
+                                                        <p>
+                                                            The financial information are the responsibility of the
+                                                            management of the Company, which is also responsible for establishing and maintaining effective internal control, for
+                                                            properly recording transactions in the accounting records, for
+                                                            safeguarding assets, for prevention and detection of fraud
+                                                            and error, for complying with accounting standards and for the
+                                                            overall fair presentation of the Financial Information.
+                                                            Management of the Company is also responsible for
+                                                            identifying and ensuring that the Company complies with the
+                                                            laws and regulations applicable to its activities.
+                                                        </p>
+                                                        <p>
+                                                            Management is responsible for adjusting the Financial
+                                                            Information to correct material misstatements and for
+                                                            affirming to us in its representation letter that the effects of
+                                                            any unadjusted differences identified by us during the work
+                                                            are immaterial, both individually and in the aggregate, to the
+                                                            Financial Information taken as a whole.
+                                                        </p>
+                                                        <p>
+                                                            As an integral part of our procedures and as required by
+                                                            auditing standards generally accepted in India, and the
+                                                            Guidance Note, we will request letters of representation from
+                                                            officers and other executives, including the chief executive,
+                                                            financial, and accounting officers, responsible for financial
+                                                            and accounting matters of the Company. This includes
+                                                            making specific inquiries of management about the
+                                                            representations contained in the Financial Information and the
+                                                            effectiveness of the internal control structure.
+                                                        </p>
+                                                        <p>
+                                                            The responses to those inquiries, written representations and
+                                                            the results of our examination tests comprise the evidential
+                                                            matter we intend to rely upon in forming an opinion on the
+                                                            Financial Information. Because of the importance of
+                                                            management's representations to effective examination and
+                                                            review, the Company agrees to release [Auditor’s Name],
+                                                            chartered accountants and its personnel from any liability and
+                                                            costs relating to our services under this letter attributable to
+                                                            any misrepresentations by management.
+                                                        </p>
+                                                        <p>
+                                                            In order to enable us to fulfil our responsibilities, you agree on
+                                                            request, to provide us with complete, accurate and timely
+                                                            information and to carry out any obligations ascribed to or
+                                                            undertaken by you or others under your control.
+                                                            Management’s failure to provide requisite information on a timely basis may cause us to delay our report, modify
+                                                        </p>
+                                                        <p>
+                                                            You agree that any commercial decisions that you make, are
+                                                            not within the scope of our duty of care and in taking such
+                                                            decisions you should take into account the restrictions on the
+                                                            scope of our work and other factors, commercial and
+                                                            otherwise, of which you and your other advisers are, or
+                                                            should be, aware from sources other than our work.
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        Other Terms 
+                                                        <ol type="a">
+                                                            <li>
+                                                                If you intend to publish or otherwise reproduce the
+                                                                Financial Information together with our report (or
+                                                                otherwise make reference to our firm) in a document
+                                                                other than that which contains other information, you
+                                                                agree to (i) provide us with a draft of the document to
+                                                                read, and (ii) obtain our approval for inclusion of our
+                                                                report, before it is printed and distributed.
+                                                            </li>
+                                                            <li>
+                                                                Under this arrangement, we have no responsibility to
+                                                                update our reports for events and circumstances
+                                                                occurring after the date of our report.
+                                                            </li>
+                                                            <li>
+                                                                The working papers prepared in conjunction with our
+                                                                examination are the property of our firm, constitute
+                                                                confidential information and will be retained by us in
+                                                                accordance with our firm's policies and procedures.
+                                                            </li>
+                                                            <li>
+                                                                We shall inform you separately on our scope of work as
+                                                                may be required for the interim period subsequent to
+                                                                March 31, 20XX.
+                                                            </li>
+                                                        </ol>
+                                                    </li>
+                                                    <li>
+                                                        <em>Fees and Billing arrangements</em>
+                                                        <ul>
+                                                            <li>
+                                                                Our fees for the engagement covered under this letter of
+                                                                engagement will be ___________________ [insert amount].
+                                                                We will also charge for any expenses incurred during the
+                                                                engagement and we will add applicable taxes to charges and
+                                                                expenses.
+                                                            </li>
+                                                            <li>
+                                                                Any fee estimate agreed with you is necessarily based on the
+                                                                assumption that the information required for our work is made available in accordance with agreed timetables, and that your
+                                                                key executives and personnel are available during the course
+                                                                of our work. If delays or other unanticipated problems which
+                                                                are beyond our control occur this may result in additional fees
+                                                                for which invoices will be raised.
+                                                            </li>
+                                                            <li>
+                                                                Should the scope of our work require any modification,
+                                                                including reporting on the financial statements or financial
+                                                                information for any broken/stub period subsequent to [insert
+                                                                period-end date], we will discuss the matter with you
+                                                                immediately and only proceed to incur additional fees with
+                                                                your prior approval.
+                                                            </li>
+                                                            <li>
+                                                                We will be entitled to submit invoices for services provided
+                                                                and expenses incurred on an interim basis as the work
+                                                                progresses. Invoices are payable upon presentation. We
+                                                                reserve the right, where fees have been invoiced and
+                                                                payment is outstanding to us, to exercise a lien in respect of
+                                                                those outstanding fees over any documents belonging to you
+                                                                which may be in our possession.
+                                                            </li>
+                                                            <li>
+                                                                Our billing is payable upon the presentation of our fee note.
+                                                                Our fees, expenses and applicable taxes are payable by the
+                                                                Company.
+                                                            </li>
+                                                            <li>
+                                                                We shall be grateful if you will acknowledge receipt of this
+                                                                letter by signing and returning to us the duplicate copy of this
+                                                                letter, which is enclosed. If the contents are not in accordance
+                                                                with your understanding of our agreement, we shall be
+                                                                pleased to receive your further observations and to give you
+                                                                any further information you require.
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ol>
+                                          </div>
+                                            <div class="text-right">
+                                                <p>
+                                                    For XYZ and Co.
+                                                </p>
+                                                <p>
+                                                    Chartered Accountants
+                                                </p>
+                                                <p>
+                                                    Firm’s Registration Number
+                                                </p>
+                                                <p>
+                                                    Signature
+                                                </p>
+                                                <p>
+                                                    [Name of the Member]
+                                                </p>
+                                                <p>
+                                                    Designation <sup>@</sup>
+                                                </p>
+                                                <p>
+                                                    Membership Number
+                                                </p>
+                                            </div>
+                                            <div class="inputset">
+                                                <div class="text-left">
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="companyName" class="form-label">Acknowledged on behalf of the Company by :</label>
+                                                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                    </div>
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="companyName" class="form-label">Title :</label>
+                                                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                    </div>
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="companyName" class="form-label">Date :</label>
+                                                        <input type="date" class="form-control" id="exampleFormControlInput1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="term">
+                                                <small>
+                                                    <sup>@</sup> Partner or proprietor, as the case may be.
+                                                </small>
+                                            </div>
+                                        </div>  
+                                    </div>   
+                                    <div class="card-footer footer-btn">
+                                        <a href="#Edit">Edit in Docs</a>
+                                        <a href="#Download">Download</a>
+                                        <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">See Format</a>
+                                    </div>                                        
+                                </div>                                   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script src="./dashboard-pack.js"></script>
+<script src="./dashboard.js"></script>
+<!-- ==========================JQuery================================ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script> 
+    // Required: JQUERY
+     (function ($) {
+ 
+     $.fn.select3 = function (options) {
+         var dataItems = [];
+         var selectorID = '#' + this.attr('id');
+ 
+         $(selectorID).find('option').each(function (index, element) {
+ 
+             if (element.text != '') {
+                 dataItems.push(element.text.trim());
+             }
+             else {
+                 dataItems.push(element.value.trim());
+             }
+ 
+         });
+ 
+         var opts = $.extend({}, $.fn.select3.defaults, options);
+ 
+         var idDiv = this.attr('id') + 'searchSelect3';
+         var idInput = this.attr('id') + 'searchSelect3_Input';
+         var idClose = this.attr('id') + 'searchSelect3_Times';
+         var idDown = this.attr('id') + 'searchSelect3_Caret_Down';
+         var idList = this.attr('id') + 'searchSelect3_List';
+         var idListLi = this.attr('id') + 'searchSelect3_List_LI';
+ 
+         var selectorDiv = '#' + this.attr('id') + 'searchSelect3';
+         var selectorInput = '#' + this.attr('id') + 'searchSelect3_Input';
+         var selectorClose = '#' + this.attr('id') + 'searchSelect3_Times';
+         var selectorDown = '#' + this.attr('id') + 'searchSelect3_Caret_Down';
+         var selectorList = '#' + this.attr('id') + 'searchSelect3_List';
+         var selectorListLi = '#' + this.attr('id') + 'searchSelect3_List_LI';
+ 
+         var buildELement = $('<div class="searchSelect3" id="' + idDiv + '" style="position:relative;"><input class="searchSelect3_Input" placeholder="' + opts.placeholder + '" value="' + opts.defaultvalue + '" id="' + idInput + '"><span class="fa fa-times searchSelect3_Times" id="' + idClose + '"></span><span class="fa fa-caret-down searchSelect3_Caret_Down" id="' + idDown + '"></span></div>');
+ 
+         if ($(selectorDiv).length > 0) {
+             $(selectorDiv).remove();
+         }
+ 
+         this.after(buildELement);
+ 
+         if (opts.width > 0) {
+             $(selectorInput).css('width', opts.width);
+             $(selectorDown).css('left', (opts.width - 20));
+             $(selectorClose).css('left', (opts.width - 40));
+         }
+ 
+ 
+         var cache = {};
+         var drew = false;
+         this.hide();
+ 
+ 
+ 
+         $(document).on('click', function (e) {
+             if ($(e.target).parent().is("li[id*='" + idListLi + "']") == false) {
+                 if ($(e.target).attr('id') != idInput && $(e.target).attr('id') != idDown) {
+                     $(selectorList).empty();
+                     $(selectorList).css('z-index', -1);
+                     $(selectorClose).hide();
+                 }
+             }
+ 
+             
+ 
+         });
+ 
+ 
+ 
+ 
+         var showList = function (query, valuee) {
+ 
+             if (query in cache) {
+                 results = cache[query];
+             } else {
+                 var results = $.grep(dataItems, function (item) {
+                     return item.search(RegExp(query, "i")) != -1;
+                 });
+ 
+                 cache[query] = results;
+             }
+ 
+             $(selectorList).css('z-index', opts.zIndex);
+ 
+ 
+             if (drew == false) {
+                 $(selectorInput).after('<ul id="' + idList + '" class="searchSelect3_List" style="z-index:' + opts.zIndex + '"></ul>');
+ 
+                 if (opts.width > 0) {
+ 
+                     $(selectorList).css('width', opts.width);
+ 
+                 }
+ 
+                 if (opts.widthList > 0)
+                 {
+                     $(selectorList).css('width', opts.widthList);
+                 }
+                 drew = true;
+ 
+                 $(selectorList).on("click", "li", function () {
+                     var nilai = $(this).text()
+                     $(selectorInput).val(nilai);
+                     $(selectorID).val(nilai);
+                     $(selectorList).empty();
+                     $(selectorClose).show();
+                     $(selectorList).css('z-index', -1);
+                     $(selectorID).change();
+                 });
+ 
+ 
+             }
+             else {
+                 $(selectorList).empty();
+             }
+ 
+             var counter = 0;
+             for (term in results) {
+                 counter++;
+                 $(selectorList).append("<li id=" + idListLi + counter + "><label>" + results[term] + "</label></li>");
+             }
+ 
+             
+ 
+         };
+ 
+ 
+ 
+         $(selectorInput).on('click', function (e) {
+             var query = $(this).val();
+ 
+             showList('', query);
+ 
+ 
+             $(selectorClose).hide();
+             if (query.length > 0) {
+                 $(selectorClose).show();
+             }
+ 
+         });
+ 
+         $(selectorInput).on('keyup', function (e) {
+             $(selectorList).empty();
+             var query = $(selectorInput).val();
+             showList(query, query);
+ 
+             $(selectorClose).hide();
+             if (query.length > 0) {
+                 $(selectorClose).show();
+             }
+ 
+             $(selectorID).change();
+         });
+ 
+         $(selectorInput).on('keydown', function (e) {
+             if (e.which == 9) {
+                 $(selectorList).empty();
+                 $(selectorList).css('z-index', -1);
+                 $(selectorClose).hide();
+             }
+         });
+ 
+         $(selectorDown).on('click', function (e) {
+             var query = $(this).val();
+             if ($(selectorList).find('li').length == 0) {
+                 showList('', query);
+             }
+             else {
+                 //$(selectorList).css('z-index', -1);
+                 $(selectorList).empty();
+                 $(selectorList).css('z-index', -1);
+             }
+ 
+             $(selectorClose).hide();
+             if (query.length > 0) {
+                 $(selectorClose).show();
+             }
+ 
+         });
+ 
+         $(selectorClose).on('click', function (e) {
+             $(selectorInput).val('');
+             $(selectorClose).hide();
+             $(selectorID).change();
+ 
+         });
+ 
+ 
+         return this;
+     };
+ 
+     $.fn.select3.defaults = {
+         placeholder: "",
+         zIndex: 1,
+         defaultvalue: "",
+         width: 0,
+         widthList: 0
+     };
+ 
+     }(jQuery));
+   
+     $(document).ready(function(e){
+ 
+     $('#selectBankList').select3({ width: 260, placeholder: 'Search Name or ID', zIndex: 100 });  
+ 
+     });
+</script>
+</body>
+</html>

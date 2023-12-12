@@ -1,0 +1,1018 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> Dashboard | CharteredONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/dashboardpack.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa-solid fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Romana I Khan
+                                    </div>
+                                    <div class="widget-subheading">
+                                       GST Analyst
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <div class="widget-content-left">
+                                        <div class="widget-content-left">
+                                            <a href="./profile.html"><img width="40" class="rounded-circle" src="../images/female_avatar_efig.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>        
+        <div class="ui-theme-settings">
+            <button type="button" id="TooltipDemo" class="btn-open-options btn">
+                <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+            </button>
+            <div class="theme-settings__inner">
+                <div class="scrollbar-container">
+                    <div class="theme-settings__options-wrapper">
+                        <h3 class="themeoptions-heading">Layout Options
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-header">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Header
+                                                </div>
+                                                <div class="widget-subheading">Makes the header top fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-sidebar">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Sidebar
+                                                </div>
+                                                <div class="widget-subheading">Makes the sidebar left fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-footer">
+                                                    <div class="switch-animate switch-off">
+                                                        <input type="checkbox" data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Footer
+                                                </div>
+                                                <div class="widget-subheading">Makes the app footer bottom fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>
+                                Header Options
+                            </div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-header-cs-class" data-class="bg-secondary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-header-cs-class" data-class="bg-success header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-header-cs-class" data-class="bg-info header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-header-cs-class" data-class="bg-warning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-header-cs-class" data-class="bg-danger header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-header-cs-class" data-class="bg-light header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-header-cs-class" data-class="bg-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-header-cs-class" data-class="bg-focus header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-header-cs-class" data-class="bg-alternate header-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-header-cs-class" data-class="bg-midnight-bloom header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-header-cs-class" data-class="bg-night-sky header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-header-cs-class" data-class="bg-slick-carbon header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-header-cs-class" data-class="bg-asteroid header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-header-cs-class" data-class="bg-royal header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-header-cs-class" data-class="bg-warm-flame header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-header-cs-class" data-class="bg-night-fade header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-header-cs-class" data-class="bg-sunny-morning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-header-cs-class" data-class="bg-tempting-azure header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-header-cs-class" data-class="bg-amy-crisp header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-header-cs-class" data-class="bg-heavy-rain header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-header-cs-class" data-class="bg-mean-fruit header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-header-cs-class" data-class="bg-malibu-beach header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-header-cs-class" data-class="bg-deep-blue header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-header-cs-class" data-class="bg-ripe-malin header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-header-cs-class" data-class="bg-arielle-smile header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-header-cs-class" data-class="bg-plum-plate header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-header-cs-class" data-class="bg-happy-fisher header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-header-cs-class" data-class="bg-happy-itmeo header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-header-cs-class" data-class="bg-mixed-hopes header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-header-cs-class" data-class="bg-strong-bliss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-header-cs-class" data-class="bg-grow-early header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-header-cs-class" data-class="bg-love-kiss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-header-cs-class" data-class="bg-premium-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-header-cs-class" data-class="bg-happy-green header-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Sidebar Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-sidebar-cs-class" data-class="bg-primary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-sidebar-cs-class" data-class="bg-secondary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-sidebar-cs-class" data-class="bg-success sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-sidebar-cs-class" data-class="bg-info sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-sidebar-cs-class" data-class="bg-warning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-sidebar-cs-class" data-class="bg-danger sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-sidebar-cs-class" data-class="bg-light sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-sidebar-cs-class" data-class="bg-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-sidebar-cs-class" data-class="bg-focus sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-sidebar-cs-class" data-class="bg-alternate sidebar-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class" data-class="bg-vicious-stance sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-sidebar-cs-class" data-class="bg-midnight-bloom sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-sidebar-cs-class" data-class="bg-night-sky sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-sidebar-cs-class" data-class="bg-slick-carbon sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-sidebar-cs-class" data-class="bg-asteroid sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-sidebar-cs-class" data-class="bg-royal sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-sidebar-cs-class" data-class="bg-warm-flame sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-sidebar-cs-class" data-class="bg-night-fade sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-sidebar-cs-class" data-class="bg-sunny-morning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-sidebar-cs-class" data-class="bg-tempting-azure sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-sidebar-cs-class" data-class="bg-amy-crisp sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-sidebar-cs-class" data-class="bg-heavy-rain sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-sidebar-cs-class" data-class="bg-mean-fruit sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-sidebar-cs-class" data-class="bg-malibu-beach sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-sidebar-cs-class" data-class="bg-deep-blue sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-sidebar-cs-class" data-class="bg-ripe-malin sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-sidebar-cs-class" data-class="bg-arielle-smile sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-sidebar-cs-class" data-class="bg-plum-plate sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-sidebar-cs-class" data-class="bg-happy-fisher sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-sidebar-cs-class" data-class="bg-happy-itmeo sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-sidebar-cs-class" data-class="bg-mixed-hopes sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-sidebar-cs-class" data-class="bg-strong-bliss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-sidebar-cs-class" data-class="bg-grow-early sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-sidebar-cs-class" data-class="bg-love-kiss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-sidebar-cs-class" data-class="bg-premium-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-sidebar-cs-class" data-class="bg-happy-green sidebar-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Main Content Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto active btn btn-focus btn-sm">Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Page Section Tabs
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div role="group" class="mt-2 btn-group">
+                                            <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="body-tabs-line">
+                                                Line
+                                            </button>
+                                            <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="body-tabs-shadow">
+                                                Shadow
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="app-main">
+                <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>    
+                    <div class="scrollbar-sidebar">
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu">
+                                <li class="mt-1 dashbtn">
+                                    <a href="./dashboard.html" class="mm-active">
+                                        <i class="metismenu-icon fa-solid fa-house"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Client Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-user fa-regular"></i>
+                                        Client
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="./create-client.html">
+                                                <i class="metismenu-icon"></i>
+                                                Add New Client
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="all-client.html">
+                                                <i class="metismenu-icon"></i>All Clients
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Service Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-users-gear"></i>
+                                        Services
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="./tax.html">
+                                                <i class="metismenu-icon"></i>
+                                                Tax
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./gst.html">
+                                                <i class="metismenu-icon"></i>GST
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./audit.html">
+                                                <i class="metismenu-icon"></i>Audit
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./compliences.html">
+                                                <i class="metismenu-icon"></i>Company Compliences
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Revunue</li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon fa-solid fa-dollar-sign"></i>
+                                        Revenue
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Audit</li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon fa-solid fa-magnifying-glass">
+                                        </i>Audit Report
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon fa-solid fa-magnifying-glass-plus">
+                                        </i>Create Report
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">PRO Version</li>
+                                <li>
+                                    <a href="#000">
+                                        <i class="metismenu-icon fa-regular fa-circle-check">    
+                                        </i>
+                                        Upgrade to PRO
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===================Content====================== -->
+                <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <!-- ================Profile ================-->   
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-header">
+                                        <span>Profile Info</span>
+                                        <div class="btn-actions-pane-right">
+                                           <!-- Right Item -->
+                                        </div>
+                                    </div>
+                                    <section>
+                                        <div class="container pt-4">      
+                                          <div class="row">
+                                            <div class="col-lg-4">
+                                              <div class="card mb-4">
+                                                <div class="card-body text-center">
+                                                  <img src="../images/c-logo.avif" alt="avatar"
+                                                    class="rounded-circle img-fluid" style="width: 150px;">
+                                                  <h5 class="my-3">Sociallabs Enterprise LTD</h5>Sociallabs Enterprise LTD
+                                                  <p class="text-muted mb-3">Chartered Accountant &amp GST Analyst</p>
+                                                  <div class="profile-btn mb-2">
+                                                    <a href="#" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#generateKey">Generate Master Key</a>
+                                                    <a href="#" type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#editProfile"><i class="fa-regular fa-pen-to-square"></i></a>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="col-lg-8">
+                                              <div class="card mb-4">
+                                                <div class="card-body">
+                                                  <div class="row">
+                                                    <div class="col-sm-3">
+                                                      <p class="mb-0">Company Name</p>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                      <p class="text-muted mb-0">Sociallabs Enterprise LTD</p>
+                                                    </div>
+                                                  </div>
+                                                  <hr>
+                                                  <div class="row">
+                                                    <div class="col-sm-3">
+                                                      <p class="mb-0">Email</p>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                      <p class="text-muted mb-0">example@example.com</p>
+                                                    </div>
+                                                  </div>
+                                                  <hr>
+                                                  <div class="row">
+                                                    <div class="col-sm-3">
+                                                      <p class="mb-0">Phone</p>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                      <p class="text-muted mb-0">(097) 234-5678</p>
+                                                    </div>
+                                                  </div>
+                                                  <hr>
+                                                  <div class="row">
+                                                    <div class="col-sm-3">
+                                                      <p class="mb-0">Mobile</p>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                      <p class="text-muted mb-0">(098) 765-4321</p>
+                                                    </div>
+                                                  </div>
+                                                  <hr>
+                                                  <div class="row">
+                                                    <div class="col-sm-3">
+                                                      <p class="mb-0">Address</p>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                      <p class="text-muted mb-0">Bay Area, San Francisco, CA</p>
+                                                    </div>
+                                                  </div>
+                                                  <hr>
+                                                  <div class="row d-flex align-items-center">
+                                                    <div class="col-sm-3">
+                                                      <p class="mb-0">Profile Status</p>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                      <p class="text-muted mb-0 public-profile d-none">Public<i class="fa-solid fa-globe"></i></p><p class="text-muted mb-0 profile-private">Private<i class="fa-solid fa-lock"></i></p>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <!-- ========================== -->
+                                          <div class="container">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                  <div class="card mb-4 mb-lg-0">
+                                                    <div class="card-body p-0">
+                                                      <ul class="list-group list-group-flush rounded-3">
+                                                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                                          <i class="fas fa-globe fa-lg text-warning"></i>
+                                                          <p class="mb-0">https://charteredOne.com/username</p>
+                                                        </li>
+                                                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                                            <i class="fa-brands fa-whatsapp" style="color: #25d366;"></i>
+                                                          <p class="mb-0">+91 xxxxxxx82</p>
+                                                        </li>
+                                                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                                            <i class="fa-brands fa-x-twitter" style="color: #000000;"></i>
+                                                          <p class="mb-0">@twitter</p>
+                                                        </li>
+                                                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                                          <i class="fab fa-instagram fa-lg" style="color: #ac2bac;"></i>
+                                                          <p class="mb-0">@instagram</p>
+                                                        </li>
+                                                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                                          <i class="fab fa-facebook-f fa-lg" style="color: #3b5998;"></i>
+                                                          <p class="mb-0">@facebook</p>
+                                                        </li>
+                                                      </ul>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                  <div class="card mb-4">
+                                                    <div class="card-body">
+                                                      <div class="row">
+                                                        <div class="d-md-flex align-items-center">
+                                                            <div class="me-auto mb-2 mb-md-0">
+                                                                <p class="mb-0 bank-info">Bank Details<i class="fa-solid fa-building-columns"></i></p>
+                                                            </div>
+                                                            <div class="ms-auto">
+                                                                <a href="#" class="edit-bank" data-bs-toggle="modal" data-bs-target="#editBank">Edit Details</a>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                      <hr>
+                                                      <div class="row">
+                                                        <div class="col-sm-3">
+                                                          <p class="mb-0">Bank Name</p>
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                          <p class="text-muted mb-0">Standard Chartered Bank</p>
+                                                        </div>
+                                                      </div>
+                                                      <hr>
+                                                      <div class="row">
+                                                        <div class="col-sm-3">
+                                                          <p class="mb-0">Bank Branch</p>
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                          <p class="text-muted mb-0">MUMBAI CST</p>
+                                                        </div>
+                                                      </div>
+                                                      <hr>
+                                                      <div class="row">
+                                                        <div class="col-sm-3">
+                                                          <p class="mb-0">Account Holder Name</p>
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                          <p class="text-muted mb-0">Romana I Khan</p>
+                                                        </div>
+                                                      </div>
+                                                      <hr>
+                                                      <div class="row">
+                                                        <div class="col-sm-3">
+                                                          <p class="mb-0">Bank IFSC</p>
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                          <p class="text-muted mb-0">STDMUMBAI4454</p>
+                                                        </div>
+                                                      </div>
+                                                      <hr>
+                                                      <div class="row">
+                                                        <div class="col-sm-3">
+                                                          <p class="mb-0">IBAN Number</p>
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                          <p class="text-muted mb-0">765977</p>
+                                                        </div>
+                                                      </div>
+                                                      <hr>
+                                                      <div class="row">
+                                                        <div class="col-sm-3">
+                                                          <p class="mb-0">Swift Code</p>
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                          <p class="text-muted mb-0">P44H</p>
+                                                        </div>
+                                                      </div>
+                                                      <hr>
+                                                      <div class="row">
+                                                        <div class="col-sm-3">
+                                                          <p class="mb-0">Micr Code</p>
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                          <p class="text-muted mb-0">KHDHD67</p>
+                                                        </div>
+                                                      </div>
+                                                      <hr>
+                                                      <div class="row">
+                                                        <div class="col-sm-3">
+                                                          <p class="mb-0">Pan Card Number</p>
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                          <p class="text-muted mb-0">KHDHD67</p>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                    </section>
+                                    <div class="row upload-card">
+                                        <div class="col-md-12">
+                                            <div class="main-card mb-3 card">
+                                                <div class="card-header">
+                                                    <span>Registration Details</span>
+                                                </div>
+                                                <div class="registration-details">
+                                                    <form action="#someWhere"></form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row upload-card">
+                                        <div class="col-md-12">
+                                            <div class="main-card mb-3 card">
+                                                <div class="card-header">
+                                                    <span>Upload Company Logo</span>
+                                                </div>
+                                                <form class="form-container" enctype='multipart/form-data'>
+                                                    <div class="upload-files-container">
+                                                        <div class="drag-file-area">
+                                                            <span class="fa-solid fa-cloud-arrow-up upload-icon"></span>
+                                                            <h3 class="dynamic-message"> Drag & drop any file here </h3>
+                                                            <label class="label"> or <span class="browse-files"> <input type="file" class="default-file-input"/> <span class="browse-files-text">browse file</span> <span>from device</span> </span> </label>
+                                                        </div>
+                                                        <span class="cannot-upload-message"> <span class="material-icons-outlined">error</span> Please select a file first <span class="material-icons-outlined cancel-alert-button">cancel</span> </span>
+                                                        <div class="file-block">
+                                                            <div class="file-info"> <span class="material-icons-outlined file-icon">description</span> <span class="file-name"> </span> | <span class="file-size">  </span> </div>
+                                                            <span class="material-icons remove-file-icon">delete</span>
+                                                            <div class="progress-bar"> </div>
+                                                        </div>
+                                                        <button type="button" class="upload-button"> Upload </button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--====================Upload Company Sign============================  -->
+                                    <div class="row upload-card">
+                                        <div class="col-md-12">
+                                            <div class="main-card mb-3 card">
+                                                <div class="card-header">
+                                                    <span>Upload Company Signature</span>
+                                                </div>
+                                                <form class="form-container" enctype='multipart/form-data'>
+                                                    <div class="upload-files-container">
+                                                        <div class="drag-file-area">
+                                                            <span class="fa-solid fa-cloud-arrow-up upload-icon"></span>
+                                                            <h3 class="dynamic-message"> Drag & drop any file here </h3>
+                                                            <label class="label"> or <span class="browse-files"> <input type="file" class="default-file-input"/> <span class="browse-files-text">browse file</span> <span>from device</span> </span> </label>
+                                                        </div>
+                                                        <span class="cannot-upload-message"> <span class="material-icons-outlined">error</span> Please select a file first <span class="material-icons-outlined cancel-alert-button">cancel</span> </span>
+                                                        <div class="file-block">
+                                                            <div class="file-info"> <span class="material-icons-outlined file-icon">description</span> <span class="file-name"> </span> | <span class="file-size">  </span> </div>
+                                                            <span class="material-icons remove-file-icon">delete</span>
+                                                            <div class="progress-bar"> </div>
+                                                        </div>
+                                                        <button type="button" class="upload-button"> Upload </button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!-- ==============Generate Master Key modal================== -->
+    <div class="modal fade" id="generateKey" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content my-4">
+                <div class="modal-body">
+                    <h2 id="staticBackdropLabel" class="text-center">Action Alert !</h2>
+                    <div class="text-center">
+                        <img src="../images/master-key.svg" alt="">
+                    </div>
+                    <h3>Your are about to create master key</h3>
+                    <ul>
+                        <li><p>Maste key is required in order to edit client data.</p></li>
+                        <li><p>Master Key will be send to your registered <span>mobile Number</span> and <span>Email Address</span></p></li>
+                        <li><p>Previous Existing Master Key will be revoked after creation of new Master Key.</p></li>
+                    </ul>
+                </div>
+                <div class="btns">
+                    <a href="#" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</a>
+                    <a href="#" type="button" class="btn btn-primary masterkey">Generate Key<i class="fa-solid fa-key"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==============Enter Bank Details================== -->
+    <div class="modal fade" id="editBank" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            
+            <div class="modal-content my-4">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Enter Bank Details</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                <div class="modal-body">
+                <form action="#someWhere">
+                    <div class="mb-3">
+                        <label for="exampleInputtext" class="form-label">Bank Name</label>
+                        <input type="text" class="form-control" id="exampleInputText" aria-describedby="textHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputtext" class="form-label">Bank Branch</label>
+                        <input type="text" class="form-control" id="exampleInputText" aria-describedby="textHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputtext" class="form-label">Account Holder Name</label>
+                        <input type="text" class="form-control" id="exampleInputText" aria-describedby="textHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputtext" class="form-label">Bank IFSC Code</label>
+                        <input type="text" class="form-control" id="exampleInputText" aria-describedby="textHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputtext" class="form-label">IBAN Number</label>
+                        <input type="text" class="form-control" id="exampleInputText" aria-describedby="textHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputtext" class="form-label">Swift Code</label>
+                        <input type="text" class="form-control" id="exampleInputText" aria-describedby="textHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputtext" class="form-label">MICR Code</label>
+                        <input type="text" class="form-control" id="exampleInputText" aria-describedby="textHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputtext" class="form-label">Pan Card Number</label>
+                        <input type="text" class="form-control" id="exampleInputText" aria-describedby="textHelp">
+                    </div>
+                    <div class="btns d-flex justify-content-space-around">
+                        <a href="#" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</a>
+                        <a href="#" type="button" class="btn btn-primary save">Save</a>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==============Edit profile modal================== -->
+    <div class="modal fade" id="editProfile" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            
+            <div class="modal-content my-4">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Edit Profile</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                <div class="modal-body">
+                <form action="#someWhere">
+                    <div class="mb-3">
+                        <div>
+                            <label for="inputCity" class="form-label">Profile Status</label>
+                            <select id="inputCity" class="form-select">
+                                <option selected>Public(Recommended)</option>
+                                <option>Private</option>
+                            </select>
+                        </div>
+                        <p class="profile-msg">Keeping your profile public will enhance professional visibility and builds trust within the industry. It also attracts potential clients and networking opportunities.</p>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputtext" class="form-label">Company Name</label>
+                        <input type="text" class="form-control" id="exampleInputText" aria-describedby="textHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputCity" class="form-label">Company Type</label>
+                        <select id="inputCity" class="form-select">
+                            <option selected>Private Limited</option>
+                            <option>Corporation</option>
+                            <option>Joint Stock</option>
+                            <option>Small Business</option>
+                            <option>subsidiary</option>
+                            <option>General Partnership</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputtext" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="exampleInputText" aria-describedby="textHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputtext" class="form-label">Phone Number</label>
+                        <input type="text" class="form-control" id="exampleInputText" aria-describedby="textHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Your Address</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputcountry" class="form-label">Country</label>
+                        <select id="inputcountry" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputState" class="form-label">State</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputCity" class="form-label">City</label>
+                        <select id="inputCity" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputZip" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="inputZip">
+                      </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Website</label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1">https://</span>
+                            <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Instagram</label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Twitter</label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Facebook</label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div>
+                        <p>You may leave input fields empty.</p>
+                    </div>
+                    <div class="btns d-flex justify-content-space-around">
+                        <a href="#" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</a>
+                        <a href="#" type="button" class="btn btn-primary save">Save</a>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/dashboard-pack.js"></script>
+<script src="../js/dashboard.js"></script>
+<!-- ==========================JQuery================================ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

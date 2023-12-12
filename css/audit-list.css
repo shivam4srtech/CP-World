@@ -1,0 +1,70 @@
+body a{
+  text-decoration: none;
+  font-weight: 500;
+}
+.audit-list ol li{
+    margin-bottom: .5rem;
+    list-style: none;
+}    
+.audit-list ol{
+    padding: 0;
+    margin: 0
+}
+.audit-list ol li a{
+   display: inline-block;
+   padding: .5rem;
+   font-weight: 500;
+   color: #5676ff;
+   letter-spacing: .5px;
+}
+.audit-list ol {
+    counter-reset: cupcake;
+  }
+ .audit-list  ol li {
+    counter-increment: cupcake;
+  }
+  .audit-list ol li:before {
+    content: counters(cupcake, '.') ') ';
+    color: #000;
+    font-weight: 600;
+  }
+  /* ========================= */
+  .doc-box{
+    background-color: #0000001d;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+ }
+ .doc-box img{
+  max-width: 100%;
+  padding: 1rem .5rem;
+  display: block;
+  margin: auto;
+  object-fit: contain;
+  width: 50%;
+}
+.doc-box .title{
+  display: block;
+  margin: auto;
+  object-fit: contain;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  color: #5676ff;
+  letter-spacing: .5px;
+  padding-bottom: 1.2rem;
+  padding-left: .4rem;
+  padding-right: .4rem;
+  min-height: 4rem;
+  font-size: .9rem;
+}
+@media(max-width:600px){
+  .doc-box .title{
+    font-size: .7rem;
+  }
+}
+h4{
+  font-weight: 600;
+  color: #000;
+  margin: 1.6rem 0;
+  font-size: 1.65rem;
+}

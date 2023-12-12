@@ -1,0 +1,237 @@
+body a{
+    text-decoration: none;
+    color: #3f6ad8;
+}
+body a:hover{
+    text-decoration: none;
+    color: #3f6ad8;
+}
+.header-links{
+    display: flex;
+    justify-content: space-between;
+}
+.steps{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@media(max-width:768px){
+   .steps{
+    display: block;
+   }
+   .steps .count{
+   margin-bottom: 1rem;
+}
+}
+.steps .count{
+    border-radius: 50%;
+    padding: .2rem;
+    height: 2.2rem;
+    width: 2.2rem;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: .5rem;
+    font-weight: 600;
+    color: #3f6ad8;
+    border: 1px solid #3f6ad8;
+}
+.steps .selected{
+    border: 1px solid #26ace3;
+    background-color: #26ace3;
+    color: #fff;
+}
+.bookdata{
+    border: 1px solid #fff;
+    border-radius: 0;
+}
+.bookdata a{
+    padding: .4rem 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: .5px;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+.bookdata .selected{
+    background-color: #26ace3;
+    color: #fff;
+}
+.toggle-btn{
+    background-color: #eaeaea;
+}
+.bookdata a:nth-of-type(1){
+    border-right: 1px solid #FFF;
+}
+.table-responsive table tr{
+    border: 1px solid #23232329;
+}
+.table-responsive table th{
+    border: 1px solid #23232329;
+}
+.table-responsive table td{
+    border: 1px solid #23232329;
+}
+.table-responsive table th{
+    vertical-align: top;
+}
+.custome-accordion button{
+   border-radius: 0px !important;
+}
+.custome-accordion{
+    border-radius: 0 !important;
+}
+.custome-accordion button:focus{
+   outline: none !important;
+}
+.custome-accordion button:active{
+    outline: none !important;
+ }
+ .accordion-button{
+    border: none !important;
+    font-weight: 600;
+}
+.accordion-button strong{
+    margin-right: .5rem;
+    font-size: 1.1rem;
+}
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-item .accordion-button.collapsed{
+    background-color: #eaeaea;
+}
+
+.download-btn a{
+    padding: .5rem 1rem;
+    letter-spacing: .5px;
+    background-color: #26ace3;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: .5rem;
+}
+.download-btn a:hover{
+    color: #fff;
+}
+@media(max-width:768px){
+    .download-btn {
+        margin-top: 1rem;
+        margin-bottom: .5rem;
+    }
+}
+/* ==========================modal========================= */
+.custome-btn-group a {
+    border: 1px solid #fff;
+    padding: .4rem 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: .5px;
+    background-color: none;
+    border: 1px solid #999;
+}
+.custome-btn-group .selected {
+    background-color: #26ace3;
+    color: #FFF;
+}
+/* ============================Import Book data===================== */
+#importBookData p{
+    color: #000;
+    font-weight: 500;
+    letter-spacing: .5px;
+    font-size: 1rem;
+}
+
+/* =========================== Add and Remove row from the table====================== */
+._table :is(th, td) {
+    border: 1px solid #0002;
+    padding: 8px 10px;
+}
+.success {
+    background-color: #24b96f !important;
+}
+
+.warning {
+    background-color: #ebba33 !important;
+}
+
+.primary {
+    background-color: #259dff !important;
+}
+
+.secondery {
+    background-color: #00bcd4 !important;
+}
+
+.danger {
+    background-color: #ff5722 !important;
+}
+
+.action_container {
+    display: inline-flex;
+}
+
+.action_container>* {
+    border: none;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 14px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.action_container>*+* {
+    border-left: 1px solid #fff5;
+}
+
+.action_container>*:hover {
+    filter: hue-rotate(-20deg) brightness(0.97);
+    transform: scale(1.05);
+    border-color: transparent;
+    box-shadow: 0 2px 10px #0004;
+    border-radius: 2px;
+}
+
+.action_container>*:active {
+    transition: unset;
+    transform: scale(.95);
+}
+/* ========================== */
+.radio-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.radio-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.radio-group label{
+    font-weight: 500;
+    font-size: .8rem;
+    text-transform: capitalize;
+}
+.radio-group .form-check{
+    margin-right: .5rem;
+}
+@media(max-width:992px){
+    .radio-links{
+        flex-direction: column;
+    }
+    .radio-group{
+        margin-top: .2rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+.flex-accordian-btn{
+    display: flex;
+    justify-content: space-between;
+}
+.accordion-body {
+    padding: 0;
+}

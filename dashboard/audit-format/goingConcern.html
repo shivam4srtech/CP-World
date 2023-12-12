@@ -1,0 +1,1682 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> Dashboard | CharteredONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./style/dashboardpack.css">
+    <link rel="stylesheet" href="./style/dashboard.css">
+    <link rel="stylesheet" href="./style/bankaudit.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa-solid fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Romana I Khan
+                                    </div>
+                                    <div class="widget-subheading">
+                                       GST Analyst
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <div class="widget-content-left">
+                                        <div class="widget-content-left">
+                                            <a href="./profile.html"><img width="40" class="rounded-circle" src="../images/female_avatar_efig.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>        
+        <div class="ui-theme-settings">
+            <button type="button" id="TooltipDemo" class="btn-open-options btn">
+                <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+            </button>
+            <div class="theme-settings__inner">
+                <div class="scrollbar-container">
+                    <div class="theme-settings__options-wrapper">
+                        <h3 class="themeoptions-heading">Layout Options
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-header">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Header
+                                                </div>
+                                                <div class="widget-subheading">Makes the header top fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-sidebar">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Sidebar
+                                                </div>
+                                                <div class="widget-subheading">Makes the sidebar left fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-footer">
+                                                    <div class="switch-animate switch-off">
+                                                        <input type="checkbox" data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Footer
+                                                </div>
+                                                <div class="widget-subheading">Makes the app footer bottom fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>
+                                Header Options
+                            </div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-header-cs-class" data-class="bg-secondary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-header-cs-class" data-class="bg-success header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-header-cs-class" data-class="bg-info header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-header-cs-class" data-class="bg-warning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-header-cs-class" data-class="bg-danger header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-header-cs-class" data-class="bg-light header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-header-cs-class" data-class="bg-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-header-cs-class" data-class="bg-focus header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-header-cs-class" data-class="bg-alternate header-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-header-cs-class" data-class="bg-midnight-bloom header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-header-cs-class" data-class="bg-night-sky header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-header-cs-class" data-class="bg-slick-carbon header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-header-cs-class" data-class="bg-asteroid header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-header-cs-class" data-class="bg-royal header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-header-cs-class" data-class="bg-warm-flame header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-header-cs-class" data-class="bg-night-fade header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-header-cs-class" data-class="bg-sunny-morning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-header-cs-class" data-class="bg-tempting-azure header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-header-cs-class" data-class="bg-amy-crisp header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-header-cs-class" data-class="bg-heavy-rain header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-header-cs-class" data-class="bg-mean-fruit header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-header-cs-class" data-class="bg-malibu-beach header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-header-cs-class" data-class="bg-deep-blue header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-header-cs-class" data-class="bg-ripe-malin header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-header-cs-class" data-class="bg-arielle-smile header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-header-cs-class" data-class="bg-plum-plate header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-header-cs-class" data-class="bg-happy-fisher header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-header-cs-class" data-class="bg-happy-itmeo header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-header-cs-class" data-class="bg-mixed-hopes header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-header-cs-class" data-class="bg-strong-bliss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-header-cs-class" data-class="bg-grow-early header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-header-cs-class" data-class="bg-love-kiss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-header-cs-class" data-class="bg-premium-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-header-cs-class" data-class="bg-happy-green header-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Sidebar Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-sidebar-cs-class" data-class="bg-primary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-sidebar-cs-class" data-class="bg-secondary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-sidebar-cs-class" data-class="bg-success sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-sidebar-cs-class" data-class="bg-info sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-sidebar-cs-class" data-class="bg-warning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-sidebar-cs-class" data-class="bg-danger sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-sidebar-cs-class" data-class="bg-light sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-sidebar-cs-class" data-class="bg-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-sidebar-cs-class" data-class="bg-focus sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-sidebar-cs-class" data-class="bg-alternate sidebar-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class" data-class="bg-vicious-stance sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-sidebar-cs-class" data-class="bg-midnight-bloom sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-sidebar-cs-class" data-class="bg-night-sky sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-sidebar-cs-class" data-class="bg-slick-carbon sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-sidebar-cs-class" data-class="bg-asteroid sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-sidebar-cs-class" data-class="bg-royal sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-sidebar-cs-class" data-class="bg-warm-flame sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-sidebar-cs-class" data-class="bg-night-fade sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-sidebar-cs-class" data-class="bg-sunny-morning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-sidebar-cs-class" data-class="bg-tempting-azure sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-sidebar-cs-class" data-class="bg-amy-crisp sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-sidebar-cs-class" data-class="bg-heavy-rain sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-sidebar-cs-class" data-class="bg-mean-fruit sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-sidebar-cs-class" data-class="bg-malibu-beach sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-sidebar-cs-class" data-class="bg-deep-blue sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-sidebar-cs-class" data-class="bg-ripe-malin sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-sidebar-cs-class" data-class="bg-arielle-smile sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-sidebar-cs-class" data-class="bg-plum-plate sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-sidebar-cs-class" data-class="bg-happy-fisher sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-sidebar-cs-class" data-class="bg-happy-itmeo sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-sidebar-cs-class" data-class="bg-mixed-hopes sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-sidebar-cs-class" data-class="bg-strong-bliss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-sidebar-cs-class" data-class="bg-grow-early sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-sidebar-cs-class" data-class="bg-love-kiss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-sidebar-cs-class" data-class="bg-premium-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-sidebar-cs-class" data-class="bg-happy-green sidebar-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Main Content Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto active btn btn-focus btn-sm">Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Page Section Tabs
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div role="group" class="mt-2 btn-group">
+                                            <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="body-tabs-line">
+                                                Line
+                                            </button>
+                                            <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="body-tabs-shadow">
+                                                Shadow
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="app-main">
+                <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>    
+                    <div class="scrollbar-sidebar">
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu">
+                                <li class="mt-1 dashbtn">
+                                    <a href="../dashboard.html" class="mm-active">
+                                        <i class="metismenu-icon fa-solid fa-house"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Client Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-user fa-regular"></i>
+                                        Client
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../create-client.html">
+                                                <i class="metismenu-icon"></i>
+                                                Add New Client
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../all-client.html">
+                                                <i class="metismenu-icon"></i>All Clients
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Service Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-users-gear"></i>
+                                        Services
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../tax.html">
+                                                <i class="metismenu-icon"></i>
+                                                Tax
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../gst.html">
+                                                <i class="metismenu-icon"></i>GST
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../audit.html">
+                                                <i class="metismenu-icon"></i>Audit
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../compliences.html">
+                                                <i class="metismenu-icon"></i>Company Compliences
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Audits &amp Reports</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-magnifying-glass"></i>
+                                        Audit
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../company-audit.html">
+                                                <i class="metismenu-icon"></i>
+                                                company
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./gst.html">
+                                                <i class="metismenu-icon"></i>LLP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./audit.html">
+                                                <i class="metismenu-icon"></i>Non Company Entity
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>NPO
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>Banks
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Community</li>
+                                <li>
+                                    <a href="../community.html">
+                                        <i class="metismenu-icon fa-solid fa-solid fa-user">
+                                        </i>My Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../message.html">
+                                        <i class="metismenu-icon fa-solid fa-regular fa-message">
+                                        </i>Chats
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Revunue</li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon fa-solid fa-dollar-sign"></i>
+                                        Revenue
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">PRO Version</li>
+                                <li>
+                                    <a href="#000">
+                                        <i class="metismenu-icon fa-regular fa-circle-check">    
+                                        </i>
+                                        Upgrade to PRO
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===================Content====================== -->
+                <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <!-- ================Pay Taxes ================-->   
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-header">
+                                        <span>Going Concern Checklist</span>
+                                        <div class="btn-actions-pane-right">
+                                            <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">Click here to see format</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div>
+                                            <h2 class="audit-title p-0 text-center">
+                                                Template for Checklists for Evaluating
+                                                Management’s Use of Going Concern
+                                                Basis of Accounting
+                                            </h2>
+                                        </div>
+                                    </div>    
+                                    <div class="card-body">
+                                        <div class="bankaudit">
+                                            <p>
+                                                An entity’s continuance as a going concern for the foreseeable
+                                                future is assumed in the preparation of financial statements in the
+                                                absence of significant information to the contrary. Accordingly,
+                                                assets and liabilities are recorded on the basis that the entity will
+                                                be able to realize its assets and discharge its liabilities in the
+                                                normal course of business. If this assumption is unjustified, the
+                                                amounts and classification of assets and liabilities in the financial
+                                                statements may need to be adjusted. A detailed analysis for
+                                                testing of related indicators regarding uncertainty of going concern
+                                                consideration is briefly enumerated in the below checklist:
+                                            </p>
+                                            <h5>
+                                                Going-Concern Consideration Program
+                                            </h5>
+                                            <div class="table-responsive my-4">
+                                                <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Particulars</th>
+                                                            <th>
+                                                                Going
+                                                                concern indicator present (Yes/No/Not Applicable and References, if any)
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <h5>
+                                                                    A Going Concern Considerations
+                                                                </h5>
+                                                            </td>
+                                                            <td>
+                
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>
+                                                                    Consider whether there is a risk that the
+                                                                    entity will not continue as a going concern for
+                                                                    the foreseeable future:
+                                                                </p>
+                                                                <h5>Consider Financial Indications</h5>
+                                                                <ul>
+                                                                    <li>
+                                                                        Recurring operating losses.
+                                                                    </li>
+                                                                    <li>
+                                                                        Negative Net Worth.
+                                                                    </li>
+                                                                    <li>
+                                                                        Working capital deficiencies.
+                                                                    </li>
+                                                                    <li>
+                                                                        Continuing negative cash flows from
+                                                                        business activities.
+                                                                    </li>
+                                                                    <li>
+                                                                        Excessive reliance on short-term
+                                                                        borrowings to finance long-term assets.
+                                                                    </li>
+                                                                    <li>
+                                                                        Adverse key financial ratios.
+                                                                    </li>
+                                                                    <li>
+                                                                        Inability to pay creditors on due dates.
+                                                                    </li>
+                                                                    <li>
+                                                                        Default on loans or similar agreements.
+                                                                    </li>
+                                                                    <li>
+                                                                        Restrictions on usual trade terms.
+                                                                    </li>
+                                                                    <li>
+                                                                        Restructuring of debt.
+                                                                    </li>
+                                                                    <li>
+                                                                        Entered into any arrangement with
+                                                                        creditors for reduction of payment.
+                                                                    </li>
+                                                                    <li>
+                                                                        Arrears or discontinuance of dividends.
+                                                                    </li>
+                                                                    <li>
+                                                                        Excessive or obsolete stock.
+                                                                    </li>
+                                                                    <li>
+                                                                        Unable to obtain finance for new product
+                                                                        development or essential investment.
+                                                                    </li>
+                                                                    <li>
+                                                                        Need to seek new sources or methods of
+                                                                        financing, or fixed-term borrowings
+                                                                        approaching maturity without realistic
+                                                                        prospects of renewal or repayment.
+                                                                    </li>
+                                                                    <li>
+                                                                        Need to dispose of substantial assets.
+                                                                    </li>
+                                                                    <li>
+                                                                        Application filed against Corporate Debtor
+                                                                        in NCLT under IBC 2016.
+                                                                    </li>
+                                                                    <li>
+                                                                        Sick entity under any statutory definition.
+                                                                    </li>
+                                                                </ul>
+                                                                <h5>Consider Operating Indications</h5>
+                                                                <ul>
+                                                                    <li>
+                                                                        Loss of key management or staff.
+                                                                    </li>
+                                                                    <li>
+                                                                        Work stoppages or other labor difficulties.
+                                                                    </li>
+                                                                    <li>
+                                                                        Substantial dependence on the success of
+                                                                        a particular project or on a particular
+                                                                        asset.
+                                                                    </li>
+                                                                    <li>
+                                                                        Management intentions to liquidate the
+                                                                        entity or cease operations.
+                                                                    </li>
+                                                                    <li>
+                                                                        Emergence of a highly successful
+                                                                        competitor.
+                                                                    </li>
+                                                                    <li>
+                                                                        Excessive reliance on the success of a
+                                                                        new product.
+                                                                    </li>
+                                                                    <li>
+                                                                        Uneconomic long-term commitments.
+                                                                    </li>
+                                                                    <li>
+                                                                        Loss of a major market or principal
+                                                                        supplier.
+                                                                    </li>
+                                                                    <li>
+                                                                        Loss of a key franchise, license, or patent.
+                                                                    </li>
+                                                                </ul>
+                                                                <h5>Consider Other Indications</h5> 
+                                                                <ul>
+                                                                    <li>
+                                                                        Noncompliance with capital or other
+                                                                        statutory requirements.
+                                                                    </li>
+                                                                    <li>
+                                                                        Pending legal proceedings or similar
+                                                                        matters that might jeopardize an entity’s
+                                                                        ability to operate.
+                                                                    </li>
+                                                                    <li>
+                                                                        Changes in or establishment of new
+                                                                        legislation or government policy.
+                                                                    </li>
+                                                                    <li>
+                                                                        Technical developments that render a key
+                                                                        product obsolete.
+                                                                    </li>
+                                                                </ul>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <h5>
+                                                                    B: Consideration of Management’s Assessment
+                                                                </h5>
+                                                            </td>
+                                                            <td>
+                                                                
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>
+                                                                    <small class="bullet">1.</small>
+                                                                    Evaluate management’s assessment of the
+                                                                    entity’s ability to continue as a going
+                                                                    concern. (The auditor should consider the
+                                                                    same period as that used by management in
+                                                                    making its assessment under the applicable
+                                                                    financial reporting framework. If
+                                                                    management’s assessment of the entity’s
+                                                                    ability to continue as a going concern covers
+                                                                    less than twelve months from the balance
+                                                                    sheet date, the auditor should request
+                                                                    management to extend its assessment
+                                                                    period to twelve months from the balance
+                                                                    sheet date.)
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>
+                                                                    <small class="bullet">2.</small>
+                                                                    Inquire of management as to its knowledge
+                                                                    of events or conditions and related business
+                                                                    risks beyond the period of assessment used
+                                                                    by management that may cast significant
+                                                                    doubt on the entity’s ability to continue as a
+                                                                    going concern.
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>
+                                                                    <small class="bullet">3.</small>
+                                                                    Evaluate the information obtained above in
+                                                                    conjunction with other information obtained
+                                                                    throughout the audit that may impact
+                                                                    auditor’s assessment of the appropriateness
+                                                                    of the management’s use of the going
+                                                                    concern basis of accounting.
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <h5>
+                                                                   C: Consideration of Management’s Plans
+                                                                </h5>
+                                                            </td>
+                                                            <td>
+                                                                
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>
+                                                                    <small class="bullet">1.</small>
+                                                                    If, after considering the identified conditions
+                                                                    and events in the aggregate, the auditor
+                                                                    believes that continuance as a going concern
+                                                                    may be questionable, he/she should consider
+                                                                    management’s plans for dealing with the
+                                                                    adverse effects of the identified conditions
+                                                                    and events and assess the likelihood of
+                                                                    effective implementation thereof.
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>
+                                                                    <small class="bullet">2.</small>
+                                                                    Obtain information about management’s
+                                                                    plans and consider whether it is likely that the
+                                                                    adverse effects will be mitigated for the
+                                                                    foreseeable future. Evaluate the likelihood of
+                                                                    effective implementation of such plans.
+                                                                </p>
+                                                                <p>
+                                                                    Plans that the auditor would consider and
+                                                                    discuss with management may include:
+                                                                </p>
+                                                                <ul>
+                                                                    <li>
+                                                                        Plans to dispose of assets.
+                                                                    </li>
+                                                                    <li>
+                                                                        Plans to borrow money or restructure
+                                                                        debt.
+                                                                    </li>
+                                                                    <li>
+                                                                        Plans to reduce or delay expenditures.
+                                                                    </li>
+                                                                    <li>
+                                                                        Plans to increase revenues more than
+                                                                        increases in related costs and
+                                                                        expenses.
+                                                                    </li>
+                                                                    <li>
+                                                                        Plans to increase ownership equity.
+                                                                    </li>
+                                                                </ul>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>
+                                                                    <small class="bullet">3.</small>
+                                                                    Consider the bases on which the plans have
+                                                                    been prepared, giving consideration as to
+                                                                    whether they conform with facts already
+                                                                    known and to available independent
+                                                                    evidence.
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>
+                                                                    <small class="bullet">4.</small>
+                                                                    Carry out additional procedures to update
+                                                                    information obtained earlier.
+                                                                </p>
+                                                                <p>
+                                                                    Such procedures may include:
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>
+                                                                    <small class="bullet">*</small>
+                                                                    Analysis and discussion of cash flow,
+                                                                    profit, and other relevant forecasts with
+                                                                    management.
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>
+                                                                    <small class="bullet">*</small>
+                                                                    Review of events after the balance-sheet
+                                                                    date for items affecting the entity’s ability
+                                                                    to continue as a going concern.
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>
+                                                                    <small class="bullet">*</small>
+                                                                    Analysis and discussion of the entity’s
+                                                                    latest available interim financial
+                                                                    statements.
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>
+                                                                    <small class="bullet">*</small>
+                                                                    Review of the terms of debentures and
+                                                                    loan agreements and determination
+                                                                    whether any have been breached.
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>
+                                                                    <small class="bullet">*</small>
+                                                                    Reading of minutes of the meetings of
+                                                                    shareholders, board of directors, and
+                                                                    other important committees for reference
+                                                                    to financing difficulties.
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>
+                                                                    <small class="bullet">*</small>
+                                                                    Request for information on relevant
+                                                                    material legal matters from the entity’s
+                                                                    legal counsel.
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>
+                                                                    <small class="bullet">*</small>
+                                                                    Confirmation of the existence, legality,
+                                                                    and enforceability of arrangements to
+                                                                    provide or maintain financial support with
+                                                                    related and third parties, and assessment
+                                                                    of the financial ability of such parties to
+                                                                    provide additional funds.
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>
+                                                                    <small class="bullet">*</small>
+                                                                    Consideration of the entity’s position
+                                                                        concerning unfilled customer orders.
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>
+                                                                    <small class="bullet">*</small>
+                                                                    Obtaining written representation from
+                                                                    management concerning plans for future
+                                                                    action whose outcome is expected to
+                                                                    mitigate the situation.
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>
+                                                                    <small class="bullet">5.</small>
+                                                                    Obtain written confirmation of the
+                                                                    corresponding representations by the
+                                                                    management.
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>
+                                                                    <small class="bullet">6.</small>
+                                                                    When prospective financial information is
+                                                                    particularly significant to management’s
+                                                                    plans, consider, based on the auditor’s
+                                                                    knowledge of the entity, its business and
+                                                                    management, the adequacy of support for
+                                                                    significant assumptions underlying that
+                                                                    information. Compare the prospective data
+                                                                    for recent prior periods with historical results
+                                                                    and the prospective data for the current
+                                                                    period with results achieved to date.
+                                                                    Consider the reliability of the entity’s system
+                                                                    for generating such information and give
+                                                                    particular attention to assumptions that are:
+                                                                </p>
+                                                                <ul>
+                                                                    <li>
+                                                                        Material to the prospective financial
+                                                                        information.
+                                                                    </li>
+                                                                    <li>
+                                                                        Especially sensitive or susceptible to
+                                                                        change.
+                                                                    </li>
+                                                                    <li>
+                                                                        Inconsistent with historical trends.
+                                                                    </li>
+                                                                </ul>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <h5>
+                                                                    D:  Management Representation
+                                                                </h5>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>
+                                                                    <small class="bullet">1.</small>
+                                                                    When additional disclosures are made in the
+                                                                    financial statements relating to the entity’s
+                                                                    ability to continue as a going-concern, obtain
+                                                                    a specific management representation stating
+                                                                    that the disclosures contain all of the
+                                                                    pertinent facts.
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>
+                                                                    <small class="bullet">2.</small>
+                                                                    Consider whether particular matters need to
+                                                                    be represented by management related to
+                                                                    the considerations of the entity’s ability to
+                                                                    continue as a going concern.
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <h5>
+                                                                    E: Consideration of Effects on the Financial
+                                                                    Statements.
+                                                                </h5>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>
+                                                                    <small class="bullet">1.</small>
+                                                                    If, after considering management’s plans, the
+                                                                    auditor concludes that the going-concern
+                                                                    question is not satisfactorily resolved, the
+                                                                    auditor would consider the possible effects
+                                                                    on the financial statements and ensure the
+                                                                    adequacy of the related disclosure. The
+                                                                    disclosure should:
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>
+                                                                    <small class="bullet">*</small>
+                                                                    Describe the principal conditions and
+                                                                    events that raised doubt about the entity’s
+                                                                    ability to continue as a going concern for
+                                                                    the foreseeable future.
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>
+                                                                    <small class="bullet">*</small>
+                                                                    Describe the possible effects of such
+                                                                    conditions and events and management’s
+                                                                    evaluation of the significance of those
+                                                                    conditions.
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>
+                                                                    <small class="bullet">*</small>
+                                                                    Describe any mitigating factors and the
+                                                                    management’s plans (including relevant
+                                                                    prospective financial information).
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>
+                                                                    <small class="bullet">*</small>
+                                                                    State that there are doubts that the entity
+                                                                    will be able to continue as a going
+                                                                    concern and, therefore, may be unable to
+                                                                    realize its assets and discharge its
+                                                                    liabilities in the normal course of
+                                                                    business.
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>
+                                                                    <small class="bullet">*</small>
+                                                                    State that the financial statements do not
+                                                                    include any adjustments relating to the
+                                                                    recoverability and classification of
+                                                                    recorded asset amounts or to amounts
+                                                                    and classification of liabilities that may be
+                                                                    necessary should the entity be unable to
+                                                                    continue as a going concern.
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>
+                                                                    <small class="bullet">2.</small>
+                                                                    If the auditor concludes that management’s
+                                                                    use of the going concern basis of accounting is appropriate because of mitigating factors
+                                                                    (in particular management’s plans for future
+                                                                    action), evaluate the need for disclosure of
+                                                                    the principal conditions and events that
+                                                                    initially caused the substantial doubt.
+                                                                    Disclosure considerations include the
+                                                                    possible effects of such conditions and
+                                                                    events and any mitigating factors, including
+                                                                    management’s plans.
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <h5>
+                                                                    F: Consultation
+                                                                </h5>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>
+                                                                    <small class="bullet">1.</small>
+                                                                    If the auditor concludes that an entity’s
+                                                                    continuance as a going concern for the
+                                                                    foreseeable future is questionable, consider
+                                                                    consultation within the firm to consider
+                                                                    management’s plans or representations and
+                                                                    financial statement effects.
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <h5>
+                                                                    G: Accounting Policies and Disclosures
+                                                                </h5>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>
+                                                                    <small class="bullet">1.</small>
+                                                                    Consider whether the presentation of the
+                                                                    financial statements conforms with
+                                                                    professional standards and the applicable
+                                                                    legal or regulatory requirements. Consider
+                                                                    whether:
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>
+                                                                    <small class="bullet">*</small>
+                                                                    Material transactions or items may
+                                                                    require separate disclosure.
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>
+                                                                    <small class="bullet">*</small>
+                                                                    Accounting policies used in the financial
+                                                                    statements are appropriate and are
+                                                                    consistent with prior periods.
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>
+                                                                    <small class="bullet">*</small>
+                                                                    Balances and associated footnote
+                                                                    disclosures are presented in accordance
+                                                                    with the accounting policies.
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <h5>
+                                                                    H: Conclusion
+                                                                </h5>
+                                                                <ul>
+                                                                    <li>
+                                                                        Based on the tests performed and
+                                                                        responses as noted above, a conclusion
+                                                                        may be drawn whether management’s use of the going concern basis of
+                                                                        accounting is appropriate.
+                                                                    </li>
+                                                                    <li>
+                                                                        Also give reference to the type of audit
+                                                                        report that may be issued based on the
+                                                                        conclusion drawn under this section
+                                                                        (Refer Annexure – I for audit report
+                                                                        format).
+                                                                    </li>
+                                                                </ul>
+                                                            </td>
+                                                            <td>
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>  
+                                    </div>                                   
+                                    <div class="card-footer footer-btn">
+                                        <a href="#Edit">Edit in Docs</a>
+                                        <a href="#Download">Download</a>
+                                        <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">See Format</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script src="./dashboard-pack.js"></script>
+<script src="./dashboard.js"></script>
+<!-- ==========================JQuery================================ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script> 
+    // Required: JQUERY
+     (function ($) {
+ 
+     $.fn.select3 = function (options) {
+         var dataItems = [];
+         var selectorID = '#' + this.attr('id');
+ 
+         $(selectorID).find('option').each(function (index, element) {
+ 
+             if (element.text != '') {
+                 dataItems.push(element.text.trim());
+             }
+             else {
+                 dataItems.push(element.value.trim());
+             }
+ 
+         });
+ 
+         var opts = $.extend({}, $.fn.select3.defaults, options);
+ 
+         var idDiv = this.attr('id') + 'searchSelect3';
+         var idInput = this.attr('id') + 'searchSelect3_Input';
+         var idClose = this.attr('id') + 'searchSelect3_Times';
+         var idDown = this.attr('id') + 'searchSelect3_Caret_Down';
+         var idList = this.attr('id') + 'searchSelect3_List';
+         var idListLi = this.attr('id') + 'searchSelect3_List_LI';
+ 
+         var selectorDiv = '#' + this.attr('id') + 'searchSelect3';
+         var selectorInput = '#' + this.attr('id') + 'searchSelect3_Input';
+         var selectorClose = '#' + this.attr('id') + 'searchSelect3_Times';
+         var selectorDown = '#' + this.attr('id') + 'searchSelect3_Caret_Down';
+         var selectorList = '#' + this.attr('id') + 'searchSelect3_List';
+         var selectorListLi = '#' + this.attr('id') + 'searchSelect3_List_LI';
+ 
+         var buildELement = $('<div class="searchSelect3" id="' + idDiv + '" style="position:relative;"><input class="searchSelect3_Input" placeholder="' + opts.placeholder + '" value="' + opts.defaultvalue + '" id="' + idInput + '"><span class="fa fa-times searchSelect3_Times" id="' + idClose + '"></span><span class="fa fa-caret-down searchSelect3_Caret_Down" id="' + idDown + '"></span></div>');
+ 
+         if ($(selectorDiv).length > 0) {
+             $(selectorDiv).remove();
+         }
+ 
+         this.after(buildELement);
+ 
+         if (opts.width > 0) {
+             $(selectorInput).css('width', opts.width);
+             $(selectorDown).css('left', (opts.width - 20));
+             $(selectorClose).css('left', (opts.width - 40));
+         }
+ 
+ 
+         var cache = {};
+         var drew = false;
+         this.hide();
+ 
+ 
+ 
+         $(document).on('click', function (e) {
+             if ($(e.target).parent().is("li[id*='" + idListLi + "']") == false) {
+                 if ($(e.target).attr('id') != idInput && $(e.target).attr('id') != idDown) {
+                     $(selectorList).empty();
+                     $(selectorList).css('z-index', -1);
+                     $(selectorClose).hide();
+                 }
+             }
+ 
+             
+ 
+         });
+ 
+ 
+ 
+ 
+         var showList = function (query, valuee) {
+ 
+             if (query in cache) {
+                 results = cache[query];
+             } else {
+                 var results = $.grep(dataItems, function (item) {
+                     return item.search(RegExp(query, "i")) != -1;
+                 });
+ 
+                 cache[query] = results;
+             }
+ 
+             $(selectorList).css('z-index', opts.zIndex);
+ 
+ 
+             if (drew == false) {
+                 $(selectorInput).after('<ul id="' + idList + '" class="searchSelect3_List" style="z-index:' + opts.zIndex + '"></ul>');
+ 
+                 if (opts.width > 0) {
+ 
+                     $(selectorList).css('width', opts.width);
+ 
+                 }
+ 
+                 if (opts.widthList > 0)
+                 {
+                     $(selectorList).css('width', opts.widthList);
+                 }
+                 drew = true;
+ 
+                 $(selectorList).on("click", "li", function () {
+                     var nilai = $(this).text()
+                     $(selectorInput).val(nilai);
+                     $(selectorID).val(nilai);
+                     $(selectorList).empty();
+                     $(selectorClose).show();
+                     $(selectorList).css('z-index', -1);
+                     $(selectorID).change();
+                 });
+ 
+ 
+             }
+             else {
+                 $(selectorList).empty();
+             }
+ 
+             var counter = 0;
+             for (term in results) {
+                 counter++;
+                 $(selectorList).append("<li id=" + idListLi + counter + "><label>" + results[term] + "</label></li>");
+             }
+ 
+             
+ 
+         };
+ 
+ 
+ 
+         $(selectorInput).on('click', function (e) {
+             var query = $(this).val();
+ 
+             showList('', query);
+ 
+ 
+             $(selectorClose).hide();
+             if (query.length > 0) {
+                 $(selectorClose).show();
+             }
+ 
+         });
+ 
+         $(selectorInput).on('keyup', function (e) {
+             $(selectorList).empty();
+             var query = $(selectorInput).val();
+             showList(query, query);
+ 
+             $(selectorClose).hide();
+             if (query.length > 0) {
+                 $(selectorClose).show();
+             }
+ 
+             $(selectorID).change();
+         });
+ 
+         $(selectorInput).on('keydown', function (e) {
+             if (e.which == 9) {
+                 $(selectorList).empty();
+                 $(selectorList).css('z-index', -1);
+                 $(selectorClose).hide();
+             }
+         });
+ 
+         $(selectorDown).on('click', function (e) {
+             var query = $(this).val();
+             if ($(selectorList).find('li').length == 0) {
+                 showList('', query);
+             }
+             else {
+                 //$(selectorList).css('z-index', -1);
+                 $(selectorList).empty();
+                 $(selectorList).css('z-index', -1);
+             }
+ 
+             $(selectorClose).hide();
+             if (query.length > 0) {
+                 $(selectorClose).show();
+             }
+ 
+         });
+ 
+         $(selectorClose).on('click', function (e) {
+             $(selectorInput).val('');
+             $(selectorClose).hide();
+             $(selectorID).change();
+ 
+         });
+ 
+ 
+         return this;
+     };
+ 
+     $.fn.select3.defaults = {
+         placeholder: "",
+         zIndex: 1,
+         defaultvalue: "",
+         width: 0,
+         widthList: 0
+     };
+ 
+     }(jQuery));
+   
+     $(document).ready(function(e){
+ 
+     $('#selectBankList').select3({ width: 260, placeholder: 'Search Name or ID', zIndex: 100 });  
+ 
+     });
+</script>
+</body>
+</html>

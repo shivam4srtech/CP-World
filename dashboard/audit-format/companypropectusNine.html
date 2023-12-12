@@ -1,0 +1,1773 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> Dashboard | CharteredONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./style/dashboardpack.css">
+    <link rel="stylesheet" href="./style/dashboard.css">
+    <link rel="stylesheet" href="./style/bankaudit.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa-solid fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Romana I Khan
+                                    </div>
+                                    <div class="widget-subheading">
+                                       GST Analyst
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <div class="widget-content-left">
+                                        <div class="widget-content-left">
+                                            <a href="./profile.html"><img width="40" class="rounded-circle" src="../images/female_avatar_efig.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>        
+        <div class="ui-theme-settings">
+            <button type="button" id="TooltipDemo" class="btn-open-options btn">
+                <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+            </button>
+            <div class="theme-settings__inner">
+                <div class="scrollbar-container">
+                    <div class="theme-settings__options-wrapper">
+                        <h3 class="themeoptions-heading">Layout Options
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-header">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Header
+                                                </div>
+                                                <div class="widget-subheading">Makes the header top fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-sidebar">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Sidebar
+                                                </div>
+                                                <div class="widget-subheading">Makes the sidebar left fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-footer">
+                                                    <div class="switch-animate switch-off">
+                                                        <input type="checkbox" data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Footer
+                                                </div>
+                                                <div class="widget-subheading">Makes the app footer bottom fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>
+                                Header Options
+                            </div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-header-cs-class" data-class="bg-secondary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-header-cs-class" data-class="bg-success header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-header-cs-class" data-class="bg-info header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-header-cs-class" data-class="bg-warning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-header-cs-class" data-class="bg-danger header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-header-cs-class" data-class="bg-light header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-header-cs-class" data-class="bg-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-header-cs-class" data-class="bg-focus header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-header-cs-class" data-class="bg-alternate header-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-header-cs-class" data-class="bg-midnight-bloom header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-header-cs-class" data-class="bg-night-sky header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-header-cs-class" data-class="bg-slick-carbon header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-header-cs-class" data-class="bg-asteroid header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-header-cs-class" data-class="bg-royal header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-header-cs-class" data-class="bg-warm-flame header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-header-cs-class" data-class="bg-night-fade header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-header-cs-class" data-class="bg-sunny-morning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-header-cs-class" data-class="bg-tempting-azure header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-header-cs-class" data-class="bg-amy-crisp header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-header-cs-class" data-class="bg-heavy-rain header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-header-cs-class" data-class="bg-mean-fruit header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-header-cs-class" data-class="bg-malibu-beach header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-header-cs-class" data-class="bg-deep-blue header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-header-cs-class" data-class="bg-ripe-malin header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-header-cs-class" data-class="bg-arielle-smile header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-header-cs-class" data-class="bg-plum-plate header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-header-cs-class" data-class="bg-happy-fisher header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-header-cs-class" data-class="bg-happy-itmeo header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-header-cs-class" data-class="bg-mixed-hopes header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-header-cs-class" data-class="bg-strong-bliss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-header-cs-class" data-class="bg-grow-early header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-header-cs-class" data-class="bg-love-kiss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-header-cs-class" data-class="bg-premium-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-header-cs-class" data-class="bg-happy-green header-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Sidebar Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-sidebar-cs-class" data-class="bg-primary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-sidebar-cs-class" data-class="bg-secondary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-sidebar-cs-class" data-class="bg-success sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-sidebar-cs-class" data-class="bg-info sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-sidebar-cs-class" data-class="bg-warning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-sidebar-cs-class" data-class="bg-danger sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-sidebar-cs-class" data-class="bg-light sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-sidebar-cs-class" data-class="bg-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-sidebar-cs-class" data-class="bg-focus sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-sidebar-cs-class" data-class="bg-alternate sidebar-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class" data-class="bg-vicious-stance sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-sidebar-cs-class" data-class="bg-midnight-bloom sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-sidebar-cs-class" data-class="bg-night-sky sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-sidebar-cs-class" data-class="bg-slick-carbon sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-sidebar-cs-class" data-class="bg-asteroid sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-sidebar-cs-class" data-class="bg-royal sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-sidebar-cs-class" data-class="bg-warm-flame sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-sidebar-cs-class" data-class="bg-night-fade sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-sidebar-cs-class" data-class="bg-sunny-morning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-sidebar-cs-class" data-class="bg-tempting-azure sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-sidebar-cs-class" data-class="bg-amy-crisp sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-sidebar-cs-class" data-class="bg-heavy-rain sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-sidebar-cs-class" data-class="bg-mean-fruit sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-sidebar-cs-class" data-class="bg-malibu-beach sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-sidebar-cs-class" data-class="bg-deep-blue sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-sidebar-cs-class" data-class="bg-ripe-malin sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-sidebar-cs-class" data-class="bg-arielle-smile sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-sidebar-cs-class" data-class="bg-plum-plate sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-sidebar-cs-class" data-class="bg-happy-fisher sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-sidebar-cs-class" data-class="bg-happy-itmeo sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-sidebar-cs-class" data-class="bg-mixed-hopes sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-sidebar-cs-class" data-class="bg-strong-bliss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-sidebar-cs-class" data-class="bg-grow-early sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-sidebar-cs-class" data-class="bg-love-kiss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-sidebar-cs-class" data-class="bg-premium-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-sidebar-cs-class" data-class="bg-happy-green sidebar-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Main Content Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto active btn btn-focus btn-sm">Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Page Section Tabs
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div role="group" class="mt-2 btn-group">
+                                            <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="body-tabs-line">
+                                                Line
+                                            </button>
+                                            <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="body-tabs-shadow">
+                                                Shadow
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="app-main">
+                <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>    
+                    <div class="scrollbar-sidebar">
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu">
+                                <li class="mt-1 dashbtn">
+                                    <a href="../dashboard.html" class="mm-active">
+                                        <i class="metismenu-icon fa-solid fa-house"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Client Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-user fa-regular"></i>
+                                        Client
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../create-client.html">
+                                                <i class="metismenu-icon"></i>
+                                                Add New Client
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../all-client.html">
+                                                <i class="metismenu-icon"></i>All Clients
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Service Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-users-gear"></i>
+                                        Services
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../tax.html">
+                                                <i class="metismenu-icon"></i>
+                                                Tax
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../gst.html">
+                                                <i class="metismenu-icon"></i>GST
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../audit.html">
+                                                <i class="metismenu-icon"></i>Audit
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../compliences.html">
+                                                <i class="metismenu-icon"></i>Company Compliences
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Audits &amp Reports</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-magnifying-glass"></i>
+                                        Audit
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../company-audit.html">
+                                                <i class="metismenu-icon"></i>
+                                                company
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./gst.html">
+                                                <i class="metismenu-icon"></i>LLP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./audit.html">
+                                                <i class="metismenu-icon"></i>Non Company Entity
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>NPO
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>Banks
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Community</li>
+                                <li>
+                                    <a href="../community.html">
+                                        <i class="metismenu-icon fa-solid fa-solid fa-user">
+                                        </i>My Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../message.html">
+                                        <i class="metismenu-icon fa-solid fa-regular fa-message">
+                                        </i>Chats
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Revunue</li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon fa-solid fa-dollar-sign"></i>
+                                        Revenue
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">PRO Version</li>
+                                <li>
+                                    <a href="#000">
+                                        <i class="metismenu-icon fa-regular fa-circle-check">    
+                                        </i>
+                                        Upgrade to PRO
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===================Content====================== -->
+                <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <!-- ================Pay Taxes ================-->   
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-header">
+                                        <span>Appendix 4</span>
+                                        <div class="btn-actions-pane-right">
+                                            <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">Click here to see format</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div>
+                                            <h2 class="audit-title p-0 text-center">
+                                                Illustrative Auditor’s Examination Report on
+                                                Financial Information in Relation to Prospectus
+                                            </h2>
+                                        </div>
+
+                                        <div class="bankaudit">
+                                            <p class="text-center">
+                                                (on financial information of the issuer Company)
+
+                                                (Refer paragraph 2.5)
+                                            </p>
+                                            <div class="inputset">
+                                                <div id="wrapper" class="col-md-6 mb-3">
+                                                    <label for="companyName" class="form-label">Choose Client</label>
+                                                    <select id="selectBankList" >
+                                                      <option value="Rachin Ravindra">Rachin Ravindra</option>
+                                                      <option value="Mark Wood">Mark Wood</option>
+                                                      <option value="Jos B">Jos B</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="companyName" class="form-label">Company Name</label>
+                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="year" class="form-label">Year</label>
+                                                    <input type="number" placeholder="YYYY" min="1999" max="2020" class="form-control">
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="companyName" class="form-label">Chartered Accountants Name</label>
+                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="companyName" class="form-label">Firm’s Registration No.</label>
+                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="companyName" class="form-label">Name of the Member Signing the Audit Report</label>
+                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="companyName" class="form-label">Designation</label>
+                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="companyName" class="form-label">Membership No.</label>
+                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="companyName" class="form-label">Place</label>
+                                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="companyName" class="form-label">Date</label>
+                                                    <input type="date" class="form-control" id="exampleFormControlInput1">
+                                                </div>
+                                            </div>
+                                            <h5>
+                                                INDEPENDENT AUDITOR’S/[PRACTICIONER’S] <sup>22</sup>
+                                                EXAMINATION REPORT ON RESTATED [CONSOLIDATED]
+                                                FINANCIAL INFORMATION   
+                                            </h5>
+                                            
+                                           
+                                           <p>
+                                            The Board of Directors
+                                           </p>
+                                           <p>
+                                            [ABC Limited]/[Component name]
+                                           </p>
+                                          <p>
+                                            Dear Sirs,
+                                          </p>
+                                          <ol type="1">
+                                                <li>
+                                                    We have examined the attached Restated [Consolidated]
+                                                    Financial Information of [ABC Limited] (Formerly known as
+                                                    [company’s old name]) (the “Company” [or the “Issuer”]) and
+                                                    its subsidiaries (the Company and its subsidiaries together
+                                                    referred to as the “Group"), its associates and its joint
+                                                    ventures, comprising the Restated [Consolidated] Statement of
+                                                    Assets and Liabilities as at [June/September/December XX,
+                                                    20XX, March 31, 20XX, 20XX and 20XX], the Restated
+                                                    [Consolidated] Statements of Profit and Loss (including other
+                                                    comprehensive income), the Restated [Consolidated]
+                                                    Statement of Changes in Equity, the Restated [Consolidated]
+                                                    Cash Flow Statement for the [three/six/nine month period
+                                                    ended June/September/December XX, 20XX and for the years
+                                                    ended March 31, 20XX, 20XX and 20XX], the Summary
+                                                    Statement of Significant Accounting Policies, and other
+                                                    explanatory information (collectively, the “Restated
+                                                    [Consolidated] Financial Information”), as approved by the
+                                                    Board of Directors of the Company at their meeting held on
+                                                    [Date] [for the purpose of inclusion in the [Draft Red Herring
+                                                    Prospectus/Red Herring Prospectus/ Prospectus
+                                                    (“DRHP/RHP/Prospectus”)] prepared by the Company in
+                                                    connection with its proposed Initial Public Offer of equity shares (“IPO”)] <sup>23</sup> prepared in terms of the requirements of:
+                                                    <ol type="a">
+                                                      <li>
+                                                        Section 26 of Part I of Chapter III of the Companies Act,
+                                                        2013 (the “Act");
+                                                      </li>
+                                                      <li>
+                                                        The Securities and Exchange Board of India (Issue of
+                                                        Capital and Disclosure Requirements) Regulations, 2018,
+                                                        as amended ("ICDR Regulations"); and
+                                                      </li>
+                                                      <li>
+                                                        The Guidance Note on Reports in Company Prospectuses
+                                                        (Revised 2019) issued by the Institute of Chartered
+                                                        Accountants of India (“ICAI”), as amended from time to
+                                                        time (the “Guidance Note”).
+                                                      </li>
+                                                    </ol>
+                                                </li>
+                                                <div class="term">
+                                                    <small>
+                                                        <sup>
+                                                            22  
+                                                        </sup> In case of previous auditors.
+                                                    </small>
+                                                </div>
+                                                <li>
+                                                    The Company’s Board of Directors is responsible for the
+                                                    preparation of the Restated [Consolidated] Financial
+                                                    Information for the purpose of inclusion in the
+                                                    [DRHP/RHP/Prospectus] to be filed with Securities and
+                                                    Exchange Board of India, [relevant stock exchanges and
+                                                    Registrar of Companies, [State]] in connection with the
+                                                    proposed IPO. The Restated [Consolidated] Financial
+                                                    Information have been prepared by the management of the
+                                                    Company on the basis of preparation stated in note [.] to the
+                                                    Restated [Consolidated] Financial Information. The
+                                                    [respective] Board of Directors of the [companies included in
+                                                    the Group and of its associates and joint ventures]/[Company]
+                                                    responsibility includes designing, implementing and
+                                                    maintaining adequate internal control relevant to the
+                                                    preparation and presentation of the Restated [Consolidated]
+                                                    Financial Information. The [respective] Board of Directors are
+                                                    also responsible for identifying and ensuring that the [Group
+                                                    and its associates and joint ventures]/[Company] complies with
+                                                    the Act, ICDR Regulations and the Guidance Note. shares (“IPO”)]23 prepared in terms of the requirements of:
+                                                </li>
+                                                <li>
+                                                    We have examined such Restated [Consolidated] Financial
+                                                    Information taking into consideration:
+                                                    <ol type="a">
+                                                        <li>
+                                                            The terms of reference and terms of our engagement
+                                                            agreed upon with you in accordance with our engagement
+                                                            letter dated [Date] in connection with the proposed IPO of
+                                                            equity shares of the Issuer/[Company];
+                                                        </li>
+                                                        <li>
+                                                            The Guidance Note. The Guidance Note also requires that
+                                                            we comply with the ethical requirements of the Code of
+                                                            Ethics issued by the ICAI;
+                                                        </li>
+                                                        <li>
+                                                            Concepts of test checks and materiality to obtain
+                                                            reasonable assurance based on verification of evidence
+                                                            supporting the Restated [Consolidated] Financial
+                                                            Information; and
+                                                        </li>
+                                                        <li>
+                                                            The requirements of Section 26 of the Act and the ICDR
+                                                            Regulations. Our work was performed solely to assist you
+                                                            in meeting your responsibilities in relation to your
+                                                            compliance with the Act, the ICDR Regulations and the
+                                                            Guidance Note in connection with the IPO.
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                                <li>
+                                                    These Restated [Consolidated] Financial Information have
+                                                    been compiled by the management from:
+                                                    <ol type="a">
+                                                        <li>
+                                                            [Audited special purpose interim [consolidated] Ind AS
+                                                            financial statements of the Group and its associates and
+                                                            joint ventures as at and for the [three/six/nine] month
+                                                            period ended [June/September/December XX, 20XX]
+                                                            prepared in accordance with Indian Accounting Standard
+                                                            (Ind AS) 34 "Interim Financial Reporting", specified under
+                                                            section 133 of the Act and other accounting principles
+                                                            generally accepted in India (the “Special Purpose Interim
+                                                            [Consolidated] Ind AS Financial Statements”) which have
+                                                            been approved by the Board of Directors at their meeting
+                                                            held on <input type="date">
+                                                        </li>
+                                                        <li>
+                                                            Audited [Consolidated] Ind AS financial statements of the
+                                                            Group and its associates and joint ventures as at and for
+                                                            the year ended March 31, 20XX, prepared in accordance
+                                                            with the Indian Accounting Standards (referred to as “Ind
+                                                            AS”) as prescribed under Section 133 of the Act read with
+                                                            Companies (Indian Accounting Standards) Rules 2015, as
+                                                            amended, and other accounting principles generally
+                                                            accepted in India, which have been approved by the Board
+                                                            of Directors at their meeting held on [Date]. [The
+                                                            comparative information for the year ended March 31,
+                                                            <p>
+                                                                20XX included in such financial statements have been
+                                                                prepared by making Ind AS adjustments to the audited
+                                                                [consolidated] financial statements of the Company as at
+                                                                and for the year ended March 31, 20XX, prepared in
+                                                                accordance with the accounting standards notified under
+                                                                the section 133 of the Act (“Indian GAAP”) which was
+                                                                approved by the Board of directors at their meeting held on
+                                                                <input type="date"> <sup>24</sup>.
+                                                            </p>
+                                                            <strong>OR</strong>
+                                                            <p>
+                                                                Audited [Consolidated] Ind AS financial statements of the
+                                                                [Group and its associates and joint ventures]/[Company] as
+                                                                at and for the years ended March 31, 20XX, 20XX [and
+                                                                20XX] prepared in accordance with the Indian Accounting
+                                                                Standards (referred to as “Ind AS”) as prescribed under
+                                                                Section 133 of the Act read with Companies (Indian
+                                                                Accounting Standards) Rules 2015, as amended, and
+                                                                other accounting principles generally accepted in India,
+                                                                which have been approved by the Board of Directors at
+                                                                their meeting held on <input type="text">.
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            [The Restated [Consolidated] Financial Information also
+                                                            contains the proforma [consolidated] Ind AS financial
+                                                            information as at and for the year ended March 31, 20XX.
+                                                            The proforma [consolidated] Ind AS financial information
+                                                            have been prepared by making Ind AS adjustments to the
+                                                            audited Indian GAAP financial statements as at and for the
+                                                            year ended March 31, 20XX which have been approved by
+                                                            the Board of Directors at their meeting held on [Date] as
+                                                            described in Note [.] to the Restated [Consolidated]
+                                                            Financial Information.] <sup>25</sup>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                                <li>
+                                                    [We have audited the special purpose [consolidated] financial
+                                                    information of the [Group and its associates and joint
+                                                    ventures]/[Company] for the year ended March 31, 20XX
+                                                    prepared by the Company in accordance with the Ind AS for
+                                                    the limited purpose of complying with the requirement of
+                                                    getting its financial statements audited by an audit firm holding
+                                                    a valid peer review certificate issued by the “Peer Review Board” of the ICAI as required by ICDR Regulations in relation
+                                                    to proposed IPO. We have issued our report dated [Date] on
+                                                    these special purpose [consolidated] financial information to
+                                                    the Board of Directors who have approved these in their
+                                                    meeting held on <input type="date"> ] <sup>26</sup>
+                                                </li>
+                                                
+                                                <div class="term">
+                                                    <small>
+                                                       <sup>23</sup> When the examination report is furnished by the auditors for a branch/subsidiary/joint
+                                                        venture entity/associate or if examination report is issued by the previous auditors of the
+                                                        Issuer, the examination report should include the following phrase at this point: “for the
+                                                        purpose of providing information to [ABC Limited (the “Issuer”) to enable them to prepare
+                                                        the Restated [Consolidated] Financial Information in connection with the Issuer’s proposed
+                                                        Initial Public Offer of equity shares (“IPO”).” When the examination report is issued by the
+                                                        auditor of the issuer company on restated standalone financial information, the examination
+                                                        report should include the following phrase at this point: “for the purpose of preparation of
+                                                        restated consolidated financial information in connection with its proposed Initial Public
+                                                        Offer of equity shares (“IPO”).”
+                                                    </small>
+                                                    <small>
+                                                        <sup>24</sup> The terms of reference and terms of our engagement
+                                                        agreed upon with you in accordance with our engagement
+                                                        letter dated [Date] in connection with the proposed IPO of
+                                                        equity shares of the Issuer/[Company];
+                                                    </small>
+                                                    <small>
+                                                        <sup>25</sup> Applicable when the earliest third financial year’s financial statements were prepared
+                                                        under Indian GAAP.
+                                                    </small>
+                                                </div>
+                                                <li>
+                                                    For the purpose of our examination, we have relied on:
+                                                    <ol type="a">
+                                                        <li>
+                                                            Auditors’ reports issued by us dated [date] and [date] on
+                                                            the [consolidated] financial statements of the Group as at
+                                                            and for the [three / six / nine month period ended June /
+                                                            September / December XX, 20XX] and as at and for the
+                                                            year ended March XX, 20XX as referred in Paragraph [4]
+                                                            above; and
+                                                        </li>
+                                                        <li>
+                                                            Auditors’ Report issued by the Previous Auditors dated
+                                                            [date] and [date] on the [consolidated] financial statements
+                                                            of the Group as at and for the years ended March 31,
+                                                            20XX and 20XX, as referred in Paragraph [4] above.
+                                                            </br>
+                                                            The audits for the financial years ended March 31, 20XX
+                                                            and 20XX were conducted by the Company’s previous
+                                                            auditors, [XYZ1 & Co.], (the “Previous Auditors”), and
+                                                            accordingly reliance has been placed on the restated
+                                                            [consolidated] statement of assets and liabilities and the
+                                                            restated [consolidated] statements of profit and loss
+                                                            (including other comprehensive income), statements of
+                                                            changes in equity and cash flow statements, the Summary
+                                                            Statement of Significant Accounting Policies, and other
+                                                            explanatory information and (collectively, the “20XX and
+                                                            20XX Restated [Consolidated] Financial Information”)
+                                                            examined by them for the said years. The examination
+                                                            report included for the said years is based solely on the
+                                                            report submitted by the Previous Auditors. They have also
+                                                            confirmed that the 20XX and 20XX Restated
+                                                            [Consolidated] Financial Information:
+                                                        </li>
+                                                        <ol type="a">
+                                                            <li>
+                                                                [have been prepared after incorporating adjustments
+                                                                for the changes in accounting policies, material errors
+                                                                and regrouping/reclassifications retrospectively in the
+                                                                financial year ended March 31, 20XX to reflect the
+                                                                same accounting treatment as per the accounting
+                                                                policies and grouping/classifications followed as at and
+                                                                for the [three/six/nine month period ended
+                                                                June/September/December XX, 20XX];
+                                                            </li>
+                                                            <li>
+                                                                [have been prepared after incorporating proforma Ind
+                                                                AS adjustments to the audited Indian GAAP financial
+                                                                statements as at and for the year ended March 31,
+                                                                20XX as described in Note [.] to the Restated
+                                                                [Consolidated] Financial Information];
+                                                            </li>
+                                                            <li>
+                                                                [have been made after giving effect to the matter(s)
+                                                                giving rise to modifications mentioned in paragraph [7]
+                                                                below] / [do not require any adjustments for the
+                                                                matter(s) giving rise to modifications mentioned in
+                                                                paragraph [7] below]; and
+                                                            </li>
+                                                            <li>
+                                                                have been prepared in accordance with the Act, ICDR
+                                                                Regulations and the Guidance Note.]
+                                                            </li>
+                                                        </ol>
+                                                    </ol>
+                                                </li>
+                                                <li>
+                                                    The audit reports on the [consolidated] financial statements
+                                                    issued by [us]/[Previous Auditors] were modified and included
+                                                    following matter(s) giving rise to modifications on the financial
+                                                    statements as at and for the years ended March 31, 20XX,
+                                                    20XX and 20XX:
+                                                </li>
+                                                <li>
+                                                    [As indicated in our audit reports referred above:
+                                                    <ol type="a">
+                                                        <li>
+                                                             we did not audit the financial statements of [.] branches
+                                                            and [.] joint operations included in the [consolidated]
+                                                            financial statements of the companies included in the
+                                                            Group whose financial statements share of total assets
+                                                            and total revenues included in the [consolidated] financial
+                                                            statements, for the relevant years is tabulated below,
+                                                            which have been audited by other auditors, [XYZ2 & Co.
+                                                            and XYZ3 & Co.], and whose reports have been furnished
+                                                            to us by the Company’s management and our opinion on
+                                                            the [consolidated] financial statements, in so far as it
+                                                            relates to the amounts and disclosures included in respect
+                                                            of these components, is based solely on the reports of the
+                                                            other auditors:
+                                                        </li>
+                                                        <div class="table-responsive my-4">
+                                                            <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th class="text-center">Particulars</th>
+                                                                        <th>
+                                                                            As at/ for the [three/six/nine]
+                                                                            month period ended [June/
+                                                                            September/December XX,
+                                                                            
+                                                                            20XX]
+                                                                        </th>
+                                                                        <th>
+                                                                            As at/ for
+                                                                            the year
+                                                                            ended
+                                                                            March 31,
+                                                                            20XX
+                                                                        </th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <span>Total assets</span>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <span>Total revenue</span>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <li>
+                                                            we did not audit the financial statements of [.] subsidiaries,
+                                                            [.] associates and [.] joint ventures whose share of total
+                                                            assets, total revenues, net cash inflows / (outflows) and
+                                                            share of profit/ loss in its associates and joint ventures
+                                                            included in the consolidated financial statements, for the
+                                                            relevant years is tabulated below, which have been
+                                                            audited by other auditors, [XYZ4 & Co. and XYZ5 & Co.],
+                                                            and whose reports have been furnished to us by the
+                                                            Company’s management and our opinion on the
+                                                            consolidated financial statements, in so far as it relates to
+                                                            the amounts and disclosures included in respect of these
+                                                            components, is based solely on the reports of the other
+                                                            auditors:
+                                                        </li>
+                                                        <div class="table-responsive my-4">
+                                                            <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th class="text-center">Particulars</th>
+                                                                        <th>
+                                                                            As at/ for the [three/six/nine]
+                                                                            month period ended [June/
+                                                                            September/December XX,
+                                                                            
+                                                                            20XX]
+                                                                        </th>
+                                                                        <th>
+                                                                            As at/ for
+                                                                            the year
+                                                                            ended
+                                                                            March 31,
+                                                                            20XX
+                                                                        </th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <span>Total assets</span>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <span>Total revenue</span>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <span>
+                                                                                Net cash
+                                                                                inflows/
+                                                                                (outflows)
+                                                                            </span>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <span>
+                                                                                Share of
+                                                                                profit/ loss
+                                                                                in its
+                                                                                associates
+                                                                            </span>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <span>
+                                                                                Share of
+                                                                                profit/ loss
+                                                                                in its joint
+                                                                                ventures
+                                                                            </span>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <li>
+                                                            [The comparative financial information of the Company for
+                                                            the year ended March 31, 20XX and the transition date
+                                                            opening balance sheet as at April 1, 20XX prepared in
+                                                            accordance with Ind AS included in these [consolidated]
+                                                            Ind AS financial statements have been audited by the
+                                                            previous auditors. The report of the previous auditors on
+                                                            the comparative financial information and the said opening
+                                                            balance sheet dated [Date] expressed an unmodified
+                                                            opinion.]
+                                                            <br>
+                                                            Our opinion on the consolidated Ind AS financial
+                                                            statements is not modified in respect of these matters.
+                                                            <br>
+                                                            [amend as applicable]
+                                                            These other auditors of the branches, joint operations,
+                                                            subsidiaries, associates and joint ventures, as mentioned
+                                                            above, have examined the restated [consolidated] financial
+                                                            information and have confirmed that the restated
+                                                            [consolidated] financial information:
+                                                            <ol type="a">
+                                                                <li>
+                                                                    [have been prepared after incorporating adjustments for
+                                                                    the changes in accounting policies, material errors and
+                                                                    regrouping/reclassifications retrospectively in the financial
+                                                                    year ended March 31, 20XX to reflect the same accounting
+                                                                    treatment as per the accounting policies and
+                                                                    grouping/classifications followed as at and for the
+                                                                    [three/six/nine month period ended June/ September/
+                                                                    December XX, 20XX];
+                                                                </li>
+                                                                <li>
+                                                                    [have been prepared after incorporating proforma Ind AS
+                                                                    adjustments to the audited Indian GAAP financial
+                                                                    statements as at and for the year ended March 31, 20XX
+                                                                    as described in Note [.] to the Restated [Consolidated]
+                                                                    Financial Information];
+                                                                </li>
+                                                                <li>
+                                                                    [have been made after giving effect to the matter(s) giving
+                                                                    rise to modifications mentioned in paragraph [7] above] /
+                                                                    [do not require any adjustments for the matter(s) giving rise
+                                                                    to modifications mentioned in paragraph [7] above]; and
+                                                                </li>
+                                                                <li>
+                                                                    have been prepared in accordance with the Act, ICDR
+                                                                    Regulations and the Guidance Note.]
+                                                                </li>
+                                                            </ol>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                                <li>
+                                                    Based on examination report dated [Date] provided by the
+                                                    Previous Auditors, the audit reports on the [consolidated]
+                                                    financial statements issued by the Previous Auditors included
+                                                    following other matters:
+                                                    <ol type="a">
+                                                        <li>
+                                                            We did not audit the financial statements of [.] branches
+                                                            and [.] joint operations included in the [consolidated]
+                                                            financial statements of the companies included in the
+                                                            Group whose financial statements share of total assets
+                                                            and total revenues included in the [consolidated] financial
+                                                            statements, for the relevant years is tabulated below,
+                                                            which have been audited by other auditors, [XYZ2 & Co.
+                                                            and XYZ3 & Co.], and whose reports have been furnished
+                                                            to us by the Company’s management and our opinion on
+                                                            the [consolidated] financial statements, in so far as it
+                                                            relates to the amounts and disclosures included in respect
+                                                            of these components, is based solely on the reports of the
+                                                            other auditors:
+                                                        </li>
+                                                        <div class="table-responsive my-4">
+                                                            <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th class="text-center">Particulars</th>
+                                                                        <th>
+                                                                            As at/ for the [three/six/nine]
+                                                                            month period ended [June/
+                                                                            September/December XX,
+                                                                            
+                                                                            20XX]
+                                                                        </th>
+                                                                        <th>
+                                                                            As at/ for
+                                                                            the year
+                                                                            ended
+                                                                            March 31,
+                                                                            20XX
+                                                                        </th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <span>Total assets</span>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <span>Total revenue</span>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <li>
+                                                            We did not audit the financial statements of [.] subsidiaries,
+                                                            [.] associates and [.] joint ventures whose share of total
+                                                            assets, total revenues, net cash inflows / (outflows) and
+                                                            share of profit/ loss in its associates and joint ventures
+                                                            included in the Consolidated Financial Statements, for the
+                                                            relevant years is tabulated below, which have been
+                                                            audited by other auditors, [XYZ4 & Co. and XYZ5 & Co.],
+                                                            and whose reports have been furnished to us by the
+                                                            Company’s management and our opinion on the
+                                                            consolidated financial statements, in so far as it relates to
+                                                            the amounts and disclosures included in respect of these
+                                                            components, is based solely on the reports of the other
+                                                            auditors:
+                                                        </li>
+                                                        <div class="table-responsive my-4">
+                                                            <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th class="text-center">Particulars</th>
+                                                                        <th>
+                                                                            As at/ for the [three/six/nine]
+                                                                            month period ended [June/
+                                                                            September/December XX,
+                                                                            
+                                                                            20XX]
+                                                                        </th>
+                                                                        <th>
+                                                                            As at/ for
+                                                                            the year
+                                                                            ended
+                                                                            March 31,
+                                                                            20XX
+                                                                        </th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <span>Total assets</span>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <span>Total revenue</span>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <span>
+                                                                                Net cash
+                                                                                inflows/
+                                                                                (outflows)
+                                                                            </span>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <span>
+                                                                                Share of
+                                                                                profit/ loss
+                                                                                in its
+                                                                                associates
+                                                                            </span>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <span>
+                                                                                Share of
+                                                                                profit/ loss
+                                                                                in its joint
+                                                                                ventures
+                                                                            </span>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="col">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        Our opinion on the consolidated Ind AS financial statements is not
+                                                        modified in respect of these matters.
+                                                        [amend as applicable]
+                                                    </ol>
+                                                </li>
+                                                <li>
+                                                    Based on our examination and according to the information
+                                                    and explanations given to us [and also as per the reliance
+                                                    <br>
+                                                    placed on the examination report submitted by the Previous
+                                                    Auditors and other auditors <sup>27</sup> for the respective periods/years],
+                                                    we report that the Restated [Consolidated] Financial
+                                                    Information:
+                                                    <ol>
+                                                        <li>
+                                                            [have been prepared after incorporating adjustments for
+                                                            the changes in accounting policies, material errors and
+                                                            regrouping/reclassifications retrospectively in the financial
+                                                            years ended March 31, 20XX and 20XX to reflect the same
+                                                            accounting treatment as per the accounting policies and
+                                                            grouping/classifications followed as at and for the
+                                                            [three/six/nine month period ended
+                                                            June/September/December XX, 20XX];
+                                                        </li>
+                                                        <li>
+                                                            [have been prepared after incorporating proforma Ind AS
+                                                            adjustments to the audited Indian GAAP financial
+                                                            statements as at and for the year ended March 31, 20XX
+                                                            as described in Note [.] to the Restated [Consolidated]
+                                                            Financial Information];
+                                                        </li>
+                                                        <li>
+                                                            [have been made after giving effect to the matter(s) giving
+                                                            rise to modifications mentioned in paragraph [7] above] /
+                                                            [do not require any adjustments for the matter(s) giving rise
+                                                            to modifications mentioned in paragraph [7] above]; and
+                                                        </li>
+                                                        <li>
+                                                            have been prepared in accordance with the Act, ICDR
+                                                            Regulations and the Guidance Note.]
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                                <li>
+                                                    The Restated [Consolidated] Financial Information do not
+                                                    reflect the effects of events that occurred subsequent to the
+                                                    respective dates of the reports on the special purpose interim
+                                                    [consolidated] Ind AS financial statements and audited
+                                                    [consolidated] financial statements mentioned in paragraph [4]
+                                                    above.
+                                                </li>
+                                                <div class="term">
+                                                    <small>
+                                                        <sup>26</sup> This paragraph is applicable if underlying latest audited financial year presented is
+                                                        required to be re-audited by an auditor holding a valid peer review certificate to comply with
+                                                        ICDR Regulations.
+                                                    </small>
+                                                    <small>
+                                                       <sup>27</sup> Generally, the examination of past periods of the group and of the material branches/joint
+                                                        operations/subsidiaries/joint ventures/ associates should be performed by the previous
+                                                        auditors and other auditors of such branches, joint operations, subsidiaries, joint ventures
+                                                        and associates and an examination report should be submitted to company/ current auditor
+                                                        based on their work performed. The company should communicate the current policy and
+                                                        other required information to previous auditors/ other auditors and previous auditors/ other
+                                                        auditors should consider such policies and other information for their examination. In case
+                                                        the previous auditors and other auditors are not in a position to issue examination report for
+                                                        past periods and for components due to practical issues, then the current auditors should
+                                                        perform adequate procedures to be able to take responsibility of past periods and for
+                                                        components.
+                                                    </small>
+                                                </div>
+                                                <li>
+                                                    This report should not in any way be construed as a
+                                                    reissuance or re-dating of any of the previous audit reports
+                                                    issued by us [or the Previous Auditors], nor should this report
+                                                    be construed as a new opinion on any of the financial
+                                                    statements referred to herein.
+                                                </li>
+                                                <li>
+                                                    We have no responsibility to update our report for events and
+                                                    circumstances occurring after the date of the report.
+                                                </li>
+                                                <li>
+                                                    Our report is intended solely for use of the Board of Directors
+                                                    for inclusion in the [DRHP/RHP/Prospectus] to be filed with
+                                                    Securities and Exchange Board of India, [relevant stock
+                                                    exchanges and Registrar of Companies, [State]] in connection
+                                                    with the proposed IPO. Our report should not be used, referred
+                                                    to, or distributed for any other purpose except with our prior
+                                                    consent in writing. Accordingly, we do not accept or assume
+                                                    any liability or any duty of care for any other purpose or to any
+                                                    other person to whom this report is shown or into whose hands
+                                                    it may come without our prior consent in writing.
+                                                    <br>
+                                                    <strong>OR</strong>
+                                                    <br>
+                                                    Our report is intended solely for use of the Board of Directors
+                                                    for the purpose set forth in the first paragraph of this report.
+                                                    Our report should not be used, referred to, or distributed for
+                                                    <br>
+                                                    any other purpose except with our prior consent in writing.
+                                                    Accordingly, we do not accept or assume any liability or any
+                                                    duty of care for any other purpose or to any other person to
+                                                    whom this report is shown or into whose hands it may come
+                                                    without our prior consent in writing <sup>29</sup>
+                                                </li>
+                                            </ol>
+                                            <div class="text-right">
+                                                <p>
+                                                    For XYZ and Co.
+                                                </p>
+                                                <p>
+                                                    Chartered Accountants
+                                                </p>
+                                                <p>
+                                                    Firm’s Registration Number
+                                                </p>
+                                                <p>
+                                                    Signature
+                                                </p>
+                                                <p>
+                                                    [Name of the Member]
+                                                </p>
+                                                <p>
+                                                    Designation <sup>30</sup>
+                                                </p>
+                                                <p>
+                                                    Membership Number
+                                                </p>
+                                            </div>
+                                            <div class="text-left">
+                                                <p>
+                                                    Place of Signature:
+                                                </p>
+                                                <p>
+                                                    Date:
+                                                </p>
+                                            </div>
+                                            <div class="term">
+                                                <small>
+                                                    <sup>29</sup> This paragraph to be used when the report is issued by the auditor on restated
+                                                    standalone financial information of the issuer.
+                                                </small>
+                                                <small>
+                                                    <sup>30</sup> Partner or proprietor, as the case may be.
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                    <div class="card-footer footer-btn">
+                                        <a href="#Edit">Edit in Docs</a>
+                                        <a href="#Download">Download</a>
+                                        <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">See Format</a>
+                                    </div>                                        
+                                </div>                                   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script src="./dashboard-pack.js"></script>
+<script src="./dashboard.js"></script>
+<!-- ==========================JQuery================================ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script> 
+    // Required: JQUERY
+     (function ($) {
+ 
+     $.fn.select3 = function (options) {
+         var dataItems = [];
+         var selectorID = '#' + this.attr('id');
+ 
+         $(selectorID).find('option').each(function (index, element) {
+ 
+             if (element.text != '') {
+                 dataItems.push(element.text.trim());
+             }
+             else {
+                 dataItems.push(element.value.trim());
+             }
+ 
+         });
+ 
+         var opts = $.extend({}, $.fn.select3.defaults, options);
+ 
+         var idDiv = this.attr('id') + 'searchSelect3';
+         var idInput = this.attr('id') + 'searchSelect3_Input';
+         var idClose = this.attr('id') + 'searchSelect3_Times';
+         var idDown = this.attr('id') + 'searchSelect3_Caret_Down';
+         var idList = this.attr('id') + 'searchSelect3_List';
+         var idListLi = this.attr('id') + 'searchSelect3_List_LI';
+ 
+         var selectorDiv = '#' + this.attr('id') + 'searchSelect3';
+         var selectorInput = '#' + this.attr('id') + 'searchSelect3_Input';
+         var selectorClose = '#' + this.attr('id') + 'searchSelect3_Times';
+         var selectorDown = '#' + this.attr('id') + 'searchSelect3_Caret_Down';
+         var selectorList = '#' + this.attr('id') + 'searchSelect3_List';
+         var selectorListLi = '#' + this.attr('id') + 'searchSelect3_List_LI';
+ 
+         var buildELement = $('<div class="searchSelect3" id="' + idDiv + '" style="position:relative;"><input class="searchSelect3_Input" placeholder="' + opts.placeholder + '" value="' + opts.defaultvalue + '" id="' + idInput + '"><span class="fa fa-times searchSelect3_Times" id="' + idClose + '"></span><span class="fa fa-caret-down searchSelect3_Caret_Down" id="' + idDown + '"></span></div>');
+ 
+         if ($(selectorDiv).length > 0) {
+             $(selectorDiv).remove();
+         }
+ 
+         this.after(buildELement);
+ 
+         if (opts.width > 0) {
+             $(selectorInput).css('width', opts.width);
+             $(selectorDown).css('left', (opts.width - 20));
+             $(selectorClose).css('left', (opts.width - 40));
+         }
+ 
+ 
+         var cache = {};
+         var drew = false;
+         this.hide();
+ 
+ 
+ 
+         $(document).on('click', function (e) {
+             if ($(e.target).parent().is("li[id*='" + idListLi + "']") == false) {
+                 if ($(e.target).attr('id') != idInput && $(e.target).attr('id') != idDown) {
+                     $(selectorList).empty();
+                     $(selectorList).css('z-index', -1);
+                     $(selectorClose).hide();
+                 }
+             }
+ 
+             
+ 
+         });
+ 
+ 
+ 
+ 
+         var showList = function (query, valuee) {
+ 
+             if (query in cache) {
+                 results = cache[query];
+             } else {
+                 var results = $.grep(dataItems, function (item) {
+                     return item.search(RegExp(query, "i")) != -1;
+                 });
+ 
+                 cache[query] = results;
+             }
+ 
+             $(selectorList).css('z-index', opts.zIndex);
+ 
+ 
+             if (drew == false) {
+                 $(selectorInput).after('<ul id="' + idList + '" class="searchSelect3_List" style="z-index:' + opts.zIndex + '"></ul>');
+ 
+                 if (opts.width > 0) {
+ 
+                     $(selectorList).css('width', opts.width);
+ 
+                 }
+ 
+                 if (opts.widthList > 0)
+                 {
+                     $(selectorList).css('width', opts.widthList);
+                 }
+                 drew = true;
+ 
+                 $(selectorList).on("click", "li", function () {
+                     var nilai = $(this).text()
+                     $(selectorInput).val(nilai);
+                     $(selectorID).val(nilai);
+                     $(selectorList).empty();
+                     $(selectorClose).show();
+                     $(selectorList).css('z-index', -1);
+                     $(selectorID).change();
+                 });
+ 
+ 
+             }
+             else {
+                 $(selectorList).empty();
+             }
+ 
+             var counter = 0;
+             for (term in results) {
+                 counter++;
+                 $(selectorList).append("<li id=" + idListLi + counter + "><label>" + results[term] + "</label></li>");
+             }
+ 
+             
+ 
+         };
+ 
+ 
+ 
+         $(selectorInput).on('click', function (e) {
+             var query = $(this).val();
+ 
+             showList('', query);
+ 
+ 
+             $(selectorClose).hide();
+             if (query.length > 0) {
+                 $(selectorClose).show();
+             }
+ 
+         });
+ 
+         $(selectorInput).on('keyup', function (e) {
+             $(selectorList).empty();
+             var query = $(selectorInput).val();
+             showList(query, query);
+ 
+             $(selectorClose).hide();
+             if (query.length > 0) {
+                 $(selectorClose).show();
+             }
+ 
+             $(selectorID).change();
+         });
+ 
+         $(selectorInput).on('keydown', function (e) {
+             if (e.which == 9) {
+                 $(selectorList).empty();
+                 $(selectorList).css('z-index', -1);
+                 $(selectorClose).hide();
+             }
+         });
+ 
+         $(selectorDown).on('click', function (e) {
+             var query = $(this).val();
+             if ($(selectorList).find('li').length == 0) {
+                 showList('', query);
+             }
+             else {
+                 //$(selectorList).css('z-index', -1);
+                 $(selectorList).empty();
+                 $(selectorList).css('z-index', -1);
+             }
+ 
+             $(selectorClose).hide();
+             if (query.length > 0) {
+                 $(selectorClose).show();
+             }
+ 
+         });
+ 
+         $(selectorClose).on('click', function (e) {
+             $(selectorInput).val('');
+             $(selectorClose).hide();
+             $(selectorID).change();
+ 
+         });
+ 
+ 
+         return this;
+     };
+ 
+     $.fn.select3.defaults = {
+         placeholder: "",
+         zIndex: 1,
+         defaultvalue: "",
+         width: 0,
+         widthList: 0
+     };
+ 
+     }(jQuery));
+   
+     $(document).ready(function(e){
+ 
+     $('#selectBankList').select3({ width: 260, placeholder: 'Search Name or ID', zIndex: 100 });  
+ 
+     });
+</script>
+</body>
+</html>

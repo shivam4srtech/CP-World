@@ -1,0 +1,2082 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> Dashboard | CharteredONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./style/dashboardpack.css">
+    <link rel="stylesheet" href="./style/dashboard.css">
+    <link rel="stylesheet" href="./style/bankaudit.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa-solid fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Romana I Khan
+                                    </div>
+                                    <div class="widget-subheading">
+                                       GST Analyst
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <div class="widget-content-left">
+                                        <div class="widget-content-left">
+                                            <a href="./profile.html"><img width="40" class="rounded-circle" src="../images/female_avatar_efig.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>        
+        <div class="ui-theme-settings">
+            <button type="button" id="TooltipDemo" class="btn-open-options btn">
+                <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+            </button>
+            <div class="theme-settings__inner">
+                <div class="scrollbar-container">
+                    <div class="theme-settings__options-wrapper">
+                        <h3 class="themeoptions-heading">Layout Options
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-header">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Header
+                                                </div>
+                                                <div class="widget-subheading">Makes the header top fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-sidebar">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Sidebar
+                                                </div>
+                                                <div class="widget-subheading">Makes the sidebar left fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-footer">
+                                                    <div class="switch-animate switch-off">
+                                                        <input type="checkbox" data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Footer
+                                                </div>
+                                                <div class="widget-subheading">Makes the app footer bottom fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>
+                                Header Options
+                            </div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-header-cs-class" data-class="bg-secondary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-header-cs-class" data-class="bg-success header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-header-cs-class" data-class="bg-info header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-header-cs-class" data-class="bg-warning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-header-cs-class" data-class="bg-danger header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-header-cs-class" data-class="bg-light header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-header-cs-class" data-class="bg-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-header-cs-class" data-class="bg-focus header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-header-cs-class" data-class="bg-alternate header-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-header-cs-class" data-class="bg-midnight-bloom header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-header-cs-class" data-class="bg-night-sky header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-header-cs-class" data-class="bg-slick-carbon header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-header-cs-class" data-class="bg-asteroid header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-header-cs-class" data-class="bg-royal header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-header-cs-class" data-class="bg-warm-flame header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-header-cs-class" data-class="bg-night-fade header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-header-cs-class" data-class="bg-sunny-morning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-header-cs-class" data-class="bg-tempting-azure header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-header-cs-class" data-class="bg-amy-crisp header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-header-cs-class" data-class="bg-heavy-rain header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-header-cs-class" data-class="bg-mean-fruit header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-header-cs-class" data-class="bg-malibu-beach header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-header-cs-class" data-class="bg-deep-blue header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-header-cs-class" data-class="bg-ripe-malin header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-header-cs-class" data-class="bg-arielle-smile header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-header-cs-class" data-class="bg-plum-plate header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-header-cs-class" data-class="bg-happy-fisher header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-header-cs-class" data-class="bg-happy-itmeo header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-header-cs-class" data-class="bg-mixed-hopes header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-header-cs-class" data-class="bg-strong-bliss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-header-cs-class" data-class="bg-grow-early header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-header-cs-class" data-class="bg-love-kiss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-header-cs-class" data-class="bg-premium-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-header-cs-class" data-class="bg-happy-green header-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Sidebar Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-sidebar-cs-class" data-class="bg-primary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-sidebar-cs-class" data-class="bg-secondary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-sidebar-cs-class" data-class="bg-success sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-sidebar-cs-class" data-class="bg-info sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-sidebar-cs-class" data-class="bg-warning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-sidebar-cs-class" data-class="bg-danger sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-sidebar-cs-class" data-class="bg-light sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-sidebar-cs-class" data-class="bg-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-sidebar-cs-class" data-class="bg-focus sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-sidebar-cs-class" data-class="bg-alternate sidebar-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class" data-class="bg-vicious-stance sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-sidebar-cs-class" data-class="bg-midnight-bloom sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-sidebar-cs-class" data-class="bg-night-sky sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-sidebar-cs-class" data-class="bg-slick-carbon sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-sidebar-cs-class" data-class="bg-asteroid sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-sidebar-cs-class" data-class="bg-royal sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-sidebar-cs-class" data-class="bg-warm-flame sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-sidebar-cs-class" data-class="bg-night-fade sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-sidebar-cs-class" data-class="bg-sunny-morning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-sidebar-cs-class" data-class="bg-tempting-azure sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-sidebar-cs-class" data-class="bg-amy-crisp sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-sidebar-cs-class" data-class="bg-heavy-rain sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-sidebar-cs-class" data-class="bg-mean-fruit sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-sidebar-cs-class" data-class="bg-malibu-beach sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-sidebar-cs-class" data-class="bg-deep-blue sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-sidebar-cs-class" data-class="bg-ripe-malin sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-sidebar-cs-class" data-class="bg-arielle-smile sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-sidebar-cs-class" data-class="bg-plum-plate sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-sidebar-cs-class" data-class="bg-happy-fisher sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-sidebar-cs-class" data-class="bg-happy-itmeo sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-sidebar-cs-class" data-class="bg-mixed-hopes sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-sidebar-cs-class" data-class="bg-strong-bliss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-sidebar-cs-class" data-class="bg-grow-early sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-sidebar-cs-class" data-class="bg-love-kiss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-sidebar-cs-class" data-class="bg-premium-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-sidebar-cs-class" data-class="bg-happy-green sidebar-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Main Content Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto active btn btn-focus btn-sm">Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Page Section Tabs
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div role="group" class="mt-2 btn-group">
+                                            <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="body-tabs-line">
+                                                Line
+                                            </button>
+                                            <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="body-tabs-shadow">
+                                                Shadow
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="app-main">
+                <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>    
+                    <div class="scrollbar-sidebar">
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu">
+                                <li class="mt-1 dashbtn">
+                                    <a href="../dashboard.html" class="mm-active">
+                                        <i class="metismenu-icon fa-solid fa-house"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Client Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-user fa-regular"></i>
+                                        Client
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../create-client.html">
+                                                <i class="metismenu-icon"></i>
+                                                Add New Client
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../all-client.html">
+                                                <i class="metismenu-icon"></i>All Clients
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Service Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-users-gear"></i>
+                                        Services
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../tax.html">
+                                                <i class="metismenu-icon"></i>
+                                                Tax
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../gst.html">
+                                                <i class="metismenu-icon"></i>GST
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../audit.html">
+                                                <i class="metismenu-icon"></i>Audit
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../compliences.html">
+                                                <i class="metismenu-icon"></i>Company Compliences
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Audits &amp Reports</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-magnifying-glass"></i>
+                                        Audit
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../company-audit.html">
+                                                <i class="metismenu-icon"></i>
+                                                company
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./gst.html">
+                                                <i class="metismenu-icon"></i>LLP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./audit.html">
+                                                <i class="metismenu-icon"></i>Non Company Entity
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>NPO
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>Banks
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Community</li>
+                                <li>
+                                    <a href="../community.html">
+                                        <i class="metismenu-icon fa-solid fa-solid fa-user">
+                                        </i>My Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../message.html">
+                                        <i class="metismenu-icon fa-solid fa-regular fa-message">
+                                        </i>Chats
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Revunue</li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon fa-solid fa-dollar-sign"></i>
+                                        Revenue
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">PRO Version</li>
+                                <li>
+                                    <a href="#000">
+                                        <i class="metismenu-icon fa-regular fa-circle-check">    
+                                        </i>
+                                        Upgrade to PRO
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===================Content====================== -->
+                <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <!-- ================Pay Taxes ================-->   
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-header">
+                                        <span>Appendix VII</span>
+                                        <div class="btn-actions-pane-right">
+                                            <a href="https://resource.cdn.icai.org/69211aasb-gnab2022-c1.pdf" target="_blank">Click here to see format</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div>
+                                            <h2 class="audit-title p-0 text-center">
+                                                Illustrative Format of Management
+                                                Representation Letter to be obtained from Bank
+                                                Management in case of Statutory Central Audit
+                                            </h2>
+                                        </div>
+                                        <div class="inputset">
+                                            <div id="wrapper" class="col-md-6 mb-3">
+                                                <label for="companyName" class="form-label">Choose Client</label>
+                                                <select id="selectBankList" >
+                                                  <option value="Rachin Ravindra">Rachin Ravindra</option>
+                                                  <option value="Mark Wood">Mark Wood</option>
+                                                  <option value="Jos B">Jos B</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="companyName" class="form-label">Company Name</label>
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="year" class="form-label">Year</label>
+                                                <input type="number" placeholder="YYYY" min="1999" max="2020" class="form-control">
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="companyName" class="form-label">Chartered Accountants Name</label>
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="companyName" class="form-label">Firm’s Registration No.</label>
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="companyName" class="form-label">Name of the Member Signing the Audit Report</label>
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="companyName" class="form-label">Designation</label>
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="companyName" class="form-label">Membership No.</label>
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="companyName" class="form-label">Place</label>
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="companyName" class="form-label">Date</label>
+                                                <input type="date" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="companyName" class="form-label">Address</label>
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="card-body">
+                                        <div class="bankaudit">
+                                            <p>To</p>
+                                            <p><span>Statutory Central Auditors</span></p>
+                                            <p><input type="text" placeholder="__________"> Bank</p>
+                                            <p>
+                                                This representation letter is provided in connection with your audit of financial
+                                                statements of <input type="text" placeholder="__________"> Bank as at <input type="text" placeholder="__________"> and for the year ended on
+                                                that date for the purpose of your expressing an opinion as to whether the
+                                                financial statements give a true and fair view, under the historical cost convention
+                                                on the accrual basis of accounting, of the state of affairs of the Bank as
+                                                at <input type="text" placeholder="__________"> and of its profit/loss and its cash flows for the year then ended, in
+                                                accordance with the accounting principles generally accepted in India
+                                            </p>
+                                            <p>
+                                                We acknowledge our responsibility for the preparation and fair presentation of
+                                                the financial statements in accordance with the requirements of the provisions of
+                                            </p>
+                                            <div>
+                                                <ul>
+                                                    <li>
+                                                        The Banking Regulation Act, 1949
+                                                    </li>
+                                                    <li>
+                                                        Accounting Standards as notified under Companies Act, 2013/
+                                                        Accounting Standards issued by ICAI,
+                                                    </li>
+                                                    <li>
+                                                        Directives, Circulars, Notifications issued by Reserve Bank of India,
+                                                    </li>
+                                                    <li>
+                                                        Companies Act, 2013, [not applicable in case of nationalized banks]
+                                                    </li>
+                                                    <li>
+                                                        Listing requirements of SEBI,
+                                                    </li>
+                                                    <li>
+                                                        Recognised Accounting Policies & practices.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <p>
+                                                We acknowledge our responsibility for the implementation and operations of
+                                                accounting and internal control systems that are designed to prevent and detect
+                                                fraud and error.
+                                            </p>
+                                            <p>
+                                                We have assessed the ability of the Bank to continue as a going concern and are
+                                                satisfied that it will so continue. We have no knowledge of events or conditions
+                                                and related business risks beyond the period of this assessment that may cast
+                                                significant doubt on the Bank’s ability to continue as a going concern.
+                                            </p>
+                                            <p>
+                                                We confirm, to the best of our knowledge and belief that the following
+                                                representations are true and correct: 
+                                            </p>
+                                            <h5>
+                                                <small class="bullet">1.</small> ACCOUNTING POLICIES
+                                            </h5>
+                                            <div>
+                                                <ol type="a">
+                                                    <li>
+                                                        The accounting policies are in accordance with the accounting standards
+                                                        and other recognized accounting practices and policies generally accepted
+                                                        in India
+                                                    </li>
+                                                    <li>
+                                                        The accounting policies and practices which are material or critical in
+                                                        determining the results of operations for the period or financial position are
+                                                        consistent with those adopted in the financial statements for the previous
+                                                        year. The financial statements are prepared on accrual basis. 
+                                                    </li>
+                                                    <li>
+                                                        We have no plans or intentions that may materially affect the carrying value
+                                                        or classification of assets and liabilities.
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                            <h5> <small class="bullet">2.</small> REGISTERS, MINUTES AND CONTRACTS</h5>
+                                            <div>
+                                                <ol type="a">
+                                                    <li>
+                                                        All matters required to be recorded in the registers and minute books of the
+                                                        Bank have been, and are, recorded correctly.
+                                                    </li>
+                                                    <li>
+                                                        We have complied with all aspects of contractual agreements that would
+                                                        have a material effect on the financial statements in the event of noncompliance.
+                                                    </li>
+                                                    <li>
+                                                        We have submitted to your representatives, minutes covering the Audit
+                                                        Committee meetings, the Committee of Directors meetings and meetings of
+                                                        the Board of Directors. These minutes constitute a full and complete record
+                                                        of all meetings held and documented during the year.
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                           
+                                            <h5>
+                                                <small class="bullet">3.</small> OWNERSHIP AND PLEDGING OF ASSETS
+                                            </h5>
+                                            <p>
+                                                The Bank has satisfactory title to all assets in its books, and there are no liens or
+                                                encumbrances on such assets except the following:
+                                            </p>
+                                            <div>
+                                                <ol type="a">
+                                                    <li>
+                                                        ___________________
+                                                    </li>
+                                                    <li>
+                                                        ___________________
+                                                    </li>
+                                                    <li>
+                                                        ___________________
+                                                    </li>
+                                                    <small>
+                                                        (this section should include assets having encumbrances, for example, details of
+                                                        investments pledged for various facilities may be reported in this section)
+                                                    </small>
+                                                </ol>
+                                            </div>
+                                            <h5>
+                                                <small class="bullet">4.</small> COMPLIANCE WITH LEGISLATION AND OTHER REQUIREMENTS
+                                            </h5>
+                                            <p>
+                                                We have no knowledge of any instances of non-compliance with laws and
+                                                regulations, contracts or agreements involving management or employees who
+                                                have significant roles in internal control.
+                                            </p>
+                                            <p>
+                                                We have no knowledge of any breaches or possible breaches with laws and
+                                                regulations, contracts or agreements whose effects should be considered when
+                                                preparing the financial statements, or as a basis for recording an expense.In respect to operations during the period, we have complied with:
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    All Reserve Bank of India directives, including Circulars, Notifications
+                                                    issued under Banking Regulation Ac
+                                                </li>
+                                                <li>
+                                                    Income recognition, asset classification and prudential norms laid down
+                                                    by the Reserve Bank of India from time to time.
+                                                </li>
+                                                <li>
+                                                    With the local laws and regulations and guidelines of the regulations of
+                                                    respective countries, in respect of operations of a foreign branch of the
+                                                    bank.
+                                                </li>
+                                            </ul>
+                                            <p>
+                                                Treasury function of the bank are carried out in accordance with the RBI
+                                                Circulars / notification and bank’s own policy in this behalf.
+                                            </p>
+                                            <p>
+                                                Income recognition, asset classification and prudential norms applied in relation
+                                                to the foreign branch of the bank also comply with the guidelines of the RBI
+                                            </p>
+                                            <p>
+                                                There have been no communications from regulatory authorities concerning noncompliance with, or deficiencies in, financial reporting practices that could have a
+                                                material effect on the financial statements.
+                                            </p>
+                                            <h5>
+                                                <small class="bullet">5.</small> INTERNAL CONTROLS
+                                            </h5>
+                                            <p>
+                                                We have established and maintained adequate internal controls to ensure that
+                                                we:
+                                            </p>
+                                            <div>
+                                                <ul>
+                                                    <li>
+                                                        prepare reliable financial statements.
+                                                    </li>
+                                                    <li>
+                                                        maintain adequate financial records. 
+                                                    </li>
+                                                    <li>
+                                                        record all material transactions in the accounting records underlying the
+                                                        financial statements
+                                                    </li>
+                                                    <li>
+                                                        minimise the risk of fraud and error occurring and are able to detect them
+                                                        should they occur.
+                                                    </li>
+                                                    <li>
+                                                        minimise the risk of significant breaches of legislation and other
+                                                        mandatory requirements occurring and detect significant breaches of
+                                                        legislation and other mandatory requirements should they occur.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <h5>
+                                                <small class="bullet">6.</small>FRAUD AND ERROR
+                                            </h5>
+                                            <p>
+                                                We acknowledge our responsibility for the design and implementation of internal
+                                                controls to prevent and detect fraud and error
+                                            </p>
+                                            <p>
+                                                We have disclosed to you the results of our assessment of the risk that the
+                                                financial statements may be materially misstated as a result of fraud. 
+                                            </p>
+                                            <p>
+                                                The frauds detected during the period involving employees or otherwise have
+                                                been provided for to the satisfaction of the auditors. The accountability is being
+                                                reviewed and internal controls have been strengthened.
+                                            </p>
+                                            <p>
+                                                We have no knowledge of any allegations of fraud, or suspected fraud, affecting
+                                                the Bank’s financial statements committed by employees, former employees,
+                                                analysts, regulators or others other than those disclosed to you
+                                            </p>
+                                            <h5>
+                                                <small class="bullet">7.</small> INTERNAL AND CONCURRENT AUDIT
+                                            </h5>
+                                            <p>
+                                                We operate an effective internal audit function and management promptly
+                                                rectifies any shortcomings reported.
+                                            </p>
+                                            <h5>
+                                                <small class="bullet">8.</small> FIXED ASSETS
+                                            </h5>
+                                            <p>
+                                                As at <input type="text"> the bank is having satisfactory title to all assets appearing in
+                                                the balance sheet. All assets to which the Bank has satisfactory title appear in
+                                                the balance sheet at the respective net book values.
+                                            </p>
+                                            <p>
+                                                The additions during the period are stated at cost and include all capital
+                                                expenditure to fixed assets,(including capital work in progress) but do not include
+                                                expenditure chargeable to revenue. No amount representing additions or
+                                                improvements of a capital nature have been charged to revenue. Fixed Assets
+                                                do not include cost and accumulated depreciation relating to items sold,
+                                                scrapped, demolished or destroyed.
+                                            </p>
+                                            <p>
+                                                We depreciate assets over their useful lives and we have adjusted depreciation
+                                                charges for all abandoned or otherwise unusable items of property.
+                                            </p>
+                                            <p>
+                                                Depreciation rates have been reviewed against asset usage and against the rate
+                                                of technical and commercial obsolescence. Any adjustment to reflect the most
+                                                recent assessment of the useful lives of all non-current assets has been
+                                                recognised in the financial statements.
+                                            </p>
+                                            <p>
+                                                Any impairment resulting in lower realisable value than the written down value is
+                                                estimated and provided for.
+                                            </p>
+                                            <p>
+                                                The Bank has revalued its freehold land & residential/ office building based on
+                                                valuations made by independent valuers during the year <input type="text"> The net
+                                                appreciation of Rs <input type="text"> arising on revaluation, being the difference
+                                                between the net book value of Rs <input type="text"> and revalued amount of Rs
+                                                <input type="text"> as on <input type="text">, was credited to Revaluation Reserve.
+
+                                            </p>
+                                            <h5> <small class="bullet">9.</small>INVESTMENTS</h5>
+                                            <p>
+                                                All the investments portfolio which are produced at the time of audit for your
+                                                verification belong to the bank and do not include any investment held on behalf
+                                                of any other person.
+                                            </p>
+                                            <p>
+                                                All investments are held in the subsidiary general ledger account of the RBI or
+                                                the Bank's depository participant account
+                                            </p>
+                                            <p>
+                                                The Bank has not entered into any ready forward or buy-back transactions during
+                                                the year in securities in which such transactions are prohibited. 
+                                            </p>
+                                            <p>
+                                                Sales and transfers of securities to/from Held to Maturity (HTM) category
+                                            </p>
+                                            <div>
+                                                <ol type="a">
+                                                    <li>
+                                                        During the year ended <input type="text">, the value of sales and transfers of
+                                                        securities to/from HTM category (excluding onetime transfer of securities
+                                                        to/from HTM category with the approval of Board of Directors permitted to be
+                                                        undertaken by banks at the beginning of the accounting year and sale to RBI
+                                                        under pre-announced Open Market Operation auctions) have not exceeded
+                                                        5% of the book value of the investments held in HTM category at the
+                                                        beginning of the year.
+                                                    </li>
+                                                    <li>
+                                                        <em>
+                                                            [If any transfer from AFS/HFT to HTM is permitted by RBI or any
+                                                            deferral/spreading of provision for depreciation is permitted by RBI as a 'one
+                                                            time measure', the same should be appropriately covered in this section.]
+                                                        </em>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                            <p>
+                                                Appropriate provisions are made on Non-Performing Investments (‘NPIs’) based
+                                                on the provisioning guidelines issued by the RBI. Provision of Rs. <input type="text">
+                                                was made on the Non-Performing Investments (‘NPIs’) of Rs. <input type="text" name="" id="">
+                                            </p>
+                                            <p>
+                                                As at <input type="text">, there are no ready forward transactions in securities
+                                                outstanding in the books of the Bank.
+                                                As on <input type="text">, there was outstanding reverse repo transaction Rs.
+                                                <input type="text"> with RBI.
+                                            </p>
+                                            <p>
+                                                All investments as at <input type="text"> have been valued as per Bank’s accounting
+                                                policy and as per applicable RBI regulations.
+                                            </p>
+                                            <h5>
+                                               <small class="bullet">10.</small> CREDIT/ADVANCES
+                                            </h5>
+                                            <p>
+                                                We have adequate provisions for possible uncollectible advances given to
+                                                customers. There are no factors like the current economic climate or specific
+                                                customer situations that would indicate that the loan loss provisions are not
+                                                adequate at <input type="text">. Further, other than those disclosed to you, there are
+                                                no standard assets that need to be classified as non-performing as at
+                                                <input type="text">.
+                                            </p>
+                                            <div>
+                                                <ol type="a">
+                                                    <li>
+                                                        Non-performing assets (‘NPAs’) system in automated and NPAs are
+                                                        identified by based on IRAC Norms on a real time basis based on periodic
+                                                        appraisals of the portfolio by management and appropriate provisions are
+                                                        made based on the provisioning guidelines issued by the RBI.
+                                                    </li>
+                                                    <li>
+                                                        There were no standard accounts restructured during the year other than the
+                                                        ones disclosed to you. Further, the list of restructured assets as at
+                                                        <input type="text"> provided to you is complete.
+                                                    </li>
+                                                    <li>
+                                                        No material claims have arisen on guarantees issued by the Bank, other
+                                                        than those already invoked, which would require a provision or disclosure in
+                                                        the financial statements.
+                                                    </li>
+                                                    <li>
+                                                        All debit balances in cash credit/overdraft accounts overdue for a period of
+                                                        90 days or more have been adequately provided for by the Bank.
+                                                    </li>
+                                                    <li>
+                                                        All uncollected interest and other charges on non-performing assets have
+                                                        been de-recognized in accordance with RBI norms on income recognition on
+                                                        NPAs
+                                                    </li>
+                                                    <li>
+                                                        All loans with overdue bills of more than 90 days as on <input type="text">
+                                                        have been classified as non-performing assets in the books of the Bank.
+                                                    </li>
+                                                    <li>
+                                                        There are no accounts for which the Bank has entered into any settlement
+                                                        with customers, where there has been a principal sacrifice which is not
+                                                        provided for as at <input type="text">.
+                                                    </li>
+                                                    <li>
+                                                        Provision for delinquencies and servicing cost, created on advances
+                                                        securitised is adequate to cover the future loss and cost that may be
+                                                        incurred on these advances. 
+                                                    </li>
+                                                    <li>
+                                                        The list of letters of credit devolved, guarantees invoked and bills overdue,
+                                                        provided to you, is complete and there are no omissions in the same
+                                                    </li>
+                                                    <li>
+                                                        Mandatory provisioning requirements of the year on non-performing
+                                                        advances of the Bank, as required under the RBI master circular on advance
+                                                        provisioning has been made under Provisions & Contingencies.
+                                                    </li>
+                                                    <li>
+                                                        Management to include a note on identification and correct classification of
+                                                        accounts covered under moratorium as part of the COVID-19 package
+                                                        announced by RBI and adequate provisioning thereon
+                                                    </li>
+                                                    <li>
+                                                        Details of financial assets sold to Securitization/Reconstruction Company for
+                                                        Asset Reconstruction.
+                                                    </li>
+                                                    <div class="table-responsive my-4">
+                                                        <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                            <thead>
+                                                                <tr>
+                                                                    <td>Sr.No.</td>
+                                                                    <td>Particulars</td>
+                                                                    <td>Amt (Rs.)</td>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <span>(i)</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <span>No. of Accounts</span>
+                                                                    </td>
+                                                                    <td class="text-center">
+                                                                        <input type="text">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <span>(ii)</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <span>Aggregate value (net of provisions ) of accounts sold to SC/RC</span>
+                                                                    </td>
+                                                                    <td class="text-center">
+                                                                        <input type="text">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <span>(iii)</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <span>Aggregate Consideration</span>
+                                                                    </td>
+                                                                    <td class="text-center">
+                                                                        <input type="text">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <span>(iv)</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <span>Additional consideration realized in respect of accounts transferred in earlier years</span>
+                                                                    </td>
+                                                                    <td class="text-center">
+                                                                        <input type="text">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <span>(v)</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <span>Aggregate gain(loss) over net book value</span>
+                                                                    </td>
+                                                                    <td class="text-center">
+                                                                        <input type="text">
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <li>
+                                                        The financial statements for the period ended <input type="text"> have been
+                                                        arrived at after considering provision for Non-Performing Assets, Standard
+                                                        Assets and depreciation/ provision for Investments on the basis of prudential
+                                                        norms issued by RBI. The Bank has made 100% provision towards erosion
+                                                        in the value of securities in case of doubtful assets. 
+                                                    </li>
+                                                    <li>
+                                                        The bank has reviewed non-fund based exposures outstanding on case to
+                                                        case basis and there is no chance of devolvement of such liabilities and
+                                                        accordingly no provision has been made against the same.
+                                                    </li>
+                                                    <li>
+                                                        The Bank has not made any floating provision. [if a floating provision is
+                                                        made, the fact should be appropriately disclosed.]
+                                                    </li>
+                                                    <li>
+                                                        In respect of all the advances against tangible securities, the bank holds
+                                                        evidence of existence and market value of the relevant securities as at the
+                                                        period–end.
+                                                    </li>
+                                                    <li>
+                                                        All the borrowers’ account have been categorised according to the prevalent
+                                                        RBI norms applicable for the year, into Standard, Sub–standard, Doubtful or
+                                                        Loss assets, with special emphasis on Non–Performing Assets (NPA).
+                                                    </li>
+                                                    <li>
+                                                        We have examined the accounts and applied the norms borrower–wise and
+                                                        not account–wise for categorising the accounts.
+                                                    </li>
+                                                    <li>
+                                                        No income has been adjusted/ recorded to revenue, contrary to the norms of
+                                                        income recognition notified by the Reserve Bank of India; and particularly
+                                                        where the chances of recovery/ realisability of the income are remote.
+                                                    </li>
+                                                    <li>
+                                                        No income has been recorded on Non–Performing Accounts other than on
+                                                        actual realization
+                                                    </li>
+                                                    <li>
+                                                        Adequate provision has been made for erosion in value of sub-standard,
+                                                        doubtful and loss assets as per RBI regulations.
+                                                    </li>
+                                                    <li>
+                                                        In case of advance accounts where devolvement of Letters of Credits or
+                                                        invocation of Bank Guarantees is observed, the outstanding balance arising
+                                                        out of devolvement/invocation have been added to the main working capital
+                                                        facility for arriving at the overdue status with respect to Limit and Drawing
+                                                        Power available in the working capital accounts
+                                                    </li>
+                                                    <li>
+                                                        The Bank has complied with all the applicable RBI guidelines for all
+                                                        advances restructured and accordingly classification of restructured advances has been done in compliance with RBI guidelines as at
+                                                        <input type="text">.
+                                                    </li>
+                                                    <li>
+                                                        All failures of restructuring or non-compliance with terms of restructuring
+                                                        have been dealt with properly and asset classification is changed as per RBI
+                                                        regulations.
+                                                    </li>
+                                                    <li>
+                                                        In case the restructured accounts where material terms of restructuring have
+                                                        not been complied within the period prescribed as per RBI guidelines and as
+                                                        per schedule laid down in terms, the restructuring has been treated as
+                                                        “failed” and IRAC classification has been done as per the pre-restructuring
+                                                        repayment schedule
+                                                    </li>
+                                                    <li>
+                                                        For calculation of Provision on Standard Assets, the classification of
+                                                        standard advances has been made as per extant guidelines of RBI.
+                                                    </li>
+                                                    <li>
+                                                        There have been no divergences observed by RBI in their report received
+                                                        during the year for which effects have not been given in the books.
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                            <h5>
+                                                <small class="bullet">11.</small> OTHER CURRENT ASSETS
+                                            </h5>
+                                            <p>
+                                                In the opinion of the management, other current assets have a value on
+                                                realization in the ordinary course of the bank’s business which is at least equal to
+                                                the amount at which they are stated in the balance sheet.
+                                            </p>
+                                            <h5>
+                                                <small class="bullet">12.</small> CASH & BANK BALANCES
+                                            </h5>
+                                            <div>
+                                                <ol type="a">
+                                                    <li>
+                                                        The Cash balance as on <input type="text"> is Rs. <input type="text">.
+                                                    </li>
+                                                    <li>
+                                                        The Balance with RBI in Current Account as on <input type="text"> is Rs.
+                                                        <input type="text">.
+                                                    </li>
+                                                    <li>
+                                                        The Balance with Banks and Money at Call and Short Notice as on
+                                                        <input type="text"> is Rs. <input type="text">
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                            <p>
+                                                The bank has made adequate provision for the items pending in the inter-bank
+                                                reconciliation, which, in the view of the management are uncollectable. 
+                                            </p>
+                                            <h5>
+                                                <small class="bullet">13.</small> LIABILITIES AND DEPOSITS
+                                            </h5>
+                                            <div>
+                                                <ul>
+                                                    <li>
+                                                        We have recognised all liabilities including those arising under derivative
+                                                        financial instruments in the financial statements.
+                                                    </li>
+                                                    <li>
+                                                        All the borrowings and deposits have been correctly identified, measured,
+                                                        classified and disclosed and interest thereon have been correctly charged
+                                                        in the Profit and Loss 
+                                                    </li>
+                                                    <li>
+                                                        The Bank has adequate monitoring and control process over dormant or inoperative accounts and re-activation of accounts is carried as per the
+                                                        approved process.
+                                                    </li>
+                                                    <li>
+                                                        The Bank has provided interest expenses as per approved interest rate
+                                                        applicable from time to time and credited to respective deposits/interest
+                                                        accrued till the reporting date for all the category of deposits.
+                                                    </li>
+                                                    <li>
+                                                        The Bank has charged interest from saving accounts wherein there is Debit
+                                                        Balance or in case of overdraft facility or any other specific circumstances.
+                                                    </li>
+                                                    <li>
+                                                        The Bank has deducted TDS on all interest credited/accrued for deposits as
+                                                        per the requirements of Income Tax Act, 1961, as applicable.
+                                                    </li>
+                                                    <li>
+                                                        All matured and unclaimed term deposits are classified as Demand
+                                                        Deposits. Further, interest has been accrued on the basis of Savings
+                                                        Accounts interest rate on such unclaimed deposits
+                                                    </li>
+                                                    <li>
+                                                        All savings and current accounts having debit balances are shown as
+                                                        Advances
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <h5>
+                                                <small class="bullet">14.</small> FOREX AND DERIVATIVE PRODUCTS
+                                            </h5>
+                                            <p>
+                                                The Bank has recognized all its derivative instruments as assets or liabilities in
+                                                the balance sheet and measured them at the market value as per the generally
+                                                accepted practices prevalent in the industry. In respect of derivative contracts
+                                                that are marked to market, changes in the market value have been recognized in
+                                                the statement of profit and loss in the period of change. 
+                                            </p>
+                                            <p>
+                                                The fair values of all derivatives have been determined based on prevailing
+                                                market prices or by using financial models that we believe are the most
+                                                appropriate models for valuing such instruments and that incorporate market
+                                                data and other assumptions that we have determined to be reasonable and
+                                                appropriate as at <input type="text"> .
+                                            </p>
+                                            <p>
+                                                Derivative deals which are classified as hedged deals for hedge items at
+                                                inception of the deal by the Bank, are effective hedges as at <input type="text"> .
+                                                Accordingly, there was no need to do mark-to-market on such deals.
+                                            </p>
+                                            <h5>
+                                                <small class="bullet">15.</small> PROVISIONS, CONTINGENT ASSETS AND CONTINGENT LIABILITIES
+                                            </h5>
+                                            <p>We have properly recorded and/or disclosed in the financial statements:</p>
+                                            <div>
+                                                <ul>
+                                                    <li>
+                                                        arrangements involving restrictions on cash balances, compensating
+                                                        balances and line-of-credit or similar arrangements
+                                                    </li>
+                                                    <li>
+                                                        agreements or options to repurchase assets previously sold.
+                                                    </li>
+                                                    <li>
+                                                        Material or contingent liabilities or assets including those arising under
+                                                        derivative financial instruments. 
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <h5><small class="bullet">16.</small> EMPLOYEE BENEFITS</h5>
+                                            <p>
+                                                All post-employment benefits have been identified and accounted for based on
+                                                estimates and all events impacting the plans have been taken into consideration
+                                                while arriving at the estimates
+                                            </p>
+                                            <div>
+                                                <ol type="i">
+                                                    <li>
+                                                        <h5>Defined Contribution Schemes</h5>
+                                                        [Bank to briefly describe the current arrangement]
+                                                        <input type="text">
+                                                    </li>
+                                                    <li>
+                                                        <h5>Defined Benefit Schemes</h5>
+                                                        [Bank to briefly describe the current arrangement]
+                                                        <input type="text">
+                                                    </li>
+                                                    <li>
+                                                        <h5> Other long term benefits</h5>
+                                                        <p>
+                                                            Employees of the Bank are entitled to accumulate their earned/ privilege
+                                                            leave up to a maximum of <input type="text"> days for officers and <input type="text"> days for other staff.
+                                                            A maximum of <input type="text"> days leave is eligible for encashment in each year
+                                                        </p>
+                                                        <p>
+                                                            Employees of the Bank are eligible for Disability Assistance which is borne by
+                                                            the Bank as and when the disability events occur.
+                                                        </p>
+                                                        <p>
+                                                            Some employees of the Bank are eligible for Voluntary Health Scheme which
+                                                            is borne by the Bank as and when the liability events occur. 
+                                                        </p>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                            <h5><small class="bullet">17.</small> TAXATION</h5>
+                                            <p>
+                                                We have calculated income tax expense, current tax liability according to the
+                                                definitions of taxable income and allowable deductions contained under Income
+                                                Tax Act, 1961.
+                                            </p>
+                                            <p>
+                                                We have calculated and recognized all other applicable taxes according to
+                                                relevant tax legislation. Management should include a note on whether the bank
+                                                has opted for the concessional tax regime as per section 115BAA of the Income
+                                                Tax Act, 1961
+                                            </p>
+                                            <p>
+                                                Timing difference for the purpose of calculation of deferred tax is correctly
+                                                identified in accordance with Accounting Standard 22 notified under companies
+                                                Act, 2013 or issued by ICAI as may be applicable in respect of deferred tax
+                                                assets recognized in the accounts and we confirm that there is reasonable
+                                                certainty that sufficient taxable income would be available in future periods to
+                                                realize such deferred tax assets.
+                                            </p>
+                                            <p>
+                                                The Bank creates Special Reserve through appropriations of profits, in order to
+                                                avail tax deductions as per section 36(1)(viii) of the Income Tax Act, 1961. The
+                                                Reserve Bank of India, through its circular dated December 20, 2013, had
+                                                advised banks to create deferred tax liability (DTL) on the amount outstanding in
+                                                Special Reserve, as a matter of prudence. Necessary Liability is created in
+                                                accordance with these RBI guidelines.
+                                            </p>
+                                            <h5><small class="bullet">18.</small> STATEMENT OF PROFIT AND LOSS</h5>
+                                            <p>
+                                                All material transactions have been adequately disclosed and full provision has
+                                                been made in the financial statements for all claims and losses of material
+                                                amounts that have resulted or may be expected to result from events that
+                                                occurred, or from commitments that were entered into on or before the date of
+                                                balance sheet.
+                                            </p>
+                                            <p>
+                                                No personal expenses have been charged to the Profit and Loss Account of the
+                                                Bank.
+                                            </p>
+                                            <p>
+                                                Except as recorded in the financial statements, the results for the year were not
+                                                materially affected by:
+                                            </p>
+                                            <div>
+                                                <ul>
+                                                    <li>
+                                                        transactions of a nature not usually undertaken by the Bank;
+                                                    </li>
+                                                    <li>
+                                                        circumstances of an exceptional or non-recurring nature;
+                                                    </li>
+                                                    <li>
+                                                        charges or credits relating to prior years;
+                                                    </li>
+                                                    <li>
+                                                        changes in accounting policies
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <h5><small class="bullet">19.</small> BALANCING OF BOOKS</h5>
+                                            <p>
+                                                The books of account are computerized and hence the subsidiary records are
+                                                automatically balanced with the relevant control records.
+                                            </p>
+                                            <h5><small class="bullet">20.</small> RELATED PARTY TRANSACTIONS</h5>
+                                            <p>The following are the related parties:</p>
+                                            <div class="table-responsive my-4">
+                                                <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Sr.No.</td>
+                                                            <td>Particulars</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="midtag">
+                                                            <td colspan="2" class="text-center">SUBSIDIARIES</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <span>1</span>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <input type="text">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <span>2</span>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <input type="text">
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="midtag">
+                                                            <td colspan="2" class="text-center">JOINT VENTURES</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <span>1</span>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <input type="text">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <span>2</span>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <input type="text">
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="midtag">
+                                                            <td colspan="2" class="text-center">KEY MANAGEMENT PERSONNEL OF THE BANK</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <span>1</span>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <input type="text">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <span>2</span>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <input type="text">
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <p>
+                                                We confirm that the transactions with the related parties have been entered on a
+                                                'arm's length price'. 
+                                            </p>
+                                            <h5><small class="bullet">21.</small> ACCOUNTING FOR INVESTMENTS IN ASSOCIATES</h5>
+                                            <p>
+                                                We have made available to you details and records relating to the existence and
+                                                ownership of all equity interests held in associates
+                                            </p>
+                                            <h5><small class="bullet">22.</small> ACAPITAL ADEQUACY</h5>
+                                            <p>
+                                                All the assets have been considered for the risk weighted assets. The
+                                                classification of these assets is done properly
+                                            </p>
+                                            <p>
+                                                All the notional principles of outstanding derivatives portfolio have been
+                                                considered to calculate credit risk and market risk.
+                                            </p>
+                                            <p>
+                                                The Capital fund and ratios relating to Capital Adequacy have been computed as
+                                                per guidelines issued by RBI.
+                                            </p>
+                                            <h5>
+                                                <small class="bullet">23.</small> LITIGATION AND CLAIMS
+                                            </h5>
+                                            <p>
+                                                We have provided to you all information regarding material outstanding legal
+                                                matters. 
+                                            </p>
+                                            <p>
+                                                We have properly recorded and/or disclosed in the financial statements
+                                                unasserted claims or assessments that our lawyer(s) has advised us are
+                                                probable of becoming a legal matter. 
+                                            </p>
+                                            <p>
+                                                <em>
+                                                    There is no pending litigation or unasserted claims against the Bank, other than
+                                                    disclosures made, which our legal advisors advise us, are probable of assertion
+                                                    and which require disclosure in the financial statements. Other than as provided
+                                                    to you, there are no cases pending with legal counsel either filed by the Bank or
+                                                    against the Bank on <input type="text">. 
+                                                </em>
+                                            </p>
+                                            <h5>
+                                                <small class="bullet">24</small> SEGMENT REPORTING
+
+                                            </h5>
+                                            <p>
+                                                The Bank has disclosed business segment as the primary segment. The Bank
+                                                primarily operates in India, hence the Bank has considered that its operations are
+                                                predominantly in the domestic segment and as such there are no reportable
+                                                geographical segments.
+                                            </p>
+                                            <p>
+                                                The ratios adopted for the allocation of operating expenses for segment reporting
+                                                purposes are based on the management’s judgment and perception of how the
+                                                business is carried on by the Bank. Further, inter-segment income and expense
+                                                has been determined using an internally developed transfer pricing rate and is
+                                                based on the average cost of funds.
+                                            </p>
+                                            <h5><small class="bullet">25.</small> INTERNAL FINANCIAL CONTROLS STRUCTURE</h5>
+                                            <div>
+                                                <ol type="1">
+                                                    <li>
+                                                        All material transactions have been recorded in the accounting records and
+                                                        are reflected in the financial statements
+                                                    </li>
+                                                    <li>
+                                                        There is an adequate internal control system commensurate with the size of
+                                                        the Bank and the nature of its business, for the advances of credit facilities,
+                                                        acceptance of deposits, its treasury operations, purchase of fixed assets,
+                                                        accounting for interest income and expenses, other expenses and the
+                                                        financial statement closure process. There is no failure to correct any major
+                                                        weakness in internal control system.
+                                                    </li>
+                                                    <li>
+                                                        We are responsible for establishing and maintaining adequate and effective
+                                                        internal financial controls based on the internal control over financial
+                                                        reporting criteria established by the Bank considering the essential
+                                                        components of internal control stated in the Guidance Note on Audit of
+                                                        Internal Financial Controls over Financial Reporting issued by the Institute of
+                                                        Chartered Accountants of India (‘ICAI’) and the preparation and presentation
+                                                        of the financial statements as set out in the terms of the audit engagement
+                                                        dated XXXXXXXXXX and, in particular, the assertions to you on the internal
+                                                        financial controls in accordance with the criteria mentioned above.
+                                                    </li>
+                                                    <li>
+                                                         We have performed an evaluation and made an assessment of the
+                                                        adequacy and effectiveness of the Bank's internal financial controls based
+                                                        on the criteria mentioned in Paragraph 3 above for the year ended March
+                                                        31, 20XX. Those evaluations do not include the procedures performed by
+                                                        you during the audit of internal financial controls over financial reporting as
+                                                        part of the basis for our assessment of the effectiveness of internal financial
+                                                        controls. We will ensure that our inventory related systems and controls are
+                                                        strong and there are proper preventive and detective controls in place for a
+                                                        strong Core Banking Solution.
+                                                    </li>
+                                                    <li>
+                                                        We had taken necessary steps to make IT System robust to block cybercrime
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                            <h5>
+                                                 <small class="bullet">26.</small>GENERAL
+                                            </h5>
+                                            <p>
+                                                The financial statements have been prepared in accordance with accounting
+                                                standards and other recognised accounting practices and policies disclosing the
+                                                information required to be disclosed in terms of Regulation 33 of the SEBI
+                                                (Listing Obligations and Disclosure Requirements) Regulations as issued and
+                                                amended from time to time basis or other relevant laws and regulations including
+                                                the manner in which it is to be disclosed.
+                                            </p>
+                                            <p>
+                                                We confirm that we have complied with the requirement of the coverage of
+                                                advances and branches covered under review/audit as per the provisions of
+                                                RBI/SEBI.
+                                            </p>
+                                            <p>
+                                                The Bank has complied with all aspects of contractual agreements that could
+                                                have a material effect on the financial statements in the event of non-compliance.
+                                                There has been no non-compliance with requirements of regulatory authorities
+                                                that could have a material effect on the financial statements in the event of noncompliance.
+                                            </p>
+                                            <p>
+                                                Operating leases primarily comprise office premises, staff residences and ATMs,
+                                                which are cancellable at the option of the Bank other than those disclosed in the
+                                                notes to accounts.
+                                            </p>
+                                            <p>
+                                                The financial statements are free of material mis-statements, including
+                                                    omissions
+                                            </p>
+                                            <p>
+                                                No funds have been advanced or loaned or invested (either from borrowed funds
+                                                or share premium or any other sources or kind of funds) by the Bank to or in any
+                                                other person(s) or entity(ies), including foreign entities (“Intermediaries”), with the
+                                                understanding, whether recorded in writing or otherwise, that the Intermediary
+                                                shall, whether, directly or indirectly lend or invest in other persons or entities
+                                                identified in any manner whatsoever by or on behalf of the Bank (“Ultimate
+                                                Beneficiaries”) or provide any guarantee, security or the like on behalf of the
+                                                Ultimate Beneficiaries;
+                                            </p>
+                                            <p>
+                                                No funds have been received by the Bank from any person(s) or entity(ies),
+                                                including foreign entities (“Funding Parties”), with the understanding, whether
+                                                recorded in writing or otherwise, that the Bank shall, whether, directly or
+                                                indirectly, lend or invest in other persons or entities identified in any manner
+                                                whatsoever by or on behalf of the Funding Party (“Ultimate Beneficiaries”) or
+                                                provide any guarantee, security or the like on behalf of the Ultimate
+                                                Beneficiaries; and
+                                            </p>
+                                            <p>
+                                                The Bank has used such accounting software for maintaining its books of
+                                                account which has a feature of recording audit trail (edit log) facility and the same
+                                                has been operated throughout the year for all transactions recorded in the
+                                                software and the audit trail feature has not been tampered with and the audit trail
+                                                has been preserved by the company as per the statutory requirements for record
+                                                retention.
+                                            </p>
+                                            <p>
+                                                For capital adequacy, margins deducted from assets to arrive at the riskweighted assets have been appropriately computed.
+                                            </p>
+                                            <p>
+                                                [Penalty, if any levied on the bank: the fact of penalty along with the reasons
+                                                should be briefly described].
+                                            </p>
+                                            <p>
+                                                Reconciliation/ balancing of debit and credit outstanding entries in various heads
+                                                of accounts, included in Inter-Office Adjustments, NOSTRO, Drafts/ TTs payable,
+                                                Clearing Adjustments, Dividend/ Interest/ Refund Orders Paid/ Payable, Other
+                                                liabilities on account of foreign currency translation etc. is in progress. The
+                                                impact, if any, on the financial statements will not be materia
+                                            </p>
+                                            <p>
+                                                The format, breakup/grouping of sub-heads of accounts adopted during the year
+                                                are based on the regroupings done in the current year as per the details provided
+                                                to you. Figures of the previous year are regrouped / rearranged, so as to confirm
+                                                with the presentation made for the current year.
+                                            </p>
+                                            <p>
+                                                Non-banking assets acquired in satisfaction of claims have been valued at
+                                                <input type="text"> [Basis of valuation should be provided]. 
+                                            </p>
+                                            <p>
+                                                Weighted average number of equity shares considered for Basic and Diluted
+                                                EPS has been calculated as per the method prescribed in Accounting Standard20
+                                            </p>
+                                            <p>
+                                                omputation of values for disclosures related to the following have been done as
+                                                per related guidelines issued by RBI and are in agreement with the books of
+                                                account and other records maintained by the Bank:
+                                            </p>
+                                            <div>
+                                                <ol type="i">
+                                                    <li>
+                                                        Capital
+                                                    </li>
+                                                    <li>
+                                                        Investments
+                                                    </li>
+                                                    <li>
+                                                        Repo transactions
+                                                    </li>
+                                                    <li>
+                                                        Non-SLR Investment portfolio
+                                                    </li>
+                                                    <li>
+                                                        Non-performing Non-SLR investments
+                                                    </li>
+                                                    <li>
+                                                        Sales and transfers of securities to/from Held to Maturity (HTM) category
+                                                    </li>
+                                                    <li>
+                                                        Disclosure on instance of SGL bouncing
+                                                    </li>
+                                                    <li>
+                                                        Forwards Rate Agreement/Interest Rate Swap
+                                                    </li>
+                                                    <li>
+                                                        Exchange Traded Interest Rate Derivatives
+                                                    </li>
+                                                    <li>
+                                                        Currency Futures – Proprietary
+                                                    </li>
+                                                    <li>
+                                                        Disclosures on risk exposure in derivatives- Qualitative disclosures
+                                                    </li>
+                                                    <li>
+                                                        Disclosures on risk exposure in derivatives- Quantitative disclosures
+                                                    </li>
+                                                    <li>
+                                                        Non-Performing Assets ( Loans & Advances, interest accrued thereon )
+                                                    </li>
+                                                    <li>
+                                                        Details of financial assets sold to Securitisation/Reconstruction Company
+                                                        for Asset Reconstruction
+                                                    </li>
+                                                    <li>
+                                                        Details of non-performing financial assets purchased
+                                                    </li>
+                                                    <li>
+                                                        Details of non-performing financial assets sold 
+                                                    </li>
+                                                    <li>
+                                                        Provision on Standard Assets
+                                                    </li>
+                                                    <li>
+                                                        Business Ratios
+                                                    </li>
+                                                    <li>
+                                                        Exposure to Real Estate Sector
+                                                    </li>
+                                                    <li>
+                                                        Exposure to Capital Market
+                                                    </li>
+                                                    <li>
+                                                        Risk Category wise Country Exposure
+                                                    </li> 
+                                                    <li>
+                                                        Prudential Exposure Limits
+                                                    </li>
+                                                    <li>
+                                                        Break up of 'Provisions and Contingencies' shown under the head
+                                                        Expenditure in Profit and Loss Account
+                                                    </li>
+                                                    <li>
+                                                        Unsecured Advances
+                                                    </li>
+                                                    <li>
+                                                        Floating Provisions
+                                                    </li>
+                                                    <li>
+                                                        Draw Down from Reserves
+                                                    </li>
+                                                    <li>
+                                                        Disclosure of Complaints/Awards
+                                                    </li>
+                                                    <li>
+                                                        Awards passed by the Banking Ombudsman
+                                                    </li>
+                                                    <li>
+                                                         Customer Complaints on Account of ATM Transactions
+                                                    </li>
+                                                    <li>
+                                                        Securitisation
+                                                    </li>
+                                                    <li>
+                                                        Fees and Remuneration Received in respect of Bancassurance Business
+                                                    </li>
+                                                    <li>
+                                                        The bank has not issued any letter of comfort during the year
+                                                    </li>
+                                                    <li>
+                                                        Asset Liability Management
+                                                    </li>
+                                                    <li>
+                                                         Concentration of Deposits, Advances, Exposure and NPAs
+                                                    </li>
+                                                    <li>
+                                                        Sector-wise NPAs
+                                                    </li>
+                                                    <li>
+                                                         Movement of NPAs
+                                                    </li>
+                                                    <li>
+                                                        Stock of technical write-offs and the recoveries made thereon .
+                                                    </li>
+                                                    <li>
+                                                        Overseas Assets, NPAs and Revenue
+                                                    </li>
+                                                    <li>
+                                                        Off-Balance Sheet SPVs sponsored (which are required to be
+                                                        consolidated as per accounting norms)
+                                                    </li>
+                                                    <li>
+                                                        Credit Default Swaps
+                                                    </li>
+                                                    <li>
+                                                        Sugar Undertakings
+                                                    </li>
+                                                    <li>
+                                                        Employees’ Stock Option Scheme (ESOS) 
+                                                    </li>
+                                                    <li>
+                                                        Status for Extending Financial Assistance to Sugar Undertakings, 2007 
+                                                    </li>
+                                                    <li>
+                                                        Dues to micro, small & medium enterprises
+                                                    </li>
+                                                    <li>
+                                                        Estimated amount of contracts remaining to be executed on capital
+                                                        account
+                                                    </li>
+                                                    <li>
+                                                        capital adequacy and other ratios along with other qualitative and
+                                                        quantitative disclosures 
+                                                    </li>
+                                                    <li>
+                                                        Restructuring and provisioning thereof
+                                                    </li>
+                                                    <li>
+                                                        Proposed Dividend 
+                                                    </li>
+                                                </ol>
+                                                <p>
+                                                    [If the bank has proposed dividend, details thereof need to be disclosed.]
+                                                </p>
+                                                <h5>
+                                                    <small class="bullet">25.</small> EVENTS AFTER BALANCE SHEET DATE
+                                                </h5>
+                                                <p>
+                                                    No events have occurred between the financial reporting date to the date of this
+                                                    letter that would require adjustment to, or disclosure in, the financial statements. 
+                                                </p>
+                                                <h5>
+                                                    <small class="bullet">28.</small> CAPITAL INFUSION
+                                                </h5>
+                                                <p>
+                                                    <em>
+                                                        [Details of capital infusion (if any) made during the audit period needs to be
+                                                        provided]
+                                                    </em>
+                                                </p>
+                                                <p>
+                                                    We hereby agree to submit and make available copies of audited financials,
+                                                    auditors’ reports, LFAR, Tax Audit Report, Annual Returns and other
+                                                    certifications by Branch Auditors to the SCAs, which are kept in our custody on
+                                                    behalf of SCA. We further confirm that we will be submitting the soft / scanned
+                                                    copies of the same for records of SCA to be retained as audit documentation to
+                                                    ensure the compliance of SA 230 and SA 600.
+                                                </p>
+                                                <p>
+                                                    We confirm the above representations are made on the basis of adequate
+                                                    enquiries of management and staff (and where appropriate, inspection of
+                                                    evidence) sufficient to satisfy ourselves that we can properly make each of the
+                                                    above representations to you
+                                                </p>
+                                            </div>
+                                            <div class="text-left">
+                                                <p>
+                                                    Thanking you 
+                                                </p>
+                                                <p>
+                                                    Yours Faithfully
+                                                </p>
+                                                <p><input type="text"></p>
+                                                <p>
+                                                   <input type="text"> Bank
+                                                </p>
+                                                <p>
+                                                    Date _________
+                                                </p>
+                                                <p>
+                                                    Place ___________
+                                                </p>
+                                            </div>     
+                                        </div>   
+                                    </div>                                   
+                                    <div class="card-footer footer-btn">
+                                        <a href="#Edit">Edit in Docs</a>
+                                        <a href="#Download">Download</a>
+                                        <a href="https://resource.cdn.icai.org/69211aasb-gnab2022-c1.pdf" target="_blank">See Format</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script src="./dashboard-pack.js"></script>
+<script src="./dashboard.js"></script>
+<!-- ==========================JQuery================================ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    
+   // Required: JQUERY
+    (function ($) {
+
+    $.fn.select3 = function (options) {
+        var dataItems = [];
+        var selectorID = '#' + this.attr('id');
+
+        $(selectorID).find('option').each(function (index, element) {
+
+            if (element.text != '') {
+                dataItems.push(element.text.trim());
+            }
+            else {
+                dataItems.push(element.value.trim());
+            }
+
+        });
+
+        var opts = $.extend({}, $.fn.select3.defaults, options);
+
+        var idDiv = this.attr('id') + 'searchSelect3';
+        var idInput = this.attr('id') + 'searchSelect3_Input';
+        var idClose = this.attr('id') + 'searchSelect3_Times';
+        var idDown = this.attr('id') + 'searchSelect3_Caret_Down';
+        var idList = this.attr('id') + 'searchSelect3_List';
+        var idListLi = this.attr('id') + 'searchSelect3_List_LI';
+
+        var selectorDiv = '#' + this.attr('id') + 'searchSelect3';
+        var selectorInput = '#' + this.attr('id') + 'searchSelect3_Input';
+        var selectorClose = '#' + this.attr('id') + 'searchSelect3_Times';
+        var selectorDown = '#' + this.attr('id') + 'searchSelect3_Caret_Down';
+        var selectorList = '#' + this.attr('id') + 'searchSelect3_List';
+        var selectorListLi = '#' + this.attr('id') + 'searchSelect3_List_LI';
+
+        var buildELement = $('<div class="searchSelect3" id="' + idDiv + '" style="position:relative;"><input class="searchSelect3_Input" placeholder="' + opts.placeholder + '" value="' + opts.defaultvalue + '" id="' + idInput + '"><span class="fa fa-times searchSelect3_Times" id="' + idClose + '"></span><span class="fa fa-caret-down searchSelect3_Caret_Down" id="' + idDown + '"></span></div>');
+
+        if ($(selectorDiv).length > 0) {
+            $(selectorDiv).remove();
+        }
+
+        this.after(buildELement);
+
+        if (opts.width > 0) {
+            $(selectorInput).css('width', opts.width);
+            $(selectorDown).css('left', (opts.width - 20));
+            $(selectorClose).css('left', (opts.width - 40));
+        }
+
+
+        var cache = {};
+        var drew = false;
+        this.hide();
+
+
+
+        $(document).on('click', function (e) {
+            if ($(e.target).parent().is("li[id*='" + idListLi + "']") == false) {
+                if ($(e.target).attr('id') != idInput && $(e.target).attr('id') != idDown) {
+                    $(selectorList).empty();
+                    $(selectorList).css('z-index', -1);
+                    $(selectorClose).hide();
+                }
+            }
+
+            
+
+        });
+
+
+
+
+        var showList = function (query, valuee) {
+
+            if (query in cache) {
+                results = cache[query];
+            } else {
+                var results = $.grep(dataItems, function (item) {
+                    return item.search(RegExp(query, "i")) != -1;
+                });
+
+                cache[query] = results;
+            }
+
+            $(selectorList).css('z-index', opts.zIndex);
+
+
+            if (drew == false) {
+                $(selectorInput).after('<ul id="' + idList + '" class="searchSelect3_List" style="z-index:' + opts.zIndex + '"></ul>');
+
+                if (opts.width > 0) {
+
+                    $(selectorList).css('width', opts.width);
+
+                }
+
+                if (opts.widthList > 0)
+                {
+                    $(selectorList).css('width', opts.widthList);
+                }
+                drew = true;
+
+                $(selectorList).on("click", "li", function () {
+                    var nilai = $(this).text()
+                    $(selectorInput).val(nilai);
+                    $(selectorID).val(nilai);
+                    $(selectorList).empty();
+                    $(selectorClose).show();
+                    $(selectorList).css('z-index', -1);
+                    $(selectorID).change();
+                });
+
+
+            }
+            else {
+                $(selectorList).empty();
+            }
+
+            var counter = 0;
+            for (term in results) {
+                counter++;
+                $(selectorList).append("<li id=" + idListLi + counter + "><label>" + results[term] + "</label></li>");
+            }
+
+            
+
+        };
+
+
+
+        $(selectorInput).on('click', function (e) {
+            var query = $(this).val();
+
+            showList('', query);
+
+
+            $(selectorClose).hide();
+            if (query.length > 0) {
+                $(selectorClose).show();
+            }
+
+        });
+
+        $(selectorInput).on('keyup', function (e) {
+            $(selectorList).empty();
+            var query = $(selectorInput).val();
+            showList(query, query);
+
+            $(selectorClose).hide();
+            if (query.length > 0) {
+                $(selectorClose).show();
+            }
+
+            $(selectorID).change();
+        });
+
+        $(selectorInput).on('keydown', function (e) {
+            if (e.which == 9) {
+                $(selectorList).empty();
+                $(selectorList).css('z-index', -1);
+                $(selectorClose).hide();
+            }
+        });
+
+        $(selectorDown).on('click', function (e) {
+            var query = $(this).val();
+            if ($(selectorList).find('li').length == 0) {
+                showList('', query);
+            }
+            else {
+                //$(selectorList).css('z-index', -1);
+                $(selectorList).empty();
+                $(selectorList).css('z-index', -1);
+            }
+
+            $(selectorClose).hide();
+            if (query.length > 0) {
+                $(selectorClose).show();
+            }
+
+        });
+
+        $(selectorClose).on('click', function (e) {
+            $(selectorInput).val('');
+            $(selectorClose).hide();
+            $(selectorID).change();
+
+        });
+
+
+        return this;
+    };
+
+    $.fn.select3.defaults = {
+        placeholder: "",
+        zIndex: 1,
+        defaultvalue: "",
+        width: 0,
+        widthList: 0
+    };
+
+    }(jQuery));
+  
+    $(document).ready(function(e){
+
+    $('#selectBankList').select3({ width: 260, placeholder: 'Search Name or ID', zIndex: 100 });  
+
+    });
+
+</script>
+</body>
+</html>

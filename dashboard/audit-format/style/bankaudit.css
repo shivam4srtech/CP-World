@@ -1,0 +1,361 @@
+p, h1, h2, h3, h4, h5, h6 strong, span, label {
+    font-family: 'Montserrat', sans-serif;
+}
+/* =====================Serach with dropdown================ */
+/* START SELECT3.css */
+.searchSelect3 {
+    position: relative;
+    color: #000;
+    margin-bottom: 10px;
+   font-size: .9rem;
+}
+
+.searchSelect3_Input {
+    width: 50% !important;
+    height: 2rem;
+    padding: 1.2rem .4rem;
+    background: #fcfcfc;
+    border: 1px solid #0000005e;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.searchSelect3_Caret_Down {
+    position: absolute;
+    top: 10px;
+    left: 180px;
+    cursor: pointer;
+}
+
+.searchSelect3_Times {
+    position: absolute;
+    top: 10px;
+    left: 210px;
+    cursor: pointer;
+    display: none;
+}
+
+.searchSelect3_List {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    overflow-x: hidden;
+    max-height: fit-content;
+    position: absolute;
+    border: 1px solid #0000005e;
+    width: 50% !important;
+    background-color: #000000;
+    border-top: none;
+}
+
+.searchSelect3_List li {
+    list-style-type: none;
+    background: #ffffff;
+    color: #000000;
+    border-bottom: 1px solid #ccc;
+}
+
+.searchSelect3_List li:hover {
+    cursor: pointer;
+    background: #26ace3;
+    color: #ffffff;
+}
+
+
+.searchSelect3_List li label {
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.searchSelect3_List li:hover label {
+    color: #ffffff;
+}
+
+.searchSelect3_Input::-ms-clear {
+display: none;
+width: 0;
+height: 0;
+}
+
+.searchSelect3_Input::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.searchSelect3_Input::-webkit-search-decoration,
+.searchSelect3_Input::-webkit-search-cancel-button,
+.searchSelect3_Input::-webkit-search-results-button,
+.searchSelect3_Input::-webkit-search-results-decoration {
+    display: none;
+}
+#wrapper{
+  margin-top: 20px;
+}
+#wrapper ul li{
+    margin-bottom: 0;
+}
+/* =================Footer BTN============================= */
+.footer-btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-btn a{
+   display: inline-block;
+   font-weight: 500;
+   text-decoration: none;
+   letter-spacing: .5px;
+   padding: .5rem 1rem;
+   border-radius: 4px;
+   color: #ffffff;
+   border: none;
+   outline: none;
+   font-style: normal;
+}
+.footer-btn a:nth-of-type(1){
+   background-color: #e1ba00;
+ }
+ .footer-btn a:nth-of-type(2){
+    background-color: #26ace3;
+  }
+  .footer-btn a:nth-of-type(3){
+    background-color: #70ae45;
+  }
+@media(max-width:500px){
+    .footer-btn a{
+        padding: .35rem .6rem;
+     }
+}
+/* =================table======================== */
+.table th, .table td{
+    border: 1px solid #706f6f;
+}
+.table thead th{
+    border: 1px solid #706f6f;
+}
+.headtd{
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+}
+.headth{
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    letter-spacing: .5px
+}
+/* ============================================== */
+.audit-title{
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.audit-subtitle{
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.bankaudit h3{
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.table-responsive table .datarow td span{
+    font-weight: 500;
+    color: #000;
+}
+  .bullet{
+   color: #000;
+   font-weight: 600;
+   font-size: 1.1rem;
+   margin-right: .4rem;
+   display: inline-block;
+}
+.inputset label{
+    color: #000;
+    font-weight: 600;
+    font-size: .85rem;
+}
+.bankaudit h4{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #000;
+    margin: 1rem 0;
+}
+.bankaudit h5{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000;
+}
+.bankaudit ol li{
+    font-size: .9rem;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: .8rem;
+}
+::placeholder{
+    color: #000;
+    font-weight: 500;
+    font-size: .8rem;
+}
+.bankaudit p{
+    font-weight: 500;
+    color: #000;
+    line-height: 1.4;
+    font-size: .95rem;
+    letter-spacing: .4px;
+    margin-bottom: 1rem;
+}
+.bankaudit input{
+    display: inline-block;
+    margin-bottom: .6rem;
+}
+.bankaudit em{
+    display: inline-block;
+    color: #000;
+    font-weight: 500;
+    font-size: .85rem;
+}
+.term small{
+    display: block;
+    color: #000;
+    margin-bottom: .5rem;
+    font-size: .8rem;
+}
+.bankaudit ul li {
+    list-style: disc;
+    color: #000;
+    font-size: .9rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.form-check-input{
+    display: inline-block;
+    margin-left: .5rem;
+}
+li small{
+    font-weight: 500;
+    font-size: .8rem;
+}
+ol .form-check-input{
+    position: static;
+    display: block;
+}
+.table-responsive thead td{
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+    font-size: .95rem;
+}
+.table-responsive tbody td span{
+    font-weight: 500;
+    text-align: center;
+    color: #000;
+    font-size: .9rem;
+}
+.midtag{
+    font-weight: 600;
+    color: #000;
+}
+.xbrl-box{
+    border: 1px solid #23232388;
+    padding: 1rem;
+}
+.xbrl-box h5{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #000;
+}
+.xbrl-box h6{
+    font-weight: 600;
+    font-size: 1rem;
+    color: #000;
+}
+.xbrl-box p{
+    font-size: .9rem;
+    color: #000;
+    font-weight: 500;
+}
+.fillblank input{
+    border-radius: 0;
+    outline: none;
+    border: 1px solid #000;
+    display: inline-block;
+    padding: .2rem;
+    margin-bottom: .6rem;
+}
+.fillblank p{
+    font-weight: 500;
+    color: #000;
+    font-size: .9rem;
+    letter-spacing: .5px;
+}
+.fillblank li{
+    font-weight: 500;
+    color: #000;
+    font-size: .9rem;
+    letter-spacing: .5px;
+}
+h6{
+    font-weight: 600;
+    font-size: 1rem;
+    color: #000;
+}
+.checkkaro label{
+    margin-left: 2rem;
+    font-weight: 500;
+    color: #000;
+    font-size: .8rem;
+}
+.make-flex{
+    display: flex;
+    justify-content: space-between;
+
+}
+.vertical-text {
+    transform: rotate(90deg);
+    letter-spacing: .5px;
+  }
+  .verticale-table{
+    border: 1px solid red;
+    height: 8rem;
+    text-align: center;
+  }
+  .instruction{
+    border: 1px solid #8e8e8e;
+    padding: 1rem ;
+    margin: 1rem auto;
+  }
+  .companybox{
+    border: 1px solid #232323;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.4rem .5rem;
+    margin: 1rem auto;
+    font-weight: 600;
+    letter-spacing: .5px;
+    max-width: 80%;
+  }
+  @media(max-width: 600px){
+    .companybox{
+        display: block;
+        max-width: 100%;
+        text-align: center;
+      }
+  }
+  /* .applicabilityChecklist{
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+  }
+  @media(max-width: 700px){
+    .applicabilityChecklist{
+       flex-direction: column;
+
+      }
+  } */
+ 

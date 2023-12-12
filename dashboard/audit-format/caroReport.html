@@ -1,0 +1,1342 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> Dashboard | CharteredONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./style/dashboardpack.css">
+    <link rel="stylesheet" href="./style/dashboard.css">
+    <link rel="stylesheet" href="./style/bankaudit.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa-solid fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Romana I Khan
+                                    </div>
+                                    <div class="widget-subheading">
+                                       GST Analyst
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <div class="widget-content-left">
+                                        <div class="widget-content-left">
+                                            <a href="./profile.html"><img width="40" class="rounded-circle" src="../images/female_avatar_efig.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>        
+        <div class="ui-theme-settings">
+            <button type="button" id="TooltipDemo" class="btn-open-options btn">
+                <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+            </button>
+            <div class="theme-settings__inner">
+                <div class="scrollbar-container">
+                    <div class="theme-settings__options-wrapper">
+                        <h3 class="themeoptions-heading">Layout Options
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-header">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Header
+                                                </div>
+                                                <div class="widget-subheading">Makes the header top fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-sidebar">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Sidebar
+                                                </div>
+                                                <div class="widget-subheading">Makes the sidebar left fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-footer">
+                                                    <div class="switch-animate switch-off">
+                                                        <input type="checkbox" data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Footer
+                                                </div>
+                                                <div class="widget-subheading">Makes the app footer bottom fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>
+                                Header Options
+                            </div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-header-cs-class" data-class="bg-secondary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-header-cs-class" data-class="bg-success header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-header-cs-class" data-class="bg-info header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-header-cs-class" data-class="bg-warning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-header-cs-class" data-class="bg-danger header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-header-cs-class" data-class="bg-light header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-header-cs-class" data-class="bg-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-header-cs-class" data-class="bg-focus header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-header-cs-class" data-class="bg-alternate header-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-header-cs-class" data-class="bg-midnight-bloom header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-header-cs-class" data-class="bg-night-sky header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-header-cs-class" data-class="bg-slick-carbon header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-header-cs-class" data-class="bg-asteroid header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-header-cs-class" data-class="bg-royal header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-header-cs-class" data-class="bg-warm-flame header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-header-cs-class" data-class="bg-night-fade header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-header-cs-class" data-class="bg-sunny-morning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-header-cs-class" data-class="bg-tempting-azure header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-header-cs-class" data-class="bg-amy-crisp header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-header-cs-class" data-class="bg-heavy-rain header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-header-cs-class" data-class="bg-mean-fruit header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-header-cs-class" data-class="bg-malibu-beach header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-header-cs-class" data-class="bg-deep-blue header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-header-cs-class" data-class="bg-ripe-malin header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-header-cs-class" data-class="bg-arielle-smile header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-header-cs-class" data-class="bg-plum-plate header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-header-cs-class" data-class="bg-happy-fisher header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-header-cs-class" data-class="bg-happy-itmeo header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-header-cs-class" data-class="bg-mixed-hopes header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-header-cs-class" data-class="bg-strong-bliss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-header-cs-class" data-class="bg-grow-early header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-header-cs-class" data-class="bg-love-kiss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-header-cs-class" data-class="bg-premium-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-header-cs-class" data-class="bg-happy-green header-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Sidebar Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-sidebar-cs-class" data-class="bg-primary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-sidebar-cs-class" data-class="bg-secondary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-sidebar-cs-class" data-class="bg-success sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-sidebar-cs-class" data-class="bg-info sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-sidebar-cs-class" data-class="bg-warning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-sidebar-cs-class" data-class="bg-danger sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-sidebar-cs-class" data-class="bg-light sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-sidebar-cs-class" data-class="bg-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-sidebar-cs-class" data-class="bg-focus sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-sidebar-cs-class" data-class="bg-alternate sidebar-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class" data-class="bg-vicious-stance sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-sidebar-cs-class" data-class="bg-midnight-bloom sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-sidebar-cs-class" data-class="bg-night-sky sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-sidebar-cs-class" data-class="bg-slick-carbon sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-sidebar-cs-class" data-class="bg-asteroid sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-sidebar-cs-class" data-class="bg-royal sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-sidebar-cs-class" data-class="bg-warm-flame sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-sidebar-cs-class" data-class="bg-night-fade sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-sidebar-cs-class" data-class="bg-sunny-morning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-sidebar-cs-class" data-class="bg-tempting-azure sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-sidebar-cs-class" data-class="bg-amy-crisp sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-sidebar-cs-class" data-class="bg-heavy-rain sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-sidebar-cs-class" data-class="bg-mean-fruit sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-sidebar-cs-class" data-class="bg-malibu-beach sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-sidebar-cs-class" data-class="bg-deep-blue sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-sidebar-cs-class" data-class="bg-ripe-malin sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-sidebar-cs-class" data-class="bg-arielle-smile sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-sidebar-cs-class" data-class="bg-plum-plate sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-sidebar-cs-class" data-class="bg-happy-fisher sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-sidebar-cs-class" data-class="bg-happy-itmeo sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-sidebar-cs-class" data-class="bg-mixed-hopes sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-sidebar-cs-class" data-class="bg-strong-bliss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-sidebar-cs-class" data-class="bg-grow-early sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-sidebar-cs-class" data-class="bg-love-kiss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-sidebar-cs-class" data-class="bg-premium-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-sidebar-cs-class" data-class="bg-happy-green sidebar-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Main Content Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto active btn btn-focus btn-sm">Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Page Section Tabs
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div role="group" class="mt-2 btn-group">
+                                            <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="body-tabs-line">
+                                                Line
+                                            </button>
+                                            <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="body-tabs-shadow">
+                                                Shadow
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="app-main">
+                <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>    
+                    <div class="scrollbar-sidebar">
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu">
+                                <li class="mt-1 dashbtn">
+                                    <a href="../dashboard.html" class="mm-active">
+                                        <i class="metismenu-icon fa-solid fa-house"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Client Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-user fa-regular"></i>
+                                        Client
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../create-client.html">
+                                                <i class="metismenu-icon"></i>
+                                                Add New Client
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../all-client.html">
+                                                <i class="metismenu-icon"></i>All Clients
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Service Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-users-gear"></i>
+                                        Services
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../tax.html">
+                                                <i class="metismenu-icon"></i>
+                                                Tax
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../gst.html">
+                                                <i class="metismenu-icon"></i>GST
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../audit.html">
+                                                <i class="metismenu-icon"></i>Audit
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../compliences.html">
+                                                <i class="metismenu-icon"></i>Company Compliences
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Audits &amp Reports</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-magnifying-glass"></i>
+                                        Audit
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../company-audit.html">
+                                                <i class="metismenu-icon"></i>
+                                                company
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./gst.html">
+                                                <i class="metismenu-icon"></i>LLP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./audit.html">
+                                                <i class="metismenu-icon"></i>Non Company Entity
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>NPO
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>Banks
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Community</li>
+                                <li>
+                                    <a href="../community.html">
+                                        <i class="metismenu-icon fa-solid fa-solid fa-user">
+                                        </i>My Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../message.html">
+                                        <i class="metismenu-icon fa-solid fa-regular fa-message">
+                                        </i>Chats
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Revunue</li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon fa-solid fa-dollar-sign"></i>
+                                        Revenue
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">PRO Version</li>
+                                <li>
+                                    <a href="#000">
+                                        <i class="metismenu-icon fa-regular fa-circle-check">    
+                                        </i>
+                                        Upgrade to PRO
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===================Content====================== -->
+                <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <!-- ================Pay Taxes ================-->   
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-header">
+                                        <span>Appendix I</span>
+                                        <div class="btn-actions-pane-right">
+                                            <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">Click here to see format</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div>
+                                            <h2 class="audit-title p-0 text-center">
+                                                An Illustrative Checklist on Companies (Auditor’s Report) Order, 2016
+                                            </h2>
+                                        </div>
+                                    </div>    
+                                    <div class="card-body">
+                                        <div class="bankaudit">
+                                            <h5 class="text-center">
+                                                (for the reply of the Board or the Audit Committee on
+                                                fraud reported by the auditor under Rule 13(2)(b) and (d)
+                                                and Rule 13(3) and (4) of Companies (Audit and Auditors)
+                                                Rules, 2014) [as amended by the Companies (Audit and
+                                                
+                                                Auditors) Amendment Rules, 2015]
+                                            </h5>
+                                            <p class="text-center">
+                                                This checklist does not form part of the Guidance Note and
+                                                is only illustrative in nature. Members are expected to
+                                                exercise their professional judgment while making its use
+                                                depending upon facts and circumstances of each case and
+                                                read this check list in conjunction with the Guidance Note on
+                                                Companies (Auditor’s Report) Order 2016.
+                                            </p>
+                                            <p>Client:</p>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <p>Audit Report:</p>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <p>Manager In-Charge:</p>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <p>Discussed With:</p>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <p>Designation</p>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <p>Date</p>
+                                            <div class="col-md-6">
+                                                <input type="date" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <h5 class="mt-4">
+                                                Clause no. Particulars Remarks Working Paper Reference
+                                            </h5>
+                                            
+                                            <ol type="1">
+                                                <li>
+                                                    <h5>
+                                                        Whether the company is maintaining proper
+                                                        records showing full particulars, including
+                                                        quantitative details and situation of fixed
+                                                        assets;
+                                                    </h5>
+                                                   <ol type="i">
+                                                        <li>
+                                                            Whether records of Fixed
+                                                            Assets (tangible, intangible
+                                                            and leased assets) are
+                                                            maintained showing the
+                                                            following particulars:
+                                                        </li>
+                                                        <li>
+                                                            Sufficient description
+                                                            (distinctive numbers,
+                                                            purchase agreement,
+                                                            documents, records and
+                                                            registration references, etc.)
+                                                            of the asset to make
+                                                            identification possible.
+                                                        </li>
+                                                        <li>
+                                                            Classification, that is,
+                                                            the head under which it is
+                                                            shown in the accounts, e.g.,
+                                                            plant and machinery, office
+
+                                                            equipment, etc. component-
+                                                            wise, as applicable
+                                                        </li>
+                                                        <li>
+                                                            Location/situation.
+                                                        </li>
+                                                        <li>
+                                                            Quantity, i.e., number
+                                                            of units.
+                                                        </li>
+                                                        <li>
+                                                            Original cost.
+                                                        </li>
+                                                        <li>
+                                                            Year of purchase.
+                                                        </li>
+                                                        <li>
+                                                            Adjustment for
+                                                            revaluation or for any
+                                                            increase or decrease in
+                                                            cost, e.g., on revaluation of
+                                                            foreign exchange liabilities.
+                                                        </li>
+                                                        <li>
+                                                            Date of revaluation, if
+                                                            any.
+                                                        </li>
+                                                        <li>
+                                                            Rate and basis of
+                                                            depreciation, useful life,
+                                                            particulars regarding
+                                                            amortisation and impairment
+                                                        </li>
+                                                        <li>
+                                                            Depreciation,
+                                                            amortisation and impairment
+                                                            for the current year.
+                                                        </li>
+                                                        <li>
+                                                            Accumulated
+                                                            depreciation, amortisation
+                                                            and impairment loss.
+                                                        </li>
+                                                        <li>
+                                                            Particulars regarding
+                                                            sale, discarding, demolition,
+                                                            destruction etc.
+                                                        </li>
+                                                        <li>
+                                                            Particulars of fixed assets that have been
+                                                            retired from active use and
+                                                            held for disposal.
+                                                        </li>
+                                                        <li>
+                                                            Particulars of fixed
+                                                            assets that have been fully
+                                                            depreciated or amortised or
+                                                            impaired.
+                                                        </li>
+                                                        <li>
+                                                            Whether aggregate original
+                                                            cost, depreciation or
+                                                            amortisation to date and
+                                                            impairment loss, if any, as
+                                                            per the register/records
+                                                            agrees with General Ledger
+                                                            balances? If not, note the
+                                                            disagreements in respect of
+                                                            each class of assets. <br> Conclusion:
+                                                        </li>
+                                                   </ol>
+                                                </li>
+                                                <li>
+                                                    <h5>
+                                                        Whether these fixed assets have been
+                                                        physically verified by the management at
+                                                        reasonable intervals; whether any material
+                                                        discrepancies were noticed on such verification
+                                                        and if so, whether the same have been properly
+                                                        dealt with in the books of account;
+                                                    </h5>
+                                                    <ol type="i">
+                                                        <li>
+                                                            Whether Fixed Assets
+                                                            were physically verified at
+                                                            any time during the year or
+                                                            earlier years according to a
+                                                            phased program?
+                                                        </li>
+                                                        <li>
+                                                            What is the periodicity
+                                                            of physical verification and
+                                                            whether the same is
+                                                            reasonable?
+                                                        </li>
+                                                        <li>
+                                                            Whether assets
+                                                            physically verified agreed/ reconciled with book
+                                                            figures? If not, note the
+                                                            discrepancies against each
+                                                            class of assets in terms of
+                                                            value, and state how the
+                                                            discrepancies have been
+                                                            dealt with.
+                                                        </li>
+                                                        <li>
+                                                            Instructions to officials
+                                                            for carrying out physical
+                                                            verification to include
+                                                            procedures, timing,
+                                                            competency of team
+                                                            members, count
+                                                            sheets/tags, formats etc.
+                                                        </li>
+                                                        <li>
+                                                            Physically verify few items
+                                                            from the fixed asset register
+                                                            & vice versa.
+                                                        </li>
+                                                        <li>
+                                                            Whether management
+                                                            representation is obtained
+                                                            confirming that:
+                                                            <ul>
+                                                                <li>
+                                                                    fixed assets are
+                                                                    physically verified by the
+                                                                    company in accordance with
+                                                                    the policy of the company.
+                                                                </li>
+                                                                <li>
+                                                                    periodicity of the
+                                                                    physical verification of fixed
+                                                                    assets.
+                                                                </li>
+                                                                <li>
+                                                                    details of the material
+                                                                    discrepancies noticed during
+                                                                    the physical verification of
+                                                                    the fixed assets.
+                                                                </li>
+                                                                <li>
+                                                                    If no discrepancies were noted during physical
+                                                                    verification, the same should
+                                                                    be clearly mentioned. <br> Conclusion:
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                                <li>
+                                                    <h5>
+                                                        Whether the title deeds of immovable properties
+                                                        are held in the name of the company. If not,
+                                                        provide the details thereof;
+                                                    </h5>
+                                                    <ol type="i">
+                                                        <li>
+                                                            Does the company have any
+                                                            immovable properties (land
+                                                            and buildings)?
+                                                        </li>
+                                                        <li>
+                                                            Has the Company identified
+                                                            the land and building on the
+                                                            basis of Fixed Asset
+                                                            Register.
+                                                        </li>
+                                                        <li>
+                                                            Whether the title deeds of
+                                                            these immovable properties
+                                                            are in the name of the
+                                                            company? Whether the details as per
+                                                            title deeds reconcile with the
+                                                            details in Fixed assets
+                                                            register, if not, is there any
+                                                            material difference to be
+                                                            reported here
+                                                        </li>
+                                                        <li>
+                                                            Has the management
+                                                            provided details of
+                                                            immovable properties not
+                                                            held in company's name for
+                                                            example, location,
+                                                            description, and reasons for
+                                                            not being held in the
+                                                            company's name?
+                                                            <ul>
+                                                                <li>
+                                                                    In case the title deeds
+                                                                    are lost, assess whether the
+                                                                    certified copies of such
+                                                                    documents are available
+                                                                    with the company and what
+                                                                    actions have been taken by
+                                                                    the management in this
+                                                                    regard?
+                                                                </li>
+                                                                <li>
+                                                                    In case the title deeds
+                                                                    are mortgaged with the
+                                                                    lenders, assess if the
+                                                                    confirmation from the
+                                                                    lenders is obtained for the
+                                                                    same.
+                                                                </li>
+                                                                <li>
+                                                                    The discrepancies
+                                                                    observed should be
+                                                                    reported in the CARO
+                                                                    report.
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                                <li>
+                                                    <h5>
+                                                        Whether physical verification of inventory has
+                                                        been conducted at reasonable intervals by the
+                                                        management and whether any material
+                                                        discrepancies were noticed and if so, whether
+                                                        they have been properly dealt with in the books
+                                                        of account;
+                                                        <ol type="i">
+                                                            <li>
+                                                                Has the management
+                                                                physically verified the
+                                                                inventory, as defined in AS
+                                                                2? Inventory normally
+                                                                includes-
+                                                                <ul>
+                                                                    <li>
+                                                                        Raw materials and
+                                                                        Components
+                                                                    </li>
+                                                                    <li>
+                                                                        Packing materials
+                                                                    </li>
+                                                                    <li>
+                                                                        Maintenance supplies
+                                                                    </li>
+                                                                    <li>
+                                                                        Work in progress
+                                                                    </li>
+                                                                    <li>
+                                                                        Finished Goods
+                                                                    </li>
+                                                                    <li>
+                                                                        Stores and Spares
+                                                                    </li>
+                                                                    <li>
+                                                                        Consumables and
+                                                                        Loose tools
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                Whether evidence of
+                                                                physical verification has
+                                                                been seen and
+                                                                reasonableness of
+                                                                periodicity of physical
+                                                                verification evaluated? If
+                                                                yes, verify:
+                                                                <ul>
+                                                                    <li>
+                                                                        written instructions
+                                                                        issued by the management.
+                                                                    </li>
+                                                                    <li>
+                                                                        duly authenticated
+                                                                        physical verification sheets.
+                                                                    </li>
+                                                                    <li>
+                                                                        duly authenticated
+                                                                        summary sheets/
+                                                                        consolidation sheet
+                                                                    </li>
+                                                                    <li>
+                                                                        internal memo etc.
+                                                                        regarding issues arising on
+                                                                        physical verification.
+                                                                    </li>
+                                                                    <li>
+                                                                        any other documents
+                                                                        evidencing physical
+                                                                        verification.
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                Whether the original
+                                                                physical verification sheets
+                                                                have been reviewed and
+                                                                selected items traced into
+                                                                the final inventories?
+                                                                (including the more valuable
+                                                                ones as per ABC
+                                                                classification)
+                                                            </li>
+                                                            <li>
+                                                                Whether the comparison of
+                                                                final inventories with stock
+                                                                has been done? Whether
+                                                                records and other
+                                                                corroborative evidence, e.g.
+                                                                inventory statements
+                                                                submitted to banks?
+                                                            </li>
+                                                            <li>
+                                                                In case of continuous stock
+                                                                taking method, whether
+                                                                management:
+                                                                <ul>
+                                                                    <li>
+                                                                        maintains adequate
+                                                                        and up-to-date stock
+                                                                        records;
+                                                                    </li>
+                                                                    <li>
+                                                                        has established
+                                                                        adequate procedures for
+                                                                        physical verification of
+                                                                        inventories, so that in the
+                                                                        normal circumstances, the
+                                                                        programme of physical
+                                                                        verification will cover all
+                                                                        material items of inventory
+                                                                        at least once during the
+                                                                        year; and
+                                                                    </li>
+                                                                    <li>
+                                                                        check/examine
+                                                                        thoroughly and corrects all
+                                                                        material differences
+                                                                        between the book records
+                                                                        and the physical counts.
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                Whether stock register is
+                                                                updated and value of
+                                                                inventory extracted from it
+                                                                tally with the books of
+                                                                account.
+                                                            </li>
+                                                            <li>
+                                                                If any material discrepancies were found as compared to
+                                                                stock records, what were
+                                                                the extent of discrepancies
+                                                                (in terms of value) and how
+                                                                the same have been dealt
+                                                                with in the books of account
+                                                                as well as in the stock
+                                                                records? <br> Conclusion:
+                                                            </li>
+                                                        </ol>
+                                                    </h5>
+                                                </li>
+                                                <li>
+                                                    <h5>
+                                                        Whether the company has granted any loans,
+                                                        secured or unsecured to companies, firms,
+                                                        Limited Liability Partnerships or other parties
+                                                        covered in the register maintained under
+                                                        section 189 of the Companies Act, 2013. If so,
+                                                        whether the terms and conditions of the grant
+                                                        of such loans are not prejudicial to the
+                                                        company’s interest;
+                                                    </h5>
+                                                    <ol type="i">
+                                                        <li>
+                                                            Has the Company
+                                                            granted any loans (Secured
+                                                            or Unsecured) to
+                                                            companies, firms, limited
+                                                            liability partnerships or other
+                                                            parties covered in the
+                                                            register maintained under
+                                                            Section 189 of the
+                                                            Companies Act 2013?
+                                                        </li>
+                                                        <li>
+                                                            Where the company
+                                                            has granted any loans to
+                                                            parties covered in the
+                                                            register maintained under
+                                                            section 189 of the Act and
+                                                            squared off during the year,
+                                                            obtain details of such
+                                                            transactions.
+                                                        </li>
+                                                        <li>
+                                                            Whether the terms of the
+                                                            above loans are prima facie
+                                                            prejudicial, due
+                                                            consideration to be given to
+                                                            the factors mentioned
+                                                            below:
+                                                            <ul>
+                                                                <li>
+                                                                    terms & condition of
+                                                                    the loan repayment, rate of
+                                                                    interest, restrictive
+                                                                    covenants etc.,
+                                                                </li>
+                                                                <li>
+                                                                    company’s financial
+                                                                    standing, its ability to lend,
+                                                                    and terms of its borrowings
+                                                                </li>
+                                                                <li>
+                                                                    borrower’s financial
+                                                                    standing
+                                                                </li>
+                                                                <li>
+                                                                    the nature of the
+                                                                        security,
+                                                                </li>
+                                                                <li>
+                                                                    prevailing rate of
+                                                                    interest, etc. <br> Conclusion:
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                                <li>
+                                                    <h5>
+                                                        Whether the schedule of repayment of principal
+                                                        and payment of interest has been stipulated
+                                                        and whether the repayments or receipts are
+                                                        regular;
+                                                    </h5>
+                                                    <ol type="i">
+                                                        <li>
+                                                            Whether the schedule of
+                                                            repayment of principal and
+                                                            payment of interest has
+                                                            been stipulated in the loan
+                                                            agreements / mutually
+                                                            agreed letter of arrangement
+                                                            at the time of sanction?
+                                                        </li>
+                                                        <li>
+                                                            Whether repayment of
+                                                            principal amount and
+                                                            interest thereon are received regularly on the
+                                                            due date or immediately
+                                                            thereafter?
+                                                        </li>
+                                                        <li>
+                                                            If not, the fact and details
+                                                            should be Obtained. <br> Conclusion:
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                                <li>
+                                                    <h5>
+                                                        If the amount is overdue, state the total amount
+                                                        overdue for more than ninety days, and whether
+                                                        reasonable steps have been taken by the
+                                                        company for recovery of the principal and
+                                                        interest;
+                                                    </h5>
+                                                    <ol type="i">
+                                                        <li>
+                                                            Whether list of overdue
+                                                            amount has been prepared
+                                                            & recorded and reasonable
+                                                            steps taken for recovery of
+                                                            amount of loan which is
+                                                            overdue more than ninety
+                                                            days?
+                                                        </li>
+                                                        <li>
+                                                            Following documents may
+                                                            be seen for verification of
+                                                            reasonableness of steps
+                                                            taken by the company for
+                                                            recovery of principal and
+                                                            accrued interest on loan
+                                                            granted:
+                                                            <ul>
+                                                                <li>
+                                                                    Facts of each case
+                                                                    including amounts involved
+                                                                </li>
+                                                                <li>
+                                                                    Issue of reminder
+                                                                </li>
+                                                                <li>
+                                                                    Issue of reminder In absence of legal steps
+                                                                    whether auditor is satisfied
+                                                                    that reasonable steps have
+                                                                    been taken
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            Obtain management’s
+                                                            representation regarding
+                                                            steps that have been taken
+                                                            for recovery of total amount
+                                                            overdue more than ninety
+                                                            days. <br>
+                                                            Conclusion:
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                                <li>
+                                                    <h5>
+                                                        In respect of loans, investments, guarantees,
+                                                        and security whether provisions of section 185
+                                                        and 186 of the Companies Act, 2013 have been
+                                                        complied with. If not, provide the details
+                                                        thereof.
+                                                    </h5>
+                                                    <ol>
+                                                        <li type="i">
+                                                            Where Companies has
+                                                            given loans to directors etc.:
+                                                            <ol type="i">
+                                                                <li>
+                                                                    Whether any loans
+                                                                    given to directors or any
+                                                                    other person in whom the
+                                                                    director is interested, or
+                                                                    given any guarantee or
+                                                                    provided any security in
+                                                                    connection with any loan
+                                                                    taken by directors or such
+                                                                    other person?
+                                                                </li>
+                                                                <li>
+                                                                    Whether any of the
+                                                                    transaction is attracting the
+                                                                    provisions of section 185?
+                                                                </li>
+                                                                <li>
+                                                                    Whether any of such
+                                                                    transactions are covered
+                                                                    under the exceptions
+                                                                    provided under section 185?
+                                                                    If so, obtain the relevant
+                                                                    evidences ensuring such
+                                                                    exemption.
+                                                                </li>
+                                                            </ol>
+                                                        </li>
+                                                        <li>
+                                                            Where company has made
+                                                            loan/ investment
+                                                            <ol type="i">
+                                                                <li>
+`                                                                       Obtain the details of
+                                                                        loans and investment made
+                                                                        by the Company including
+                                                                        opening balances
+                                                                </li>
+                                                                <li>
+                                                                    Whether company has
+                                                                    made investment through
+                                                                    more than two layers of
+                                                                    investment companies?
+                                                                </li>
+                                                                <li>
+                                                                    Whether the company
+                                                                    has exceeded the limit of
+                                                                    sixty per cent of its paid-up
+                                                                    share capital, free reserves
+                                                                    and securities premium
+                                                                    account or one hundred per
+                                                                    cent of its free reserves and
+                                                                    securities premium account,
+                                                                    whichever is more?
+                                                                </li>
+                                                                <li>
+                                                                    If so, whether prior
+                                                                    approval by means of a
+                                                                    special resolution passed at
+                                                                    a general meeting has been
+                                                                    obtained?
+                                                                </li>
+                                                                <li>
+                                                                    Whether the rate of
+                                                                    interest charges is more or
+                                                                    at par to the rates specified
+                                                                    in subsection (7) of section
+                                                                    186 of the Act, if not, the
+                                                                    reasons thereof, <br>
+                                                                    Conclusion:
+                                                                </li>
+                                                            </ol>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                                <li>
+                                                    <h5>
+                                                        In case, the company has accepted deposits,
+                                                        whether the directives issued by the Reserve
+                                                        Bank of India and the provisions of sections 73
+                                                        to 76 or any other relevant provisions of the
+                                                        Companies Act, 2013 and the rules framed
+                                                        thereunder, where applicable, have been
+                                                        complied with? If not, the nature of such
+                                                        contraventions be stated; If an order has been
+                                                        passed by Company Law Board or National
+                                                        Company Law Tribunal or Reserve Bank of
+                                                        India or any Court or any other tribunal,
+                                                        whether the same has been complied with or
+                                                        not?
+                                                    </h5>
+                                                    <ol type="i">
+                                                        <li>
+                                                            The directives issued
+                                                            by the Reserve Bank of
+                                                            India have been complied
+                                                            with and also that:
+                                                        </li>
+                                                        <li>
+                                                            The provisions of
+                                                            Section 73 to 76 of the
+                                                            Companies Act, 2013 and
+                                                            the rules framed there under
+                                                            have been complied with.
+                                                        </li>
+                                                        <li>
+                                                            List out contraventions,
+                                                            if any.
+                                                        </li>
+                                                        <li>
+                                                            Where an order has been
+                                                            passed by the CLB or
+                                                            National Company Law
+                                                            Tribunal or Reserve Bank of
+                                                            India or any Court or any
+                                                            other Tribunal in respect of
+                                                            above, examine the steps
+                                                            taken by the company to comply with the order, and if
+                                                            not, report briefly stating
+                                                            there in the nature of
+                                                            contravention and the fact
+                                                            that Company has not
+                                                            complied with the order. <br>
+                                                            Conclusion:
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                            </ol>
+                                        </div>  
+                                    </div>                                   
+                                    <div class="card-footer footer-btn">
+                                        <a href="#Edit">Edit in Docs</a>
+                                        <a href="#Download">Download</a>
+                                        <a href="https://drive.google.com/drive/folders/1M9hX0mvbG8uM-GbucJE3u8Xfzdmfvqtw" target="_blank">See Format</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script src="./dashboard-pack.js"></script>
+<script src="./dashboard.js"></script>
+<!-- ==========================JQuery================================ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

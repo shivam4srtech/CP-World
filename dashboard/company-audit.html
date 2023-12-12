@@ -1,0 +1,968 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> Dashboard | CharteredONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="../css/dashboardpack.css">
+    <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/audit-list.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa-solid fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Romana I Khan
+                                    </div>
+                                    <div class="widget-subheading">
+                                       GST Analyst
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <div class="widget-content-left">
+                                        <div class="widget-content-left">
+                                            <a href="./profile.html"><img width="40" class="rounded-circle" src="../images/female_avatar_efig.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>        
+        <div class="ui-theme-settings">
+            <button type="button" id="TooltipDemo" class="btn-open-options btn">
+                <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+            </button>
+            <div class="theme-settings__inner">
+                <div class="scrollbar-container">
+                    <div class="theme-settings__options-wrapper">
+                        <h3 class="themeoptions-heading">Layout Options
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-header">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Header
+                                                </div>
+                                                <div class="widget-subheading">Makes the header top fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-sidebar">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Sidebar
+                                                </div>
+                                                <div class="widget-subheading">Makes the sidebar left fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-footer">
+                                                    <div class="switch-animate switch-off">
+                                                        <input type="checkbox" data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Footer
+                                                </div>
+                                                <div class="widget-subheading">Makes the app footer bottom fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>
+                                Header Options
+                            </div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-header-cs-class" data-class="bg-secondary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-header-cs-class" data-class="bg-success header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-header-cs-class" data-class="bg-info header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-header-cs-class" data-class="bg-warning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-header-cs-class" data-class="bg-danger header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-header-cs-class" data-class="bg-light header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-header-cs-class" data-class="bg-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-header-cs-class" data-class="bg-focus header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-header-cs-class" data-class="bg-alternate header-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-header-cs-class" data-class="bg-midnight-bloom header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-header-cs-class" data-class="bg-night-sky header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-header-cs-class" data-class="bg-slick-carbon header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-header-cs-class" data-class="bg-asteroid header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-header-cs-class" data-class="bg-royal header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-header-cs-class" data-class="bg-warm-flame header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-header-cs-class" data-class="bg-night-fade header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-header-cs-class" data-class="bg-sunny-morning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-header-cs-class" data-class="bg-tempting-azure header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-header-cs-class" data-class="bg-amy-crisp header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-header-cs-class" data-class="bg-heavy-rain header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-header-cs-class" data-class="bg-mean-fruit header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-header-cs-class" data-class="bg-malibu-beach header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-header-cs-class" data-class="bg-deep-blue header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-header-cs-class" data-class="bg-ripe-malin header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-header-cs-class" data-class="bg-arielle-smile header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-header-cs-class" data-class="bg-plum-plate header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-header-cs-class" data-class="bg-happy-fisher header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-header-cs-class" data-class="bg-happy-itmeo header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-header-cs-class" data-class="bg-mixed-hopes header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-header-cs-class" data-class="bg-strong-bliss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-header-cs-class" data-class="bg-grow-early header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-header-cs-class" data-class="bg-love-kiss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-header-cs-class" data-class="bg-premium-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-header-cs-class" data-class="bg-happy-green header-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Sidebar Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-sidebar-cs-class" data-class="bg-primary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-sidebar-cs-class" data-class="bg-secondary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-sidebar-cs-class" data-class="bg-success sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-sidebar-cs-class" data-class="bg-info sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-sidebar-cs-class" data-class="bg-warning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-sidebar-cs-class" data-class="bg-danger sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-sidebar-cs-class" data-class="bg-light sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-sidebar-cs-class" data-class="bg-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-sidebar-cs-class" data-class="bg-focus sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-sidebar-cs-class" data-class="bg-alternate sidebar-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class" data-class="bg-vicious-stance sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-sidebar-cs-class" data-class="bg-midnight-bloom sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-sidebar-cs-class" data-class="bg-night-sky sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-sidebar-cs-class" data-class="bg-slick-carbon sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-sidebar-cs-class" data-class="bg-asteroid sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-sidebar-cs-class" data-class="bg-royal sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-sidebar-cs-class" data-class="bg-warm-flame sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-sidebar-cs-class" data-class="bg-night-fade sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-sidebar-cs-class" data-class="bg-sunny-morning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-sidebar-cs-class" data-class="bg-tempting-azure sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-sidebar-cs-class" data-class="bg-amy-crisp sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-sidebar-cs-class" data-class="bg-heavy-rain sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-sidebar-cs-class" data-class="bg-mean-fruit sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-sidebar-cs-class" data-class="bg-malibu-beach sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-sidebar-cs-class" data-class="bg-deep-blue sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-sidebar-cs-class" data-class="bg-ripe-malin sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-sidebar-cs-class" data-class="bg-arielle-smile sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-sidebar-cs-class" data-class="bg-plum-plate sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-sidebar-cs-class" data-class="bg-happy-fisher sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-sidebar-cs-class" data-class="bg-happy-itmeo sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-sidebar-cs-class" data-class="bg-mixed-hopes sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-sidebar-cs-class" data-class="bg-strong-bliss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-sidebar-cs-class" data-class="bg-grow-early sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-sidebar-cs-class" data-class="bg-love-kiss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-sidebar-cs-class" data-class="bg-premium-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-sidebar-cs-class" data-class="bg-happy-green sidebar-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Main Content Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto active btn btn-focus btn-sm">Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Page Section Tabs
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div role="group" class="mt-2 btn-group">
+                                            <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="body-tabs-line">
+                                                Line
+                                            </button>
+                                            <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="body-tabs-shadow">
+                                                Shadow
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="app-main">
+                <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>    
+                    <div class="scrollbar-sidebar">
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu">
+                                <li class="mt-1 dashbtn">
+                                    <a href="./dashboard.html" class="mm-active">
+                                        <i class="metismenu-icon fa-solid fa-house"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Client Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-user fa-regular"></i>
+                                        Client
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="./create-client.html">
+                                                <i class="metismenu-icon"></i>
+                                                Add New Client
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="all-client.html">
+                                                <i class="metismenu-icon"></i>All Clients
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Service Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-users-gear"></i>
+                                        Services
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="./tax.html">
+                                                <i class="metismenu-icon"></i>
+                                                Tax
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./gst.html">
+                                                <i class="metismenu-icon"></i>GST
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./audit.html">
+                                                <i class="metismenu-icon"></i>Audit
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./compliences.html">
+                                                <i class="metismenu-icon"></i>Company Compliences
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Audits &amp Reports</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-magnifying-glass"></i>
+                                        Audit
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="./company-audit.html">
+                                                <i class="metismenu-icon"></i>
+                                                company
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./gst.html">
+                                                <i class="metismenu-icon"></i>LLP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./audit.html">
+                                                <i class="metismenu-icon"></i>Non Company Entity
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>NPO
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="compliences.html">
+                                                <i class="metismenu-icon"></i>Banks
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Community</li>
+                                <li>
+                                    <a href="./community.html">
+                                        <i class="metismenu-icon fa-solid fa-solid fa-user">
+                                        </i>My Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./message.html">
+                                        <i class="metismenu-icon fa-solid fa-regular fa-message">
+                                        </i>Chats
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Revenue</li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon fa-solid fa-dollar-sign"></i>
+                                        Revenue
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">PRO Version</li>
+                                <li>
+                                    <a href="#000">
+                                        <i class="metismenu-icon fa-regular fa-circle-check">    
+                                        </i>
+                                        Upgrade to PRO
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===================Content====================== -->
+                <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <!-- ================create New Client-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-header">
+                                        <span>List of company audit</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>SQC 1 Compliances	</h4>
+                                        <div class="row row-cols-2">
+                                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                                <div class="doc-box shadow">
+                                                    <a href="./audit-format/introduction.html">
+                                                        <img src="../images/independence-confirmation.png" alt="">
+                                                    </a>
+                                                    <a href="./audit-format/introduction.html" class="title">
+                                                        Firm Personnel Independence Confirmation
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                                <div class="doc-box shadow">
+                                                    <a href="./audit-format/IndependencePolicies.html">
+                                                        <img src="../images/independemt-hand.png" alt="">
+                                                    </a>
+                                                    <a href="./audit-format/IndependencePolicies.html" class="title">
+                                                        Independence Policies 
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                                <div class="doc-box shadow">
+                                                    <a href="./audit-format/EngagementAcceptance.html">
+                                                        <img src="../images/engagement-acceptence.png" alt="">
+                                                    </a>
+                                                    <a href="./audit-format/EngagementAcceptance.html" class="title">
+                                                        Engagement Acceptance and Continuance Form 
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                                <div class="doc-box shadow">
+                                                    <a href="./audit-format/engagementPlanning.html">
+                                                        <img src="../images/doc4.png" alt="">
+                                                    </a>
+                                                    <a href="./audit-format/engagementPlanning.html" class="title">
+                                                        Engagement Planning Memorandum 
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                                <div class="doc-box shadow">
+                                                    <a href="./audit-format/engagementSummary.html">
+                                                        <img src="../images/doc5.png" alt="">
+                                                    </a>
+                                                    <a href="./audit-format/engagementSummary.html" class="title">
+                                                        Engagement Summary Memorandum 
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                                <div class="doc-box shadow">
+                                                    <a href="./audit-format/inspectionChecklist.html">
+                                                        <img src="../images/chequelist.png" alt="">
+                                                    </a>
+                                                    <a href="./audit-format/inspectionChecklist.html" class="title">
+                                                        Firm QC Inspection Checklist 
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Audit Report</h4>
+                                        <div class="row row-cols-2">
+                                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                                <div class="doc-box shadow">
+                                                    <a href="./audit-format/IllustOne.html">
+                                                        <img src="../images/doc7.png" alt="">
+                                                    </a>
+                                                    <a href="./audit-format/IllustOne.html" class="title">
+                                                        Unmodified report (IFC)
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                                <div class="doc-box shadow">
+                                                    <a href="./audit-format/illustTwo.html">
+                                                        <img src="../images/doc8.png" alt="">
+                                                    </a>
+                                                    <a href="./audit-format/illustTwo.html" class="title">
+                                                        Unmodified report
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                                <div class="doc-box shadow">
+                                                    <a href="./audit-format/illustThree.html">
+                                                        <img src="../images/doc9.png" alt="">
+                                                    </a>
+                                                    <a href="./audit-format/illustThree.html" class="title">
+                                                        Qualified-Quantifiable
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                                <div class="doc-box shadow">
+                                                    <a href="./audit-format/illustFour.html">
+                                                        <img src="../images/doc10.png" alt="">
+                                                    </a>
+                                                    <a href="./audit-format/illustFour.html" class="title">
+                                                        Qualified-Nonquantifiable
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                                <div class="doc-box shadow">
+                                                    <a href="./audit-format/illustFive.html">
+                                                        <img src="../images/doc11.png" alt="">
+                                                    </a>
+                                                    <a href="./audit-format/illustFive.html" class="title">
+                                                        Adverse
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                                <div class="doc-box shadow">
+                                                    <a href="./audit-format/illusSix.html">
+                                                        <img src="../images/doc-12.png" alt="">
+                                                    </a>
+                                                    <a href="./audit-format/illusSix.html" class="title">
+                                                        Disclaimer
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>SA compliances</h4>
+                                        <div class="audit-list">
+                                            <h5>Audit Evidence</h5>
+                                            <ol>
+                                                <li>
+                                                    <a href="./audit-format/auditEvidenceOne.html">Appendix 1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./audit-format/auditEvidenceTwo.html"> Appendix 2</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./audit-format/auditEvidenceThree.html"> Appendix 3</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./audit-format/auditEvidenceFour.html"> Appendix 4</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./audit-format/auditEvidenceFive.html"> Appendix 5</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./audit-format/auditEvidenceSix.html"> Appendix 6</a>
+                                                </li>
+                                            </ol>
+                                            <h5>Internal Audit</h5>
+                                            <ol>
+                                                <li>
+                                                    <a href="./audit-format/internal-audit.html">Internal Audit</a>
+                                                </li>
+                                            </ol>
+                                            <h5>Audit Docs</h5>
+                                            <ol>
+                                                <li>
+                                                    <a href="./audit-format/auditdocs.html">Audit Documentation Checklist</a>
+                                                </li>
+                                            </ol>
+                                            <h5>Going Concern</h5>
+                                            <ol>
+                                                <li>
+                                                    <a href="./audit-format/goingConcern.html">Going Concern Checklist</a>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                        <h4>Fraud Report</h4>
+                                        <div class="audit-list">
+                                            <ol>
+                                                <li>
+                                                    <a href="./audit-format/fraudReportOne.html">Appendix 1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./audit-format/fraudReportTwo.html">Appendix 2</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./audit-format/farudReportThree.html">Appendix 3</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./audit-format/fraudReportFour.html">Appendix 4</a>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                        <h4>CARO Report</h4>
+                                        <div class="audit-list">
+                                            <ol>
+                                                <li>
+                                                    <a href="./audit-format/caroReport.html">An Illustrative Checklist on Companies (Auditor’s Report) Order, 2016</a>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                        <h4>CFS </h4>
+                                        <div class="audit-list">
+                                            <ol>
+                                                <li>
+                                                    <a href="./audit-format/cfsOne.html">Appendix I</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./audit-format/cfsTwo.html">Appendix II</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./audit-format/cfsThree.html">Appendix III</a>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                        <h4>Transition Reports </h4>
+                                        <div class="audit-list">
+                                            <ol>
+                                                <li>
+                                                    <a href="./audit-format/transitionOne.html">Annexure I</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./audit-format/transitionTwo.html">Annexure II</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./audit-format/transitionThree.html">Annexure III</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./audit-format/transitionFour.html">Annexure IV</a>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                        <h4>Special Purpose</h4>
+                                        <div class="audit-list">
+                                            <ol>
+                                                <li>
+                                                    <a href="./audit-format/specialOne.html">Illustrative Formats of Reports/Certificates</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./audit-format/specialTwo.html"> 
+                                                        Auditor’s Annual Activity Certificate
+                                                        for Indian Branch Office/Liaison Office of Foreign
+                                                        Companies
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./audit-format/specialThree.html"> Independent Auditor’s Report on the manner of
+                                                        utilization of the funds including for purposes other than
+                                                        those stated in the offer document
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./audit-format/specialFour.html"> Practitioner’s Report on Statement of
+                                                        Fixed Assets for the Last Two Years in Respect of One
+                                                        of the Project of an Entity
+                                                    </a>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                        <h4>Company Prospectus</h4>
+                                        <div class="audit-list">
+                                            <ol>
+                                                <li>
+                                                    <a href="./audit-format/companyProspectusOne.html">Illustrative Format of the Consent Letter</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./audit-format/companyProspectusTwo.html">Illustrative Format of Representation Letter from
+                                                        Bankers (ICDR Regulations Representation Letter)</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./audit-format/companyProspectusThree.html">Illustrative Format of Representation Letter from
+                                                        Management6 for Issuance of Comfort Letter</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./audit-format/companyProspectusFour.html">Illustrative Format of Comfort Letter</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./audit-format/companyProspectusFive.html">Illustrative Format of Bring Down Comfort Letter</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./audit-format/companyProspectusSix.html">Illustrative Format of Arrangement Letter</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./audit-format/companyProspectusSeven.html">Names of the Managers</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./audit-format/companyProspectusEight.html">Illustrative Capitalisation Statement</a>
+                                                </li>
+                                                <li>
+                                                        <a href="./audit-format/companypropectusNine.html">Illustrative Auditor’s Examination Report on
+                                                            Financial Information in Relation to Prospectus</a>
+                                                </li>
+                                                <li>
+                                                        <a href="./audit-format/companyProspectusTen.html">
+                                                             Auditor’s Examination Report on
+                                                            Financial Information in Relation to Prospectus
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                        <a href="./audit-format/companyProspective11.html">
+                                                             Format of Independent Auditor’s Report
+                                                            on the cash flow statement and liquidity position of
+                                                            the issuer company
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./audit-format/companyProspectus12.html">
+                                                         Format of Independent Auditor’s Report
+                                                        on the compliance with conditions of proposed
+                                                        preferential issue
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./audit-format/companyProspectus13.html">
+                                                         Format of Independent Auditor’s Report on
+                                                        the receipt of consideration of specified securities in
+                                                        connection with proposed preferential issue
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./audit-format/companyProspectus14.html">
+                                                        Format of Independent Auditor’s Report
+                                                        on the utilisation of loan for the purpose availed
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./audit-format/companyProspectus15.html">
+                                                        Format of Independent Auditor’s Report
+                                                        on sources of funds and deployment of these funds
+                                                        on the project (where the issuer is raising capital for
+                                                        a project)
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./audit-format/companyProspectus16.html">
+                                                        Format of Independent Auditor’s Report
+                                                        on the cash flow statement disclosing the use of
+                                                        funds received from promoters contribution for the
+                                                        stated objects
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./audit-format/companyProspectus17.html">
+                                                        Format of Independent Auditor’s Report on
+                                                        the receipt of consideration [paid]/[received] and mode
+                                                        of financing in case of non-material
+                                                        [acquisition]/[divestments]
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <li>
+                                                        <a href="./audit-format/companyProspectus18.html">
+                                                            Format of the Engagement Letter for the
+                                                            Entire Engagement to Issue Report on the
+                                                            Prospectus
+                                                        </a>
+                                                    </li>
+                                                </li>
+                                                <li>
+                                                    <li>
+                                                        <a href="./audit-format/companyProspectus19.html">
+                                                            Format of Representation Letter from
+                                                            Management for Issuance of Examination Report
+                                                        </a>
+                                                    </li>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                        <h4> Small Entities</h4>
+                                        <div class="audit-list">
+                                            <ol>
+                                                <li>
+                                                    <a href="./audit-format/smallEntitiesOne.html">Illustrative Format of the Consent Letter</a>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>   
+<script src="../js/dashboard-pack.js"></script> 
+</body>
+</html>

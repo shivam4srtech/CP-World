@@ -1,0 +1,2123 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> Dashboard | CharteredONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="../audit-format/style/dashboardpack.css">
+    <link rel="stylesheet" href="../audit-format/style/dashboard.css">
+    <link rel="stylesheet" href="./style/company-audit.css">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa-solid fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Privacy Policy</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                       Romana I Khan
+                                    </div>
+                                    <div class="widget-subheading">
+                                       GST Analyst
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <div class="widget-content-left">
+                                        <div class="widget-content-left">
+                                            <a href="./profile.html"><img width="40" class="rounded-circle" src="../images/female_avatar_efig.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>        
+        <div class="ui-theme-settings">
+            <button type="button" id="TooltipDemo" class="btn-open-options btn">
+                <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+            </button>
+            <div class="theme-settings__inner">
+                <div class="scrollbar-container">
+                    <div class="theme-settings__options-wrapper">
+                        <h3 class="themeoptions-heading">Layout Options
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-header">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Header
+                                                </div>
+                                                <div class="widget-subheading">Makes the header top fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-sidebar">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Sidebar
+                                                </div>
+                                                <div class="widget-subheading">Makes the sidebar left fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-footer">
+                                                    <div class="switch-animate switch-off">
+                                                        <input type="checkbox" data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Footer
+                                                </div>
+                                                <div class="widget-subheading">Makes the app footer bottom fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>
+                                Header Options
+                            </div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-header-cs-class" data-class="bg-secondary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-header-cs-class" data-class="bg-success header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-header-cs-class" data-class="bg-info header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-header-cs-class" data-class="bg-warning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-header-cs-class" data-class="bg-danger header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-header-cs-class" data-class="bg-light header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-header-cs-class" data-class="bg-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-header-cs-class" data-class="bg-focus header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-header-cs-class" data-class="bg-alternate header-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-header-cs-class" data-class="bg-midnight-bloom header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-header-cs-class" data-class="bg-night-sky header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-header-cs-class" data-class="bg-slick-carbon header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-header-cs-class" data-class="bg-asteroid header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-header-cs-class" data-class="bg-royal header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-header-cs-class" data-class="bg-warm-flame header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-header-cs-class" data-class="bg-night-fade header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-header-cs-class" data-class="bg-sunny-morning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-header-cs-class" data-class="bg-tempting-azure header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-header-cs-class" data-class="bg-amy-crisp header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-header-cs-class" data-class="bg-heavy-rain header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-header-cs-class" data-class="bg-mean-fruit header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-header-cs-class" data-class="bg-malibu-beach header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-header-cs-class" data-class="bg-deep-blue header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-header-cs-class" data-class="bg-ripe-malin header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-header-cs-class" data-class="bg-arielle-smile header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-header-cs-class" data-class="bg-plum-plate header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-header-cs-class" data-class="bg-happy-fisher header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-header-cs-class" data-class="bg-happy-itmeo header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-header-cs-class" data-class="bg-mixed-hopes header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-header-cs-class" data-class="bg-strong-bliss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-header-cs-class" data-class="bg-grow-early header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-header-cs-class" data-class="bg-love-kiss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-header-cs-class" data-class="bg-premium-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-header-cs-class" data-class="bg-happy-green header-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Sidebar Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-sidebar-cs-class" data-class="bg-primary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-sidebar-cs-class" data-class="bg-secondary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-sidebar-cs-class" data-class="bg-success sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-sidebar-cs-class" data-class="bg-info sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-sidebar-cs-class" data-class="bg-warning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-sidebar-cs-class" data-class="bg-danger sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-sidebar-cs-class" data-class="bg-light sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-sidebar-cs-class" data-class="bg-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-sidebar-cs-class" data-class="bg-focus sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-sidebar-cs-class" data-class="bg-alternate sidebar-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class" data-class="bg-vicious-stance sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-sidebar-cs-class" data-class="bg-midnight-bloom sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-sidebar-cs-class" data-class="bg-night-sky sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-sidebar-cs-class" data-class="bg-slick-carbon sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-sidebar-cs-class" data-class="bg-asteroid sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-sidebar-cs-class" data-class="bg-royal sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-sidebar-cs-class" data-class="bg-warm-flame sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-sidebar-cs-class" data-class="bg-night-fade sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-sidebar-cs-class" data-class="bg-sunny-morning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-sidebar-cs-class" data-class="bg-tempting-azure sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-sidebar-cs-class" data-class="bg-amy-crisp sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-sidebar-cs-class" data-class="bg-heavy-rain sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-sidebar-cs-class" data-class="bg-mean-fruit sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-sidebar-cs-class" data-class="bg-malibu-beach sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-sidebar-cs-class" data-class="bg-deep-blue sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-sidebar-cs-class" data-class="bg-ripe-malin sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-sidebar-cs-class" data-class="bg-arielle-smile sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-sidebar-cs-class" data-class="bg-plum-plate sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-sidebar-cs-class" data-class="bg-happy-fisher sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-sidebar-cs-class" data-class="bg-happy-itmeo sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-sidebar-cs-class" data-class="bg-mixed-hopes sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-sidebar-cs-class" data-class="bg-strong-bliss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-sidebar-cs-class" data-class="bg-grow-early sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-sidebar-cs-class" data-class="bg-love-kiss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-sidebar-cs-class" data-class="bg-premium-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-sidebar-cs-class" data-class="bg-happy-green sidebar-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Main Content Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto active btn btn-focus btn-sm">Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Page Section Tabs
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div role="group" class="mt-2 btn-group">
+                                            <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="body-tabs-line">
+                                                Line
+                                            </button>
+                                            <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="body-tabs-shadow">
+                                                Shadow
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="app-main">
+                <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>    
+                    <div class="scrollbar-sidebar">
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu">
+                                <li class="mt-1 dashbtn">
+                                    <a href="../dashboard.html" class="mm-active">
+                                        <i class="metismenu-icon fa-solid fa-house"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Client Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-user fa-regular"></i>
+                                        Client
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../create-client.html">
+                                                <i class="metismenu-icon"></i>
+                                                Add New Client
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../all-client.html">
+                                                <i class="metismenu-icon"></i>All Clients
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Service Management</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-users-gear"></i>
+                                        Services
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../tax.html">
+                                                <i class="metismenu-icon"></i>
+                                                Tax
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../gst.html">
+                                                <i class="metismenu-icon"></i>GST
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../audit.html">
+                                                <i class="metismenu-icon"></i>Audit
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../compliences.html">
+                                                <i class="metismenu-icon"></i>Company Compliences
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Audits &amp Reports</li>
+                                <li>
+                                    <a href="#" class="active-button">
+                                        <i class="metismenu-icon fa-solid fa-magnifying-glass"></i>
+                                        Audit
+                                        <i class="metismenu-state-icon fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../company-audit.html">
+                                                <i class="metismenu-icon"></i>
+                                                company
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="metismenu-icon"></i>LLP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="metismenu-icon"></i>Non Company Entity
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="metismenu-icon"></i>NPO
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="metismenu-icon"></i>Banks
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="app-sidebar__heading">Community</li>
+                                <li>
+                                    <a href="../community.html">
+                                        <i class="metismenu-icon fa-solid fa-solid fa-user">
+                                        </i>My Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../message.html">
+                                        <i class="metismenu-icon fa-solid fa-regular fa-message">
+                                        </i>Chats
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Revunue</li>
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon fa-solid fa-dollar-sign"></i>
+                                        Revenue
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">PRO Version</li>
+                                <li>
+                                    <a href="#000">
+                                        <i class="metismenu-icon fa-regular fa-circle-check">    
+                                        </i>
+                                        Upgrade to PRO
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===================Content====================== -->
+                <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <!-- ================create New Client-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-header">
+                                        <span>Annexure VI (2/3)</span>
+                                        <div class="btn-actions-pane-right">
+                                            <a href="">Click here to see the format</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="annexures">
+                                           <h3 class="mb-2">Section B – Engagement Level Quality Controls</h3>
+                                           <h3 class="mb-2">Client and engagement acceptance and continuance:</h3>
+                                        </div>
+                                        <div class="table-responsive mb-4">
+                                            <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center">Policy</th>
+                                                        <th class="text-center">Y/N</th>
+                                                        <th class="text-center">Remarks, if “No”</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <span>Whether adequate process was
+                                                                followed to conclude on client
+                                                                acceptance/continuance during/for the
+                                                                year?</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>Whether adequate process was
+                                                                followed to conclude on engagement
+                                                                acceptance/continuance during/for the
+                                                                year?</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="table-responsive mb-4">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center" colspan="1"></th>
+                                                        <th class="text-center">Full / near full compliance</th>
+                                                        <th class="text-center">Part compliance</th>
+                                                        <th class="text-center">No compliance</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="1">
+                                                            <span>RATING</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="annexures mt-5">
+                                            <h3 class="mb-2">Selection of engagement team:</h3>
+                                        </div>
+                                        <div class="table-responsive mb-4">
+                                             <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                                 <thead>
+                                                     <tr>
+                                                         <th class="text-center">Policy</th>
+                                                         <th class="text-center">Y/N</th>
+                                                         <th class="text-center">Remarks, if “No”</th>
+                                                     </tr>
+                                                 </thead>
+                                                 <tbody>
+                                                     <tr>
+                                                         <td>
+                                                             <span>Did the audit engagement partner
+                                                                properly determine that the
+                                                                engagement team selected, including
+                                                                specialists where necessary, had the
+                                                                qualifications and experience
+                                                                appropriate for the audit engagement?</span>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                     </tr>
+                                                     <tr>
+                                                         <td>
+                                                             <span>Where use of computers by the client
+                                                                was evaluated as “critical” to the
+                                                                accounting system, was a computer
+                                                                audit specialist included on the
+                                                                engagement team in testing the
+                                                                computer general and application
+                                                                controls?</span>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                     </tr>
+                                                     <tr>
+                                                         <td>
+                                                             <span>Where an outside specialist was
+                                                                included as a member of the
+                                                                engagement team, did the engagement
+                                                                partner make an adequate evaluation
+                                                                of his competency to perform the work
+                                                                entrusted to him?</span>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                     </tr>
+                                                 </tbody>
+                                             </table>
+                                         </div>
+                                         <div class="table-responsive mb-4">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center" colspan="1"></th>
+                                                        <th class="text-center">Full / near full compliance</th>
+                                                        <th class="text-center">Part compliance</th>
+                                                        <th class="text-center">No compliance</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="1">
+                                                            <span>RATING</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="annexures mt-5">
+                                            <h3 class="mb-2">Terms of engagement:</h3>
+                                        </div>
+                                        <div class="table-responsive mb-4">
+                                             <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                                 <thead>
+                                                     <tr>
+                                                         <th class="text-center">Policy</th>
+                                                         <th class="text-center">Y/N</th>
+                                                         <th class="text-center">Remarks, if “No”</th>
+                                                     </tr>
+                                                 </thead>
+                                                 <tbody>
+                                                     <tr>
+                                                         <td>
+                                                             <span>Were the terms of the audit
+                                                                engagement properly agreed with the
+                                                                client and documented in writing?</span>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                     </tr>
+                                                 </tbody>
+                                             </table>
+                                         </div>
+                                         <div class="table-responsive mb-4">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center" colspan="1"></th>
+                                                        <th class="text-center">Full / near full compliance</th>
+                                                        <th class="text-center">Part compliance</th>
+                                                        <th class="text-center">No compliance</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="1">
+                                                            <span>RATING</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="annexures mt-5">
+                                            <h3 class="mb-2">Understanding the entity and its environment:</h3>
+                                        </div>
+                                        <div class="table-responsive mb-4">
+                                             <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                                 <thead>
+                                                     <tr>
+                                                         <th class="text-center">Policy</th>
+                                                         <th class="text-center">Y/N</th>
+                                                         <th class="text-center">Remarks, if “No”</th>
+                                                     </tr>
+                                                 </thead>
+                                                 <tbody>
+                                                     <tr>
+                                                         <td>
+                                                             <span>Did the engagement team obtain an
+                                                                understanding of the entity and its
+                                                                environment sufficient to enable it to
+                                                                identify and assess the risks and
+                                                                develop an effective audit plan?</span>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                     </tr>
+                                                 </tbody>
+                                             </table>
+                                         </div>
+                                         <div class="table-responsive mb-4">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center" colspan="1"></th>
+                                                        <th class="text-center">Full / near full compliance</th>
+                                                        <th class="text-center">Part compliance</th>
+                                                        <th class="text-center">No compliance</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="1">
+                                                            <span>RATING</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="annexures mt-5">
+                                            <h3 class="mb-2">Understanding and evaluating internal controls:</h3>
+                                        </div>
+                                        <div class="table-responsive mb-4">
+                                             <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                                 <thead>
+                                                     <tr>
+                                                         <th class="text-center">Policy</th>
+                                                         <th class="text-center">Y/N</th>
+                                                         <th class="text-center">Remarks, if “No”</th>
+                                                     </tr>
+                                                 </thead>
+                                                 <tbody>
+                                                     <tr>
+                                                         <td>
+                                                             <span>Did the engagement team obtain an
+                                                                understanding of the overall entity-
+                                                                level controls and evaluate the
+                                                                components of: control environment,
+                                                                management’s risk assessment
+                                                                process, information systems and
+                                                                communication, and monitoring?</span>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                     </tr>
+                                                     <tr>
+                                                         <td>
+                                                             <span>Did the engagement team obtain an
+                                                                understanding of the computer general
+                                                                and application controls and evaluate
+                                                                them to enable identification and
+                                                                assessment of the risks of material
+                                                                misstatement of the financial
+                                                                statements, and design and perform
+                                                                further audit procedures?</span>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                     </tr>
+                                                     <tr>
+                                                         <td>
+                                                             <span>Did the engagement team obtain an
+                                                                understanding of the account-balance
+                                                                specific manual controls and evaluate
+                                                                them to enable identification and
+                                                                assessment of the risks of material
+                                                                misstatement of the financial
+                                                                statements, and design and perform
+                                                                further audit procedures?</span>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                     </tr>
+                                                 </tbody>
+                                             </table>
+                                         </div>
+                                         <div class="table-responsive mb-4">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center" colspan="1"></th>
+                                                        <th class="text-center">Full / near full compliance</th>
+                                                        <th class="text-center">Part compliance</th>
+                                                        <th class="text-center">No compliance</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="1">
+                                                            <span>RATING</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="annexures mt-5">
+                                            <h3 class="mb-2">Identification of and response to fraud risks:</h3>
+                                        </div>
+                                        <div class="table-responsive mb-4">
+                                             <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                                 <thead>
+                                                     <tr>
+                                                         <th class="text-center">Policy</th>
+                                                         <th class="text-center">Y/N</th>
+                                                         <th class="text-center">Remarks, if “No”</th>
+                                                     </tr>
+                                                 </thead>
+                                                 <tbody>
+                                                     <tr>
+                                                         <td>
+                                                             <span>Were audit procedures, as required by
+                                                                relevant AAS, followed for
+                                                                identification of fraud risks?</span>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                     </tr>
+                                                     <tr>
+                                                         <td>
+                                                             <span>Where pervasive fraud risks were
+                                                                identified, did the engagement team
+                                                                evaluate the design of the entity's
+                                                                related internal controls and determine
+                                                                whether they have been implemented?</span>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                     </tr>
+                                                     <tr>
+                                                         <td>
+                                                             <span>Where specific fraud risks were
+                                                                identified, were audit programmes for
+                                                                substantive testing adequately tailored
+                                                                to eliminate or reduce the risks to a
+                                                                level that would prevent the likelihood
+                                                                of material misstatement</span>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                     </tr>
+                                                 </tbody>
+                                             </table>
+                                         </div>
+                                         <div class="table-responsive mb-4">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center" colspan="1"></th>
+                                                        <th class="text-center">Full / near full compliance</th>
+                                                        <th class="text-center">Part compliance</th>
+                                                        <th class="text-center">No compliance</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="1">
+                                                            <span>RATING</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="annexures mt-5">
+                                            <h3 class="mb-2">Understanding and evaluating the accounting process:</h3>
+                                        </div>
+                                        <div class="table-responsive mb-4">
+                                             <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                                 <thead>
+                                                     <tr>
+                                                         <th class="text-center">Policy</th>
+                                                         <th class="text-center">Y/N</th>
+                                                         <th class="text-center">Remarks, if “No”</th>
+                                                     </tr>
+                                                 </thead>
+                                                 <tbody>
+                                                     <tr>
+                                                         <td>
+                                                             <span>Has an empowered partner or other
+                                                                qualified individual been designated to
+                                                                perform the Firm’s quality inspection
+                                                                process?Did the engagement team obtain a
+                                                                sufficiently detailed understanding of
+                                                                the accounting system, including the
+                                                                transaction and document flows, to be
+                                                                able to evaluate risks of system failure
+                                                                resulting in a material misstatement?</span>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                     </tr>
+                                                     <tr>
+                                                         <td>
+                                                             <span>Was the audit programme at the
+                                                                account balance and significant
+                                                                assertion level suitably tailored to
+                                                                consider the engagement team’s
+                                                                findings from its understanding of the
+                                                                accounting system, including the
+                                                                transaction and document flows?</span>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                     </tr>
+                                                 </tbody>
+                                             </table>
+                                         </div>
+                                         <div class="table-responsive mb-4">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center" colspan="1"></th>
+                                                        <th class="text-center">Full / near full compliance</th>
+                                                        <th class="text-center">Part compliance</th>
+                                                        <th class="text-center">No compliance</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="1">
+                                                            <span>RATING</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="annexures mt-5">
+                                            <h3 class="mb-2">Controls Testing:</h3>
+                                        </div>
+                                        <div class="table-responsive mb-4">
+                                             <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                                 <thead>
+                                                     <tr>
+                                                         <th class="text-center">Policy</th>
+                                                         <th class="text-center">Y/N</th>
+                                                         <th class="text-center">Remarks, if “No”</th>
+                                                     </tr>
+                                                 </thead>
+                                                 <tbody>
+                                                     <tr>
+                                                         <td>
+                                                             <span>Were key general computer controls
+                                                                (where use of computers was
+                                                                determined as “critical”) tested for
+                                                                their operating effectiveness?</span>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                     </tr>
+                                                     <tr>
+                                                         <td>
+                                                             <span>Were key application computer
+                                                                controls tested for their operating
+                                                                effectiveness?</span>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                     </tr>
+                                                     <tr>
+                                                        <td>
+                                                            <span>Were key manual controls tested for
+                                                                their operating effectiveness?</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                 </tbody>
+                                             </table>
+                                         </div>
+                                         <div class="table-responsive mb-4">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center" colspan="1"></th>
+                                                        <th class="text-center">Full / near full compliance</th>
+                                                        <th class="text-center">Part compliance</th>
+                                                        <th class="text-center">No compliance</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="1">
+                                                            <span>RATING</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="annexures mt-5">
+                                            <h3 class="mb-2">Developing an Audit Plan:</h3>
+                                        </div>
+                                        <div class="table-responsive mb-4">
+                                             <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                                 <thead>
+                                                     <tr>
+                                                         <th class="text-center">Policy</th>
+                                                         <th class="text-center">Y/N</th>
+                                                         <th class="text-center">Remarks, if “No”</th>
+                                                     </tr>
+                                                 </thead>
+                                                 <tbody>
+                                                     <tr>
+                                                         <td>
+                                                             <span>As a result of risk assessment and
+                                                                controls testing, did the engagement
+                                                                team conclude on modifying the
+                                                                nature, timing and extent of
+                                                                substantive procedures?</span>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                     </tr>
+                                                     <tr>
+                                                         <td>
+                                                             <span>Was a detailed audit planning
+                                                                memorandum prepared to guide the
+                                                                engagement team through the audit?</span>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                     </tr>
+                                                     <tr>
+                                                        <td>
+                                                            <span>Were detailed audit programmes,
+                                                                tailored to address fraud and other
+                                                                risks, prepared and used to perform
+                                                                tests of controls and substantive
+                                                                procedures such that the objectives of
+                                                                a “risk based” audit are achieved?</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                 </tbody>
+                                             </table>
+                                         </div>
+                                         <div class="table-responsive mb-4">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center" colspan="1"></th>
+                                                        <th class="text-center">Full / near full compliance</th>
+                                                        <th class="text-center">Part compliance</th>
+                                                        <th class="text-center">No compliance</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="1">
+                                                            <span>RATING</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="annexures mt-5">
+                                            <h3 class="mb-2">Internal Audit:</h3>
+                                        </div>
+                                        <div class="table-responsive mb-4">
+                                             <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                                 <thead>
+                                                     <tr>
+                                                         <th class="text-center">Policy</th>
+                                                         <th class="text-center">Y/N</th>
+                                                         <th class="text-center">Remarks, if “No”</th>
+                                                     </tr>
+                                                 </thead>
+                                                 <tbody>
+                                                     <tr>
+                                                         <td>
+                                                             <span>Was the work performed by the
+                                                                internal auditor reviewed by the
+                                                                engagement team?</span>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                     </tr>
+                                                     <tr>
+                                                         <td>
+                                                             <span>If the engagement team decided to
+                                                                place reliance on the work of the
+                                                                internal auditor, were due procedures
+                                                                as required by the relevant AAS
+                                                                followed?</span>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                     </tr>
+                                                     <tr>
+                                                        <td>
+                                                            <span>Were key manual controls tested for
+                                                                their operating effectiveness?</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                 </tbody>
+                                             </table>
+                                         </div>
+                                         <div class="table-responsive mb-4">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center" colspan="1"></th>
+                                                        <th class="text-center">Full / near full compliance</th>
+                                                        <th class="text-center">Part compliance</th>
+                                                        <th class="text-center">No compliance</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="1">
+                                                            <span>RATING</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="annexures mt-5">
+                                            <h3 class="mb-2">External Confirmations:</h3>
+                                        </div>
+                                        <div class="table-responsive mb-4">
+                                             <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                                 <thead>
+                                                     <tr>
+                                                         <th class="text-center">Policy</th>
+                                                         <th class="text-center">Y/N</th>
+                                                         <th class="text-center">Remarks, if “No”</th>
+                                                     </tr>
+                                                 </thead>
+                                                 <tbody>
+                                                     <tr>
+                                                         <td>
+                                                             <span>Did the engagement team follow
+                                                                procedures for obtaining evidence
+                                                                from external confirmations to support
+                                                                the existence of certain items of
+                                                                assets, liabilities and contingent
+                                                                liabilities, including attorneys’
+                                                                confirmations?</span>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                     </tr>
+                                                 </tbody>
+                                             </table>
+                                         </div>
+                                         <div class="table-responsive mb-4">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center" colspan="1"></th>
+                                                        <th class="text-center">Full / near full compliance</th>
+                                                        <th class="text-center">Part compliance</th>
+                                                        <th class="text-center">No compliance</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="1">
+                                                            <span>RATING</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="annexures mt-5">
+                                            <h3 class="mb-2">Audit Sampling:</h3>
+                                        </div>
+                                        <div class="table-responsive mb-4">
+                                             <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                                 <thead>
+                                                     <tr>
+                                                         <th class="text-center">Policy</th>
+                                                         <th class="text-center">Y/N</th>
+                                                         <th class="text-center">Remarks, if “No”</th>
+                                                     </tr>
+                                                 </thead>
+                                                 <tbody>
+                                                     <tr>
+                                                         <td>
+                                                             <span>In performing tests of account
+                                                                balances and assertions, did the
+                                                                engagement team follow an
+                                                                appropriate method of selecting
+                                                                samples as provided in the related
+                                                                AAS?</span>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                     </tr>
+                                                     <tr>
+                                                         <td>
+                                                             <span>Were the nature and causes of errors
+                                                                detected in testing of samples, and
+                                                                consider their possible effect on the
+                                                                particular audit objective and on other
+                                                                areas of the audit.</span>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                     </tr>
+                                                     <tr>
+                                                        <td>
+                                                            <span>For tests of details, did the
+                                                                engagement team project monetary
+                                                                errors found in the sample to the</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>population, and consider the effect of
+                                                                the projected error on the particular
+                                                                audit objective and on other areas of
+                                                                the audit.</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>Did the engagement team evaluate the
+                                                                sample results to determine whether
+                                                                the assessment of the relevant
+                                                                characteristic of the population is
+                                                                confirmed or needs to be revised?</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                 </tbody>
+                                             </table>
+                                         </div>
+                                         <div class="table-responsive mb-4">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center" colspan="1"></th>
+                                                        <th class="text-center">Full / near full compliance</th>
+                                                        <th class="text-center">Part compliance</th>
+                                                        <th class="text-center">No compliance</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="1">
+                                                            <span>RATING</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="annexures mt-5">
+                                            <h3 class="mb-2">Accounting Estimates:</h3>
+                                        </div>
+                                        <div class="table-responsive mb-4">
+                                             <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                                 <thead>
+                                                     <tr>
+                                                         <th class="text-center">Policy</th>
+                                                         <th class="text-center">Y/N</th>
+                                                         <th class="text-center">Remarks, if “No”</th>
+                                                     </tr>
+                                                 </thead>
+                                                 <tbody>
+                                                     <tr>
+                                                         <td>
+                                                             <span>Did the engagement team design and
+                                                                perform adequate audit procedures to
+                                                                obtain sufficient appropriate audit
+                                                                evidence as to whether the entity’s
+                                                                accounting estimates are reasonable
+                                                                in the circumstances and, when
+                                                                required, appropriately disclosed.</span>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                     </tr>
+                                                 </tbody>
+                                             </table>
+                                         </div>
+                                         <div class="table-responsive mb-4">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center" colspan="1"></th>
+                                                        <th class="text-center">Full / near full compliance</th>
+                                                        <th class="text-center">Part compliance</th>
+                                                        <th class="text-center">No compliance</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="1">
+                                                            <span>RATING</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="annexures mt-5">
+                                            <h3 class="mb-2">Related Parties:</h3>
+                                        </div>
+                                        <div class="table-responsive mb-4">
+                                             <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                                 <thead>
+                                                     <tr>
+                                                         <th class="text-center">Policy</th>
+                                                         <th class="text-center">Y/N</th>
+                                                         <th class="text-center">Remarks, if “No”</th>
+                                                     </tr>
+                                                 </thead>
+                                                 <tbody>
+                                                     <tr>
+                                                         <td>
+                                                             <span>Did the engagement team perform
+                                                                adequate procedures to obtain
+                                                                sufficient appropriate audit evidence
+                                                                regarding the identification and
+                                                                disclosure by management of related
+                                                                parties and the effect of material
+                                                                related party transactions?</span>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                     </tr>
+                                                 </tbody>
+                                             </table>
+                                         </div>
+                                         <div class="table-responsive mb-4">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center" colspan="1"></th>
+                                                        <th class="text-center">Full / near full compliance</th>
+                                                        <th class="text-center">Part compliance</th>
+                                                        <th class="text-center">No compliance</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="1">
+                                                            <span>RATING</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="annexures mt-5">
+                                            <h3 class="mb-2">Subsequent Events:</h3>
+                                        </div>
+                                        <div class="table-responsive mb-4">
+                                             <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                                 <thead>
+                                                     <tr>
+                                                         <th class="text-center">Policy</th>
+                                                         <th class="text-center">Y/N</th>
+                                                         <th class="text-center">Remarks, if “No”</th>
+                                                     </tr>
+                                                 </thead>
+                                                 <tbody>
+                                                     <tr>
+                                                         <td>
+                                                             <span>Did the engagement team perform
+                                                                adequate audit procedures to obtain
+                                                                sufficient appropriate audit evidence
+                                                                that all events up to the date of the
+                                                                auditor’s report that may require
+                                                                adjustment of, or disclosure in, the
+                                                                financial statements have been
+                                                                identified?</span>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                     </tr>
+                                                 </tbody>
+                                             </table>
+                                         </div>
+                                         <div class="table-responsive mb-4">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center" colspan="1"></th>
+                                                        <th class="text-center">Full / near full compliance</th>
+                                                        <th class="text-center">Part compliance</th>
+                                                        <th class="text-center">No compliance</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="1">
+                                                            <span>RATING</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="annexures mt-5">
+                                            <h3 class="mb-2">Management Representations:</h3>
+                                        </div>
+                                        <div class="table-responsive mb-4">
+                                             <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                                 <thead>
+                                                     <tr>
+                                                         <th class="text-center">Policy</th>
+                                                         <th class="text-center">Y/N</th>
+                                                         <th class="text-center">Remarks, if “No”</th>
+                                                     </tr>
+                                                 </thead>
+                                                 <tbody>
+                                                     <tr>
+                                                         <td>
+                                                             <span>Did the engagement team obtain audit
+                                                                evidence that management
+                                                                acknowledges its responsibility for the fair
+                                                                presentation of the financial statements
+                                                                in accordance with the applicable
+                                                                financial reporting framework, and has
+                                                                approved the financial statements?</span>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                         <td>
+                                                             <div class="col">
+                                                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                             </div>
+                                                         </td>
+                                                     </tr>
+                                                     <tr>
+                                                        <td>
+                                                            <span>Did the engagement team obtain written
+                                                                representations from management on
+                                                                matters material to the financial
+                                                                statements when other sufficient
+                                                                appropriate audit evidence cannot
+                                                                reasonably be expected to exist?</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>Did the engagement team obtain written
+                                                                representations from management on
+                                                                matters material to the financial
+                                                                statements when other sufficient
+                                                                appropriate audit evidence cannot
+                                                                reasonably be expected to exist?
+                                                                <ul>
+                                                                    <li>That management acknowledges its
+                                                                        responsibility for the design and
+                                                                        implementation of internal control to
+                                                                        prevent and detect error; and
+                                                                    </li>
+                                                                    <li>
+                                                                        That management believes the
+                                                                        effects of those uncorrected financial
+                                                                        statement misstatements aggregated
+                                                                        by the auditor during the audit are
+                                                                        immaterial, both individually and in
+                                                                        the aggregate, to the financial
+                                                                        statements taken as a whole.
+                                                                    </li>    
+                                                                </ul>
+                                                            </span>
+                                                            <span>
+                                                                Whether a summary of such items was
+                                                                included in or attached to the written
+                                                                representations?
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                 </tbody>
+                                             </table>
+                                         </div>
+                                         <div class="table-responsive mb-4">
+                                            <table class="align-middle mb-0 table table-striped table-hover" border="1">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center" colspan="1"></th>
+                                                        <th class="text-center">Full / near full compliance</th>
+                                                        <th class="text-center">Part compliance</th>
+                                                        <th class="text-center">No compliance</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="1">
+                                                            <span>RATING</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col">
+                                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="footer-btn">
+                                            <a href="./inspectionChecklist.html" class="btn">Back</a>
+                                            <a href="./sectionC.html">Save &amp Continue</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+        </div>
+    </div>
+<!-- <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script> -->
+<script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>   
+<script src="./dashboard-pack.js"></script> 
+</body>
+</html>

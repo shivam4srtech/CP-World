@@ -1,0 +1,531 @@
+.table-responsive table td a i{
+    font-weight: 500;
+    color: #000;
+    padding: .4rem .6rem;
+}
+
+#text {
+    padding: .08rem .2rem ;
+  }
+  #passText {
+    padding: .08rem .2rem ;
+  }
+  #copy {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    margin-left: .2rem;
+    border-radius: 2px;
+    padding: .1rem .4rem;
+    display: inline-block;
+    font-weight: 500;
+    font-size: .8rem;
+    letter-spacing: .5px;
+    background-color: #dddbdb;
+  }
+  #copy:before {
+    content: "";
+    clip-path: polygon(50% 40%, 0% 100%, 100% 100%);
+  }
+  #copy:after {
+    content: attr(tooltip);
+    width: 100px;
+    bottom: -32px;
+    left: 20px;
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+  }
+  #copy:before,
+  #copy:after {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    box-sizing: border-box;
+    background-color: #26ace3;
+    color: #fff;
+    transform: translateY(-10px);
+    transition: all 300ms ease;
+  }
+  #copy:hover:before,
+  #copy:hover:after {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  /* =============== */
+  #copyPass {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    margin-left: .2rem;
+    border-radius: 2px;
+    padding: .1rem .4rem;
+    display: inline-block;
+    font-weight: 500;
+    font-size: .8rem;
+    letter-spacing: .5px;
+    background-color: #dddbdb;
+  }
+  #copyPass:before {
+    content: "";
+    clip-path: polygon(50% 40%, 0% 100%, 100% 100%);
+  }
+  #copyPass:after {
+    content: attr(tooltip);
+    width: 100px;
+    bottom: -32px;
+    left: 20px;
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+  }
+  #copyPass:before,
+  #copyPass:after {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    box-sizing: border-box;
+    background-color: #26ace3;
+    color: #fff;
+    transform: translateY(-10px);
+    transition: all 300ms ease;
+  }
+  #copyPass:hover:before,
+  #copyPass:hover:after {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .password-span {
+    -webkit-text-security: disc;
+  }
+
+  /* **************************************************/
+
+   /* .dropdownsearch{
+    display:flex;
+    align-items:center;
+    justify-content:left;
+  }
+   .dropdownsearch label{
+    font-weight: 600;
+    padding-left: .2rem;
+    color: #000;
+    letter-spacing: .4px;
+  }
+  .options{
+    max-width:350px;
+   
+    min-height:6rem; 
+  }
+  @media(max-width:34em){
+    .main{
+      min-width:150px;
+      width:auto;
+    }
+  }
+  select {
+      display: none !important;
+  }
+  
+  .dropdown-select {
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
+      background-repeat: repeat-x;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#40FFFFFF', endColorstr='#00FFFFFF', GradientType=0);
+      background-color: #fff;
+      border-radius: 6px;
+      border: solid 1px #eee;
+      box-shadow: 0px 2px 5px 0px rgba(155, 155, 155, 0.5);
+      box-sizing: border-box;
+      cursor: pointer;
+      display: block;
+      float: left;
+      font-size: 14px;
+      font-weight: normal;
+      height: 42px;
+      line-height: 40px;
+      outline: none;
+      padding-left: 18px;
+      padding-right: 30px;
+      position: relative;
+      text-align: left !important;
+      transition: all 0.2s ease-in-out;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      white-space: nowrap;
+      width: auto;
+      font-weight: 500;
+  }
+  
+  .dropdown-select:focus {
+      background-color: #fff;
+  }
+  
+  .dropdown-select:hover {
+      background-color: #fff;
+  }
+  
+  .dropdown-select:active,
+  .dropdown-select.open {
+      background-color: #fff !important;
+      border-color: #bbb;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05) inset;
+  }
+  
+  .dropdown-select:after {
+      height: 0;
+      width: 0;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 4px solid #777;
+      -webkit-transform: origin(50% 20%);
+      transform: origin(50% 20%);
+      transition: all 0.125s ease-in-out;
+      content: '';
+      display: block;
+      margin-top: -2px;
+      pointer-events: none;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+  }
+  
+  .dropdown-select.open:after {
+      -webkit-transform: rotate(-180deg);
+      transform: rotate(-180deg);
+  }
+  
+  .dropdown-select.open .list {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 1;
+      pointer-events: auto;
+  }
+  
+  .dropdown-select.open .option {
+      cursor: pointer;
+  }
+  
+  .dropdown-select.wide {
+      width: 100%;
+  }
+  
+  .dropdown-select.wide .list {
+      left: 0 !important;
+      right: 0 !important;
+  } 
+  
+  .dropdown-select .list {
+      box-sizing: border-box;
+      transition: all 0.15s cubic-bezier(0.25, 0, 0.25, 1.75), opacity 0.1s linear;
+      -webkit-transform: scale(0.75);
+      transform: scale(0.75);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.09);
+      background-color: #fff;
+      border-radius: 6px;
+      margin-top: 4px;
+      padding: 3px 0;
+      opacity: 0;
+      overflow: hidden;
+      pointer-events: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 999;
+      max-height: 250px;
+      overflow: auto;
+      border: 1px solid #ddd;
+  } 
+  
+   .dropdown-select .list:hover .option:not(:hover) {
+      background-color: transparent !important;
+  }
+  .dropdown-select .dd-search{
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0.5rem;
+  } 
+  
+   .dropdown-select .dd-searchbox{
+    width:90%;
+   
+    border:1px solid #999;
+    border-color:#999;
+    border-radius:4px;
+    outline:none;
+  }
+  .dropdown-select .dd-searchbox:focus{
+    border-color:#26ace3;
+  }
+  
+  .dropdown-select .list ul {
+      padding: 0;
+  }
+  
+  .dropdown-select .option {
+      cursor: default;
+      font-weight: 500;
+      line-height: 40px;
+      outline: none;
+      padding-left: 18px;
+      padding-right: 29px;
+      text-align: left;
+      transition: all 0.2s;
+      list-style: none;
+  }
+  
+  .dropdown-select .option:hover,
+  .dropdown-select .option:focus {
+      background-color: #f6f6f6 !important;
+  }
+  
+  .dropdown-select .option.selected {
+      font-weight: 600;
+      color: #26ace3;
+  }
+  
+  .dropdown-select .option.selected:focus {
+      background: #f6f6f6;
+  }
+  
+  .dropdown-select a {
+      color: #aaa;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
+  }
+  
+  .dropdown-select a:hover {
+      color: #666;
+  } 
+   */
+
+
+
+  .form-label{
+    font-weight: 600;
+    color: #000;
+    letter-spacing: .5px;
+    padding-left: .2rem;
+  }
+  .form-label span{
+    color: #ff0000;
+  }
+  .searchbtn{
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .searchbtn a{
+    border-radius: 4px;
+    padding: .5rem 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    background-color: #26ace3;
+    color: #fff !important;
+    border: none;
+    outline: none;
+    text-decoration: none;
+  }
+  #liveAlertPlaceholder div:nth-of-type(1){
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 0;
+  }
+  #gstList{
+    display: none;
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin-top: 10px;
+}
+#gstList .gsttype{
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+#gstList .gsttype .title{
+  display: block;
+  background-color: #0558cd;
+  color: #fff;
+  text-decoration: none;
+  padding: 1.5rem .8rem;
+  text-align: center;
+  letter-spacing: .5px;
+  border: none;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: .95rem;
+  height: 6rem;
+}
+#gstList .gsttype .duedate {
+  background-color: #fff;
+  text-align: center;
+  padding: 1rem;
+  height: 5rem;
+}
+#gstList .gsttype .duedate span {
+  color: #0097A7;
+  font-weight: 600;
+  letter-spacing: .5px;
+  font-size: .95rem;
+}
+#gstList .gsttype .btns-group{
+  display: flex;
+  justify-content: space-around;
+  padding-top: .5rem;
+  padding-bottom: 1rem;
+  background-color: #fff;
+  align-items: flex-start;
+  position: relative;
+  bottom: 0;
+}
+#gstList .gsttype .btns-group a{
+  padding: .5rem .8rem;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: capitalize;
+  background-color: #1a73e8;
+  color: #fff;
+  letter-spacing: .6px;
+  border-radius: 4px;
+}
+#gstList .custome-height{
+  height: 10rem;
+}
+.table-responsive .status{
+  padding: .1rem .8rem;
+  border-radius: 6px;
+  color: #fff;
+  letter-spacing: .5px;
+}
+.table-responsive .filed{
+  background-color: #0558cd;
+}
+.table-responsive .pending{
+  background-color: #ffc501;
+}
+/* ============================ */
+.createCompany{
+  padding: .5rem 1rem;
+  text-decoration: none;
+  background-color: #0097A7;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 4px;
+  text-transform: capitalize;
+  letter-spacing: .5px;
+  display: inline-block;
+}
+.cancel{
+  padding: .5rem 1rem;
+  background-color: #666;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 4px;
+  text-transform: capitalize;
+  letter-spacing: .5px;
+  display: inline-block;
+}
+.createCompany:hover, .cancel:hover{
+ color: #fff;
+ text-decoration: none;
+}
+
+/* ===========================search taxpayer======================= */
+.searchtaxpayer{
+  text-decoration: none !important;
+  text-transform: uppercase;
+}
+.searchPayers{
+  border: 1px solid red;
+  padding: .5rem 1rem;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: .5px;
+  background-color: #26ace3;
+  color: #fff;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+.searchPayers:hover{
+ color: #fff;
+ text-decoration: none;
+}
+.or{
+  font-weight: 700;
+  letter-spacing: .5px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #000;
+}
+
+/* =====================search by gstin data list====================== */
+.searchByGstin{
+  margin: 2rem auto;
+  padding: .5rem;
+}
+.searchByGstin .head-data{
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #000;
+  margin-bottom: .5rem;
+}
+.searchByGstin p{
+  font-weight: 500;
+  color: #000;
+  letter-spacing: .4px;
+  margin-bottom: .4rem;
+  font-size: .9rem;
+}
+.searchByGstin .row{
+   max-width: 100%;
+   margin: auto;
+   padding: 1.8rem .2rem;
+}
+.searchByGstin .row:nth-child(odd){
+  background-color: #f7f7f7;
+}
+.searchByGstin .row a{
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: .5px;
+  font-size: .9rem;
+}
+
+.dealingingoods table tr{
+  border: 1px solid #23232329;
+}
+.dealingingoods table th{
+  border: 1px solid #23232329;
+}
+.dealingingoods table td{
+  border: 1px solid #23232329;
+  font-weight: 500;
+}
+.dealingingoods table th{
+  vertical-align: top;
+}
+.dealingingoods .header{
+  border-radius: 0;
+  background-color: #f5f5f5;
+}
+.accordiongroup .accordion-header .accordion-button{
+  border-radius: 0;
+  color: #000;
+  font-weight: 700;
+}
+.accordiongroup .accordion-item{
+  border-radius: 0;
+}
+.accordiongroup .accordion-item ol li{
+  font-weight: 600;
+}

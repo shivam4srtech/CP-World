@@ -1,0 +1,244 @@
+p, h1, h2, h3, h4, h5, h6 strong, span, label {
+    font-family: 'Montserrat', sans-serif;
+}
+.audit-title{
+    font-weight: 600;
+    color: #000;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    letter-spacing: .5px;
+    margin-bottom: 1rem;
+}
+.audit-subtitle{
+    font-weight: 600;
+    color: #000;
+    font-size: 1.1rem;
+    letter-spacing: .5px;
+    margin-bottom: 1rem;
+}
+.inputset label{
+    font-weight: 700;
+    letter-spacing: .5px;
+    font-size: .8rem;
+    color: #000;
+}
+.inputset input{
+   border-radius: 0px;
+   border-color: #0000005e;
+}
+.content{
+    padding: .5rem 1rem;
+    border-radius: 4px;
+    background-color: #f1f7e9;
+}
+.content p{
+    color: #000;
+    font-weight: 500;
+    line-height: 1.4;
+    font-size: .95rem;
+}
+.content p input{
+    display: inline-block;
+    margin: .4rem .5rem ;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #232323;
+    padding: .2rem .5rem;
+}
+.report h4{
+    font-weight: 600;
+    font-size: 1.15rem;
+    color: #000;
+    margin-bottom: 1rem;
+}
+.report h5{
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #000;
+    margin-bottom: 1rem;
+}
+.report p{
+    color: #000;
+    font-weight: 500;
+    line-height: 1.4;
+    font-size: .95rem;
+    margin-bottom: 1.2rem;
+}
+.terms em{
+    font-weight: 400;
+    color: #000;
+    letter-spacing: .5px;
+    font-size: .85rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+.terms em sup{
+    font-weight: 500;
+    color: #000;
+    display: inline-block;
+    padding-right: .4rem;
+}
+sup{
+    font-weight: 600;
+    color: #000;
+    display: inline-block;
+    padding-right: .4rem;
+}
+.aplha-list ul li{
+    list-style-type: lower-alpha;
+    font-weight: 500;
+    color: #000;
+    font-size: .9rem;
+    margin-bottom: 1rem;
+}
+.romanlist ol li{
+    color: #000;
+    font-weight: 500;
+    font-size: .9rem;
+    margin-top: 1rem;
+}
+.text-right p{
+    margin-bottom: .5rem;
+}
+.form-check-input{
+    display: inline-block;
+    margin-left: .5rem;
+    width: .85rem;
+    height: .85rem;
+}
+.input-check{
+    display: flex;
+}
+.input-check input{
+    display: inline-block;
+    margin-left: 10rem;
+}
+.footer-btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-btn a{
+   display: inline-block;
+   font-weight: 500;
+   text-decoration: none;
+   letter-spacing: .5px;
+   padding: .5rem 1rem;
+   border-radius: 4px;
+   color: #ffffff;
+   border: none;
+   outline: none;
+   font-style: normal;
+}
+.footer-btn a:nth-of-type(1){
+   background-color: #e1ba00;
+ }
+ .footer-btn a:nth-of-type(2){
+    background-color: #26ace3;
+  }
+  .footer-btn a:nth-of-type(3){
+    background-color: #70ae45;
+  }
+@media(max-width:500px){
+    .footer-btn a{
+        padding: .35rem .6rem;
+     }
+}
+/* =====================Serach with dropdown================ */
+/* START SELECT3.css */
+.searchSelect3 {
+    position: relative;
+    color: #000;
+    margin-bottom: 10px;
+   font-size: .9rem;
+}
+
+.searchSelect3_Input {
+    width: 50% !important;
+    height: 2rem;
+    padding: 1.2rem .4rem;
+    background: #fcfcfc;
+    border: 1px solid #0000005e;
+    border-radius: 5px;
+    /* text-indent: 10px; */
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.searchSelect3_Caret_Down {
+    position: absolute;
+    top: 10px;
+    left: 180px;
+    cursor: pointer;
+}
+
+.searchSelect3_Times {
+    position: absolute;
+    top: 10px;
+    left: 210px;
+    cursor: pointer;
+    display: none;
+}
+
+.searchSelect3_List {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    overflow-x: hidden;
+    max-height: fit-content;
+    position: absolute;
+    border: 1px solid #0000005e;
+    width: 50% !important;
+    background-color: #000000;
+    border-top: none;
+}
+
+.searchSelect3_List li {
+    list-style-type: none;
+    background: #ffffff;
+    color: #000000;
+    border-bottom: 1px solid #ccc;
+}
+
+.searchSelect3_List li:hover {
+    cursor: pointer;
+    background: #26ace3;
+    color: #ffffff;
+}
+
+
+.searchSelect3_List li label {
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.searchSelect3_List li:hover label {
+    color: #ffffff;
+}
+
+.searchSelect3_Input::-ms-clear {
+display: none;
+width: 0;
+height: 0;
+}
+
+.searchSelect3_Input::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.searchSelect3_Input::-webkit-search-decoration,
+.searchSelect3_Input::-webkit-search-cancel-button,
+.searchSelect3_Input::-webkit-search-results-button,
+.searchSelect3_Input::-webkit-search-results-decoration {
+    display: none;
+}
+/* END SELECT3.css */
+
+#wrapper{
+  margin-top: 20px;
+  
+}
